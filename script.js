@@ -2,31 +2,69 @@
    SEBASTIAN OLIVER — Interactive Script
    ============================================ */
 
-// ---- Footer art scroll reveal ----
-// Wait for the browser to paint the initial hidden state before observing.
-// Without this, the class gets added before the first paint and no transition plays.
-requestAnimationFrame(() => {
-requestAnimationFrame(() => {
-  const footerArt = document.getElementById('footerArt');
-  if (!footerArt) return;
+// ---- Footer art: scroll-driven reveal ----
+// Lines expand down as you scroll in, collapse up as you scroll out.
+(function() {
+  const art = document.getElementById('footerArt');
+  if (!art) return;
 
-  let revealed = false;
-  function reveal() {
-    if (revealed) return;
-    revealed = true;
-    footerArt.classList.add('visible');
+  const spans = art.querySelectorAll('.footer-art-text span');
+  const overlay = art.querySelector('.footer-art-overlay');
+  const count = spans.length; // 8
+  // Target opacities for each line (top=faint, bottom=solid)
+  const targetOp = [0.05, 0.08, 0.14, 0.22, 0.32, 0.45, 0.65, 1];
+  // Bottom line gets solid fill
+  const solidIndex = count - 1;
+
+  function onScroll() {
+    const rect = art.getBoundingClientRect();
+    const vh = window.innerHeight;
+
+    // progress: 0 = footer top just entering viewport bottom
+    //           1 = footer top at 40% from viewport bottom
+    const start = vh;
+    const end = vh * 0.4;
+    const progress = Math.max(0, Math.min(1, (start - rect.top) / (start - end)));
+
+    // Each line reveals sequentially within the progress range
+    // Line 0 starts at progress=0, line 7+overlay finish at progress=1
+    const totalSlots = count + 1; // 8 lines + 1 overlay
+
+    for (let i = 0; i < count; i++) {
+      const lineStart = i / totalSlots;
+      const lineEnd = (i + 1) / totalSlots;
+      const lineProgress = Math.max(0, Math.min(1, (progress - lineStart) / (lineEnd - lineStart)));
+
+      const op = targetOp[i] * lineProgress;
+      const ty = 12 * (1 - lineProgress);
+
+      spans[i].style.opacity = op;
+      spans[i].style.transform = 'translateY(' + ty + 'px)';
+
+      // Solid color on last line
+      if (i === solidIndex && lineProgress > 0.5) {
+        spans[i].style.color = 'var(--text)';
+        spans[i].style.webkitTextStroke = '0';
+      } else if (i === solidIndex) {
+        spans[i].style.color = '';
+        spans[i].style.webkitTextStroke = '';
+      }
+      // Thicker stroke on second-to-last
+      if (i === solidIndex - 1) {
+        spans[i].style.webkitTextStrokeWidth = lineProgress > 0.5 ? '1.5px' : '';
+      }
+    }
+
+    // Overlay (SHIP.) is the last slot
+    const oStart = count / totalSlots;
+    const oProgress = Math.max(0, Math.min(1, (progress - oStart) / (1 - oStart)));
+    overlay.style.opacity = oProgress;
+    overlay.style.transform = 'translateY(' + (12 * (1 - oProgress)) + 'px)';
   }
 
-  // Only trigger on scroll — not on load
-  window.addEventListener('scroll', function onScroll() {
-    const rect = footerArt.getBoundingClientRect();
-    if (rect.top < window.innerHeight * 0.92) {
-      reveal();
-      window.removeEventListener('scroll', onScroll);
-    }
-  });
-});
-});
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll(); // set initial state
+})();
 
 // ---- Expandable entries ----
 document.querySelectorAll('[data-expandable]').forEach(entry => {
