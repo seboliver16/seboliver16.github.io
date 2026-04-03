@@ -641,7 +641,7 @@ kbd {
 .footer-art-text {
   font-family: var(--mono);
   font-weight: 800;
-  font-size: clamp(4rem, 12vw, 7.5rem);
+  font-size: clamp(5rem, 14vw, 9rem);
   letter-spacing: -0.04em;
   line-height: 0.75;
   color: transparent;
@@ -679,7 +679,7 @@ kbd {
 .footer-art-overlay {
   font-family: var(--mono);
   font-weight: 800;
-  font-size: clamp(4rem, 12vw, 7.5rem);
+  font-size: clamp(5rem, 14vw, 9rem);
   letter-spacing: -0.04em;
   color: var(--accent);
   line-height: 0.75;
