@@ -643,53 +643,57 @@ kbd {
   font-weight: 800;
   font-size: clamp(5rem, 14vw, 9rem);
   letter-spacing: -0.04em;
-  line-height: 0.75;
+  line-height: 0.55;
   color: transparent;
   -webkit-text-stroke: 1px var(--border);
   user-select: none;
 }
 
-@keyframes buildReveal {
+@keyframes accordionOpen {
   from {
+    max-height: 0;
     opacity: 0;
-    transform: translateY(50px) scale(0.9);
+    transform: scaleY(0.3);
   }
   to {
+    max-height: 1.2em;
     opacity: var(--target-op, 1);
-    transform: translateY(0) scale(1);
+    transform: scaleY(1);
   }
 }
 
 @keyframes shipReveal {
   from {
     opacity: 0;
-    transform: translateY(40px) scale(0.9);
+    transform: translateY(10px);
   }
   to {
     opacity: 1;
-    transform: translateY(0) scale(1);
+    transform: translateY(0);
   }
 }
 
 .footer-art-text span {
   display: block;
+  max-height: 0;
   opacity: 0;
-  transform: translateY(50px) scale(0.9);
+  transform: scaleY(0.3);
+  transform-origin: top center;
+  overflow: hidden;
 }
 
-/* Target opacities per line */
+/* Target opacities + stagger delays */
 .footer-art-text span:nth-child(1) { --target-op: 0.05; --delay: 0s; }
-.footer-art-text span:nth-child(2) { --target-op: 0.08; --delay: 0.08s; }
-.footer-art-text span:nth-child(3) { --target-op: 0.14; --delay: 0.16s; }
-.footer-art-text span:nth-child(4) { --target-op: 0.22; --delay: 0.24s; }
-.footer-art-text span:nth-child(5) { --target-op: 0.32; --delay: 0.32s; }
-.footer-art-text span:nth-child(6) { --target-op: 0.45; --delay: 0.4s; }
-.footer-art-text span:nth-child(7) { --target-op: 0.65; --delay: 0.48s; -webkit-text-stroke-width: 1.5px; }
-.footer-art-text span:nth-child(8) { --target-op: 1; --delay: 0.56s; color: var(--text); -webkit-text-stroke: 0; }
+.footer-art-text span:nth-child(2) { --target-op: 0.08; --delay: 0.06s; }
+.footer-art-text span:nth-child(3) { --target-op: 0.14; --delay: 0.12s; }
+.footer-art-text span:nth-child(4) { --target-op: 0.22; --delay: 0.18s; }
+.footer-art-text span:nth-child(5) { --target-op: 0.32; --delay: 0.24s; }
+.footer-art-text span:nth-child(6) { --target-op: 0.45; --delay: 0.30s; }
+.footer-art-text span:nth-child(7) { --target-op: 0.65; --delay: 0.36s; -webkit-text-stroke-width: 1.5px; }
+.footer-art-text span:nth-child(8) { --target-op: 1; --delay: 0.42s; color: var(--text); -webkit-text-stroke: 0; }
 
-/* When revealed: each span gets a keyframe animation */
 .footer-art.revealed .footer-art-text span {
-  animation: buildReveal 0.6s cubic-bezier(0.22, 1, 0.36, 1) var(--delay) forwards;
+  animation: accordionOpen 0.5s cubic-bezier(0.22, 1, 0.36, 1) var(--delay) forwards;
 }
 
 .footer-art-overlay {
@@ -698,14 +702,14 @@ kbd {
   font-size: clamp(5rem, 14vw, 9rem);
   letter-spacing: -0.04em;
   color: var(--accent);
-  line-height: 0.75;
+  line-height: 0.55;
   text-shadow: 0 0 60px rgba(37, 99, 235, 0.15);
   opacity: 0;
-  transform: translateY(40px) scale(0.9);
+  transform: translateY(10px);
 }
 
 .footer-art.revealed .footer-art-overlay {
-  animation: shipReveal 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.7s forwards;
+  animation: shipReveal 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.55s forwards;
 }
 
 /* Info bar below art */
