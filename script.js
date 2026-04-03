@@ -2,19 +2,66 @@
    SEBASTIAN OLIVER — Interactive Script
    ============================================ */
 
-// ---- Footer art reveal (CSS animation, not scroll-driven) ----
-// Works on Firefox, Chrome, Safari -- no scroll-linked JS needed
+// ---- Footer art: scroll-driven accordion ----
+// rAF-batched to work on Firefox + Chrome + Safari
 (function() {
   var art = document.getElementById('footerArt');
   if (!art) return;
-  // Use IntersectionObserver to add class when 20% visible
-  // CSS @keyframes handles the actual animation
-  new IntersectionObserver(function(entries, obs) {
-    if (entries[0].isIntersecting) {
-      art.classList.add('revealed');
-      obs.disconnect();
+  var spans = [].slice.call(art.querySelectorAll('.footer-art-text span'));
+  var ship = art.querySelector('.footer-art-overlay');
+  var ops = [0.05, 0.08, 0.14, 0.22, 0.32, 0.45, 0.65, 1];
+  var ticking = false;
+
+  function update() {
+    ticking = false;
+    var rect = art.getBoundingClientRect();
+    var vh = window.innerHeight;
+
+    // p goes 0→1 as the art scrolls from viewport bottom to 30% up
+    var p = (vh - rect.top) / (vh * 0.7);
+    p = p < 0 ? 0 : p > 1 ? 1 : p;
+
+    // Smoothstep
+    var sp = p * p * (3 - 2 * p);
+
+    for (var i = 0; i < spans.length; i++) {
+      // Each line gets a staggered slice: starts later, ends later
+      var start = i * 0.09;
+      var lp = (sp - start) / 0.35;
+      lp = lp < 0 ? 0 : lp > 1 ? 1 : lp;
+
+      // scaleY: 0 → 1 (accordion expand from top)
+      // opacity: 0 → target
+      spans[i].style.transform = 'scaleY(' + lp + ')';
+      spans[i].style.opacity = ops[i] * lp;
+
+      // Last line: solid text when mostly open
+      if (i === spans.length - 1) {
+        spans[i].style.color = lp > 0.5 ? 'var(--text)' : '';
+        spans[i].style.webkitTextStroke = lp > 0.5 ? '0' : '';
+      }
+      if (i === spans.length - 2) {
+        spans[i].style.webkitTextStrokeWidth = lp > 0.5 ? '1.5px' : '';
+      }
     }
-  }, { rootMargin: '0px 0px -20% 0px' }).observe(art);
+
+    // SHIP: comes after last BUILD line
+    var sStart = spans.length * 0.09;
+    var sP = (sp - sStart) / 0.35;
+    sP = sP < 0 ? 0 : sP > 1 ? 1 : sP;
+    ship.style.opacity = sP;
+    ship.style.transform = 'translateY(' + (8 * (1 - sP)) + 'px)';
+  }
+
+  function onScroll() {
+    if (!ticking) {
+      ticking = true;
+      requestAnimationFrame(update);
+    }
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  update();
 })();
 
 // ---- Expandable entries ----
