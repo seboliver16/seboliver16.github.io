@@ -2,63 +2,19 @@
    SEBASTIAN OLIVER — Interactive Script
    ============================================ */
 
-// ---- Footer art: scroll-driven reveal ----
-// v4: dramatic movement, each line cascades from far below
+// ---- Footer art reveal (CSS animation, not scroll-driven) ----
+// Works on Firefox, Chrome, Safari -- no scroll-linked JS needed
 (function() {
-  const art = document.getElementById('footerArt');
+  var art = document.getElementById('footerArt');
   if (!art) return;
-
-  const spans = Array.from(art.querySelectorAll('.footer-art-text span'));
-  const overlay = art.querySelector('.footer-art-overlay');
-  const total = spans.length + 1; // lines + SHIP overlay
-  const targetOp = [0.05, 0.08, 0.14, 0.22, 0.32, 0.45, 0.65, 1];
-
-  function update() {
-    const rect = art.getBoundingClientRect();
-    const vh = window.innerHeight;
-
-    // progress 0..1 over a FULL viewport of scrolling
-    // 0 = art top is at viewport bottom
-    // 1 = art top is at viewport top
-    const progress = 1 - (rect.top / vh);
-    const p = Math.max(0, Math.min(1, progress));
-
-    spans.forEach(function(span, i) {
-      // each line occupies an overlapping slice of progress
-      // earlier lines start earlier, later lines start later
-      var lineP = (p - (i * 0.08)) / 0.3;
-      lineP = Math.max(0, Math.min(1, lineP));
-
-      // eased
-      var ease = lineP * lineP * (3 - 2 * lineP); // smoothstep
-
-      var moveY = 60 * (1 - ease);
-      var op = targetOp[i] * ease;
-      var scale = 0.92 + 0.08 * ease;
-
-      span.style.transform = 'translateY(' + moveY + 'px) scale(' + scale + ')';
-      span.style.opacity = op;
-
-      // last line: solid color when revealed
-      if (i === spans.length - 1 && ease > 0.5) {
-        span.style.color = 'var(--text)';
-        span.style.webkitTextStroke = '0';
-      } else if (i === spans.length - 1) {
-        span.style.color = '';
-        span.style.webkitTextStroke = '';
-      }
-    });
-
-    // SHIP overlay -- comes in after the last BUILD line
-    var shipP = (p - (spans.length * 0.08)) / 0.3;
-    shipP = Math.max(0, Math.min(1, shipP));
-    var shipEase = shipP * shipP * (3 - 2 * shipP);
-    overlay.style.transform = 'translateY(' + (50 * (1 - shipEase)) + 'px) scale(' + (0.9 + 0.1 * shipEase) + ')';
-    overlay.style.opacity = shipEase;
-  }
-
-  window.addEventListener('scroll', update, { passive: true });
-  update();
+  // Use IntersectionObserver to add class when 20% visible
+  // CSS @keyframes handles the actual animation
+  new IntersectionObserver(function(entries, obs) {
+    if (entries[0].isIntersecting) {
+      art.classList.add('revealed');
+      obs.disconnect();
+    }
+  }, { rootMargin: '0px 0px -20% 0px' }).observe(art);
 })();
 
 // ---- Expandable entries ----
