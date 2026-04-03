@@ -634,7 +634,7 @@ kbd {
 /* Giant typographic art */
 .footer-art {
   text-align: center;
-  padding: 3rem 0 1rem;
+  padding: 1rem 0 0.5rem;
   overflow: hidden;
 }
 
@@ -643,7 +643,7 @@ kbd {
   font-weight: 800;
   font-size: clamp(5rem, 14vw, 9rem);
   letter-spacing: -0.04em;
-  line-height: 0.55;
+  line-height: 0.35;
   color: transparent;
   -webkit-text-stroke: 1px var(--border);
   user-select: none;
@@ -662,7 +662,7 @@ kbd {
   font-size: clamp(5rem, 14vw, 9rem);
   letter-spacing: -0.04em;
   color: var(--accent);
-  line-height: 0.55;
+  line-height: 0.35;
   text-shadow: 0 0 60px rgba(37, 99, 235, 0.15);
   will-change: transform, opacity;
   /* JS sets transform + opacity based on scroll */
