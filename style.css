@@ -11,9 +11,9 @@
   --text: #1a1a18;
   --text-mid: #6b6860;
   --text-light: #9e9a90;
-  --accent: #c45d2c;
-  --accent-hover: #a84b22;
-  --accent-glow: rgba(196, 93, 44, 0.12);
+  --accent: #2563EB;
+  --accent-hover: #1d4ed8;
+  --accent-glow: rgba(37, 99, 235, 0.1);
   --border: #d4d0c8;
   --radius: 6px;
   --page-max: 820px;
@@ -462,7 +462,7 @@ kbd {
   background: var(--accent-glow);
   color: var(--accent);
   border-radius: 3px;
-  border: 1px solid rgba(196, 93, 44, 0.2);
+  border: 1px solid rgba(37, 99, 235, 0.2);
 }
 
 .entry-date {
@@ -526,7 +526,7 @@ kbd {
   color: var(--accent);
   text-decoration: none;
   padding: 0.3em 0.7em;
-  border: 1px solid rgba(196, 93, 44, 0.25);
+  border: 1px solid rgba(37, 99, 235, 0.25);
   border-radius: 4px;
   transition: all 0.2s;
 }
@@ -564,7 +564,7 @@ kbd {
   border-color: var(--accent);
   background: var(--accent-glow);
   transform: translateY(-2px);
-  box-shadow: 0 4px 16px rgba(196, 93, 44, 0.08);
+  box-shadow: 0 4px 16px rgba(37, 99, 235, 0.08);
 }
 
 .connect-card:hover .connect-icon {
