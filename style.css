@@ -648,24 +648,41 @@ kbd {
 
 .footer-art-text span { display: block; }
 
+/* ---- Scroll-driven animation via CSS (no JS) ---- */
+@keyframes revealGhost { from { opacity: 0; } }
+@keyframes revealSolid { from { opacity: 0; } }
+@keyframes revealShip  { from { opacity: 0; } }
+
 /* Ghost trail — outlined, faintest at top */
 .footer-art-text .ghost {
   color: transparent;
   -webkit-text-stroke: 1px var(--border);
+  animation: revealGhost linear both;
+  animation-timeline: scroll(root);
 }
 
-.footer-art-text .ghost:nth-child(1) { opacity: 0.06; }
-.footer-art-text .ghost:nth-child(2) { opacity: 0.12; }
-.footer-art-text .ghost:nth-child(3) { opacity: 0.25; }
-.footer-art-text .ghost:nth-child(4) { opacity: 0.45; -webkit-text-stroke-width: 1.5px; }
+/* Each ghost: different target opacity + scroll range */
+/* ghost 4 (closest to BUILD) reveals first, ghost 1 (faintest) last */
+.footer-art-text .ghost:nth-child(4) { opacity: 0.45; -webkit-text-stroke-width: 1.5px; animation-range: 40% 55%; }
+.footer-art-text .ghost:nth-child(3) { opacity: 0.25; animation-range: 45% 60%; }
+.footer-art-text .ghost:nth-child(2) { opacity: 0.12; animation-range: 50% 65%; }
+.footer-art-text .ghost:nth-child(1) { opacity: 0.06; animation-range: 55% 70%; }
 
-/* Solid BUILD — black */
-.footer-art-text .solid { color: var(--text); }
+/* Solid BUILD — appears first */
+.footer-art-text .solid {
+  color: var(--text);
+  animation: revealSolid linear both;
+  animation-timeline: scroll(root);
+  animation-range: 25% 45%;
+}
 
-/* SHIP — blue */
+/* SHIP — appears last */
 .footer-art-text .ship {
   color: var(--accent);
   text-shadow: 0 0 60px rgba(37, 99, 235, 0.15);
+  animation: revealShip linear both;
+  animation-timeline: scroll(root);
+  animation-range: 65% 85%;
 }
 
 /* Info bar below art */

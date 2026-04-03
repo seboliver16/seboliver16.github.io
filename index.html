@@ -330,45 +330,8 @@
   </div>
 
   <script>
-  /* === Footer scroll animation === */
+  /* Footer animation is pure CSS (animation-timeline: scroll) — no JS needed */
   (function(){
-    var art = document.getElementById('footerArt');
-    if (!art) return;
-    var ghosts = [].slice.call(art.querySelectorAll('.ghost'));
-    var solid = art.querySelector('.solid');
-    var ship = art.querySelector('.ship');
-    var ghostOps = [0.06, 0.12, 0.25, 0.45];
-    var ticking = false;
-    function update() {
-      ticking = false;
-      var st = window.pageYOffset || document.documentElement.scrollTop;
-      var max = document.documentElement.scrollHeight - window.innerHeight;
-      if (max <= 0) return;
-      var frac = st / max;
-      // p: 0→1 over 15%→85% of page scroll
-      var p = (frac - 0.15) / 0.7;
-      p = p < 0 ? 0 : p > 1 ? 1 : p;
-      // Solid BUILD: fades in first
-      var s = Math.min(1, p / 0.25);
-      solid.style.opacity = s * s * (3 - 2 * s);
-      // Ghost trail expands UPWARD from solid:
-      // ghost[3] (closest to solid) appears first, ghost[0] (faintest) last
-      for (var i = ghosts.length - 1; i >= 0; i--) {
-        var dist = ghosts.length - 1 - i; // 0=closest, 3=farthest
-        var gp = (p - 0.1 - dist * 0.12) / 0.2;
-        gp = gp < 0 ? 0 : gp > 1 ? 1 : gp;
-        var ge = gp * gp * (3 - 2 * gp);
-        ghosts[i].style.opacity = ghostOps[i] * ge;
-      }
-      // SHIP: last to appear
-      var sp = (p - 0.7) / 0.3;
-      sp = sp < 0 ? 0 : sp > 1 ? 1 : sp;
-      ship.style.opacity = sp * sp * (3 - 2 * sp);
-    }
-    window.addEventListener('scroll', function() {
-      if (!ticking) { ticking = true; requestAnimationFrame(update); }
-    }, { passive: true });
-    update();
   })();
 
   /* === Rest of site JS (expandable entries, clock, cmd palette) === */
