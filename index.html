@@ -287,8 +287,8 @@
     <footer class="footer">
       <!-- Giant typographic art -->
       <div class="footer-art" id="footerArt">
-        <div class="footer-art-text" aria-hidden="true"><span>BUILD</span><span>BUILD</span><span>BUILD</span><span>BUILD</span><span>BUILD</span><span>BUILD</span><span>BUILD</span><span>BUILD</span></div>
-        <div class="footer-art-overlay">SHIP.</div>
+        <div class="footer-art-text" aria-hidden="true"><span>BUILD</span><span>BUILD</span><span>BUILD</span><span>BUILD</span><span>BUILD</span><span>BUILD</span></div>
+        <div class="footer-art-ship">SHIP.</div>
       </div>
 
       <!-- Info bar -->
@@ -331,13 +331,14 @@
   </div>
 
   <script>
-  /* === Footer accordion (inline — no caching) === */
+  /* === Footer scroll animation === */
   (function(){
     var art = document.getElementById('footerArt');
     if (!art) return;
     var spans = [].slice.call(art.querySelectorAll('.footer-art-text span'));
-    var ship = art.querySelector('.footer-art-overlay');
-    var ops = [0.05, 0.08, 0.14, 0.22, 0.32, 0.45, 0.65, 1];
+    var ship = art.querySelector('.footer-art-ship');
+    // Target opacities: span0=solid(1), rest=trail fading out
+    var ops = [1, 0.5, 0.35, 0.2, 0.1, 0.05];
     var ticking = false;
     function update() {
       ticking = false;
@@ -345,29 +346,29 @@
       var max = document.documentElement.scrollHeight - window.innerHeight;
       if (max <= 0) return;
       var frac = st / max;
-      var p = (frac - 0.4) / 0.6;
+      // Starts at 20% scroll, done at 90%
+      var p = (frac - 0.2) / 0.7;
       p = p < 0 ? 0 : p > 1 ? 1 : p;
-      for (var i = 0; i < spans.length; i++) {
-        var lp = (p - i * 0.08) / 0.3;
+      // Solid BUILD (span 0) appears first
+      var s0 = Math.min(1, p / 0.2);
+      s0 = s0 * s0 * (3 - 2 * s0);
+      spans[0].style.opacity = ops[0] * s0;
+      // Trail lines cascade after
+      for (var i = 1; i < spans.length; i++) {
+        var lp = (p - 0.15 - (i - 1) * 0.1) / 0.2;
         lp = lp < 0 ? 0 : lp > 1 ? 1 : lp;
         var e = lp * lp * (3 - 2 * lp);
-        spans[i].style.transform = 'scaleY(' + e + ')';
         spans[i].style.opacity = ops[i] * e;
-        if (i === spans.length - 1) {
-          spans[i].style.color = e > 0.5 ? 'var(--text)' : '';
-          spans[i].style.webkitTextStroke = e > 0.5 ? '0' : '';
-        }
       }
-      var sP = (p - spans.length * 0.08) / 0.3;
+      // SHIP appears last
+      var sP = (p - 0.75) / 0.25;
       sP = sP < 0 ? 0 : sP > 1 ? 1 : sP;
       var sE = sP * sP * (3 - 2 * sP);
       ship.style.opacity = sE;
-      ship.style.transform = 'translateY(' + (8 * (1 - sE)) + 'px)';
     }
     window.addEventListener('scroll', function() {
       if (!ticking) { ticking = true; requestAnimationFrame(update); }
     }, { passive: true });
-    window.addEventListener('resize', function() { update(); }, { passive: true });
     update();
   })();
 

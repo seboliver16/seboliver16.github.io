@@ -634,38 +634,69 @@ kbd {
 /* Giant typographic art */
 .footer-art {
   text-align: center;
-  padding: 1rem 0 0.5rem;
+  padding: 0;
   overflow: hidden;
 }
 
 .footer-art-text {
   font-family: var(--mono);
   font-weight: 800;
-  font-size: clamp(5rem, 14vw, 9rem);
+  font-size: clamp(4.5rem, 13vw, 8rem);
   letter-spacing: -0.04em;
-  line-height: 0.35;
-  color: transparent;
-  -webkit-text-stroke: 1px var(--border);
+  line-height: 0.82;
   user-select: none;
 }
 
+/* First span = solid black BUILD, rest = outlined trail fading out */
 .footer-art-text span {
   display: block;
-  transform-origin: top center;
-  will-change: transform, opacity;
-  /* JS sets transform + opacity based on scroll */
+  will-change: opacity;
 }
 
-.footer-art-overlay {
+.footer-art-text span:nth-child(1) {
+  color: var(--text);
+}
+
+.footer-art-text span:nth-child(2) {
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--text-mid);
+  opacity: 0.5;
+}
+
+.footer-art-text span:nth-child(3) {
+  color: transparent;
+  -webkit-text-stroke: 1px var(--border);
+  opacity: 0.35;
+}
+
+.footer-art-text span:nth-child(4) {
+  color: transparent;
+  -webkit-text-stroke: 1px var(--border);
+  opacity: 0.2;
+}
+
+.footer-art-text span:nth-child(5) {
+  color: transparent;
+  -webkit-text-stroke: 1px var(--border);
+  opacity: 0.1;
+}
+
+.footer-art-text span:nth-child(6) {
+  color: transparent;
+  -webkit-text-stroke: 1px var(--border);
+  opacity: 0.05;
+}
+
+.footer-art-ship {
   font-family: var(--mono);
   font-weight: 800;
-  font-size: clamp(5rem, 14vw, 9rem);
+  font-size: clamp(4.5rem, 13vw, 8rem);
   letter-spacing: -0.04em;
   color: var(--accent);
-  line-height: 0.35;
+  line-height: 1;
+  margin-top: 0.3em;
   text-shadow: 0 0 60px rgba(37, 99, 235, 0.15);
-  will-change: transform, opacity;
-  /* JS sets transform + opacity based on scroll */
+  will-change: opacity;
 }
 
 /* Info bar below art */
