@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Command palette -->
+  <!-- Command palette overlay -->
   <div class="cmd-palette" id="cmdPalette">
     <div class="cmd-palette-backdrop" onclick="togglePalette()"></div>
     <div class="cmd-palette-box">
@@ -25,68 +25,74 @@
   </div>
 
   <div class="page">
-    <!-- Hero -->
-    <section class="hero" data-animate>
-      <h1 class="hero-name">SEBASTIAN<br>OLIVER<span class="accent-dot">.</span></h1>
-      <div class="hero-meta">
-        <span class="hero-tag"><strong>Engineer</strong> &mdash; New York</span>
-        <span class="hero-tag"><strong>Founder</strong> &mdash; 4x</span>
-        <span class="hero-status">
-          <span class="hero-status-dot"></span>
-          Joining Ramp &middot; AI Solutions
-        </span>
+    <!-- Header -->
+    <header class="header" data-animate>
+      <div class="header-left">
+        <h1 class="name">SEBASTIAN OLIVER</h1>
+        <div class="header-hint">
+          <kbd>Cmd</kbd><kbd>K</kbd> <span>to navigate</span>
+        </div>
       </div>
-      <nav class="hero-nav">
-        <a href="#ventures">Ventures</a>
-        <a href="#experience">Experience</a>
-        <a href="#content">Content</a>
-        <a href="#connect">Connect</a>
-        <a href="/socials">Links</a>
-      </nav>
-    </section>
+      <div class="header-right">
+        <a href="https://www.linkedin.com/in/seb-oliver/" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="https://x.com/startupseb_" target="_blank" rel="noopener" class="social-icon" aria-label="X">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a href="https://github.com/seboliver16" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="https://www.youtube.com/@StartUpSeb" target="_blank" rel="noopener" class="social-icon" aria-label="YouTube">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </a>
+      </div>
+    </header>
 
-    <!-- Bio -->
-    <section class="bio-section" data-animate>
-      <div class="bio-grid">
+    <hr class="divider" data-animate>
+
+    <!-- Bio + Status -->
+    <section class="two-col" data-animate>
+      <div class="col-bio">
         <p class="bio-text">
-          <strong>Software engineer and serial founder.</strong> I build applied AI systems at scale
-          and start companies when I see something broken. Four startups, 40K+ users
-          across products. UVA CS &amp; Econ. I like hard problems and shipping
-          things that work.
+          Software engineer and serial founder in New York. I build applied AI systems
+          at scale and start companies when I see something broken. Four startups,
+          40K+ users across products. UVA CS &amp; Econ.
+          I like hard problems and shipping things that work.
         </p>
-        <div class="currently-block">
-          <div class="currently-header">
-            <span class="hero-status-dot"></span>
-            currently
+      </div>
+      <div class="col-status">
+        <div class="status-card">
+          <div class="status-header">
+            <span class="status-dot"></span>
+            <span class="status-label">Currently</span>
           </div>
-          <ul class="currently-list">
-            <li>AI Solutions Engineer @ <a href="https://ramp.com" target="_blank">Ramp</a></li>
+          <ul class="status-list">
+            <li>Joining <a href="https://ramp.com" target="_blank">Ramp</a> &mdash; AI Solutions, Mar 2026</li>
             <li>Building AI-native enterprise finance from zero</li>
-            <li>New York, NY</li>
+            <li>Based in <span class="accent">New York, NY</span></li>
           </ul>
-          <div class="currently-timestamp" id="statusTime"></div>
+          <div class="status-timestamp" id="statusTime"></div>
         </div>
       </div>
     </section>
 
-    <!-- Ventures -->
-    <section class="section" data-animate id="ventures" data-section="startups">
-      <div class="section-header">
-        <h2 class="section-title">Ventures</h2>
-        <span class="section-count">03</span>
-      </div>
+    <hr class="divider" data-animate>
+
+    <!-- Startups -->
+    <section class="section" data-animate data-section="startups">
+      <h2 class="section-title">VENTURES</h2>
       <div class="entries">
         <div class="entry" data-expandable>
           <div class="entry-row">
             <div class="entry-left">
               <span class="entry-name">Vahalla</span>
               <span class="entry-arrow">+</span>
-              <span class="entry-sep">&mdash;</span>
               <span class="entry-desc">Technical interview prep, reimagined</span>
             </div>
             <div class="entry-right">
               <span class="entry-tag">founder</span>
-              <span class="entry-date">2025&ndash;now</span>
+              <span class="entry-date">2025 &mdash; now</span>
             </div>
           </div>
           <div class="entry-detail">
@@ -102,12 +108,11 @@
             <div class="entry-left">
               <span class="entry-name">Julie AI</span>
               <span class="entry-arrow">+</span>
-              <span class="entry-sep">&mdash;</span>
               <span class="entry-desc">Find anyone, anywhere, powered by AI</span>
             </div>
             <div class="entry-right">
               <span class="entry-tag">founder &amp; ceo</span>
-              <span class="entry-date">2024&ndash;2025</span>
+              <span class="entry-date">2024 &mdash; 2025</span>
             </div>
           </div>
           <div class="entry-detail">
@@ -123,12 +128,11 @@
             <div class="entry-left">
               <span class="entry-name">RoomMe</span>
               <span class="entry-arrow">+</span>
-              <span class="entry-sep">&mdash;</span>
-              <span class="entry-desc">AI-powered roommate matching</span>
+              <span class="entry-desc">AI-powered roommate matching for young adults</span>
             </div>
             <div class="entry-right">
               <span class="entry-tag">founder &amp; ceo</span>
-              <span class="entry-date">2021&ndash;2023</span>
+              <span class="entry-date">2021 &mdash; 2023</span>
             </div>
           </div>
           <div class="entry-detail">
@@ -142,17 +146,17 @@
       </div>
     </section>
 
+    <hr class="divider" data-animate>
+
     <!-- Experience -->
-    <section class="section" data-animate id="experience" data-section="experience">
-      <div class="section-header">
-        <h2 class="section-title">Experience</h2>
-      </div>
+    <section class="section" data-animate data-section="experience">
+      <h2 class="section-title">EXPERIENCE</h2>
       <div class="entries">
         <div class="entry" data-expandable>
           <div class="entry-row">
             <div class="entry-left">
               <span class="entry-name">AI Solutions Engineer</span>
-              <span class="entry-sep">@</span>
+              <span class="entry-at">@</span>
               <span class="entry-desc"><a href="https://ramp.com" target="_blank">Ramp</a></span>
             </div>
             <div class="entry-right">
@@ -169,11 +173,11 @@
           <div class="entry-row">
             <div class="entry-left">
               <span class="entry-name">Software Engineer</span>
-              <span class="entry-sep">@</span>
+              <span class="entry-at">@</span>
               <span class="entry-desc"><a href="https://aws.amazon.com/bedrock/" target="_blank">Amazon Bedrock</a></span>
             </div>
             <div class="entry-right">
-              <span class="entry-date">Oct 2024&ndash;2026</span>
+              <span class="entry-date">Oct 2024 &mdash; 2026</span>
             </div>
           </div>
           <div class="entry-detail">
@@ -185,11 +189,11 @@
           <div class="entry-row">
             <div class="entry-left">
               <span class="entry-name">Consultant</span>
-              <span class="entry-sep">@</span>
+              <span class="entry-at">@</span>
               <span class="entry-desc"><a href="https://www.deloitte.com" target="_blank">Deloitte Consulting</a></span>
             </div>
             <div class="entry-right">
-              <span class="entry-date">Aug 2023&ndash;Oct 2024</span>
+              <span class="entry-date">Aug 2023 &mdash; Oct 2024</span>
             </div>
           </div>
           <div class="entry-detail">
@@ -201,40 +205,40 @@
           <div class="entry-row">
             <div class="entry-left">
               <span class="entry-name">BA, Computer Science &amp; Economics</span>
-              <span class="entry-sep">@</span>
+              <span class="entry-at">@</span>
               <span class="entry-desc"><a href="https://www.virginia.edu" target="_blank">University of Virginia</a></span>
             </div>
             <div class="entry-right">
-              <span class="entry-date">2019&ndash;2023</span>
+              <span class="entry-date">2019 &mdash; 2023</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <hr class="divider" data-animate>
+
     <!-- Content -->
-    <section class="section" data-animate id="content" data-section="content">
-      <div class="section-header">
-        <h2 class="section-title">Content</h2>
-      </div>
+    <section class="section" data-animate data-section="content">
+      <h2 class="section-title">CONTENT</h2>
       <div class="connect-grid">
         <a href="https://www.youtube.com/@StartUpSeb" target="_blank" rel="noopener" class="connect-card">
           <span class="connect-icon">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
           </span>
           <span class="connect-label">YouTube</span>
           <span class="connect-value">@StartUpSeb &nearr;</span>
         </a>
         <a href="https://www.tiktok.com/@startupsebb" target="_blank" rel="noopener" class="connect-card">
           <span class="connect-icon">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 0 0-.79-.05A6.34 6.34 0 0 0 3.15 15a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.71a8.2 8.2 0 0 0 4.76 1.52v-3.4a4.85 4.85 0 0 1-1-.14z"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 0 0-.79-.05A6.34 6.34 0 0 0 3.15 15a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.71a8.2 8.2 0 0 0 4.76 1.52v-3.4a4.85 4.85 0 0 1-1-.14z"/></svg>
           </span>
           <span class="connect-label">TikTok</span>
           <span class="connect-value">@startupsebb &nearr;</span>
         </a>
         <a href="https://www.instagram.com/startupseb/" target="_blank" rel="noopener" class="connect-card">
           <span class="connect-icon">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
           </span>
           <span class="connect-label">Instagram</span>
           <span class="connect-value">@startupseb &nearr;</span>
@@ -242,36 +246,36 @@
       </div>
     </section>
 
+    <hr class="divider" data-animate>
+
     <!-- Connect -->
-    <section class="section" data-animate id="connect" data-section="connect">
-      <div class="section-header">
-        <h2 class="section-title">Connect</h2>
-      </div>
+    <section class="section" data-animate data-section="connect">
+      <h2 class="section-title">CONNECT</h2>
       <div class="connect-grid">
         <a href="mailto:seb.oliver.recruiting@gmail.com" class="connect-card">
           <span class="connect-icon">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
           </span>
           <span class="connect-label">Email</span>
           <span class="connect-value">seb.oliver.recruiting@gmail.com</span>
         </a>
         <a href="https://www.linkedin.com/in/seb-oliver/" target="_blank" rel="noopener" class="connect-card">
           <span class="connect-icon">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
           </span>
           <span class="connect-label">LinkedIn</span>
           <span class="connect-value">seb-oliver &nearr;</span>
         </a>
         <a href="https://x.com/startupseb_" target="_blank" rel="noopener" class="connect-card">
           <span class="connect-icon">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
           </span>
           <span class="connect-label">X / Twitter</span>
           <span class="connect-value">@startupseb_ &nearr;</span>
         </a>
         <a href="https://github.com/seboliver16" target="_blank" rel="noopener" class="connect-card">
           <span class="connect-icon">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
           </span>
           <span class="connect-label">GitHub</span>
           <span class="connect-value">seboliver16 &nearr;</span>
@@ -279,11 +283,13 @@
       </div>
     </section>
 
+    <hr class="divider" data-animate>
+
     <!-- Footer -->
     <footer class="footer" data-animate>
-      <span>&copy; <span id="footerYear"></span> Sebastian Oliver</span>
-      <span id="footerClock"></span>
-      <span>seboliver.dev</span>
+      <span class="footer-left">&copy; <span id="footerYear"></span> Sebastian Oliver</span>
+      <span class="footer-center" id="footerClock"></span>
+      <span class="footer-right">seboliver.dev</span>
     </footer>
   </div>
 
