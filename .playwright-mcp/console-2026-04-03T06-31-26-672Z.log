@@ -1,5 +1,0 @@
-[    1766ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://dash.cloudflare.com/api/v4/accounts/b82ac7968a160d3fdd5bf00c4ff3e3e2/access/organizations:0
-[    2021ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://dash.cloudflare.com/api/v4/accounts/b82ac7968a160d3fdd5bf00c4ff3e3e2/access/organizations:0
-[    2335ms] [LOG] WebSocket connected to: ws.support-chat.cloudflare.dev @ https://dash.cloudflare.com/cf-283347cf5c5e217f.js:2
-[    2737ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://dash.cloudflare.com/api/v4/zones/f03dee82cdac8f03d240b2fa6362b93d/subscription:0
-[    2874ms] [WARNING] Missing Component for translation key: Read the Cache Analytics announcement <0>blog</0>., index: 0. Fragment will be used. @ https://dash.cloudflare.com/cf-283347cf5c5e217f.js:2

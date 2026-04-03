@@ -1,9 +1,0 @@
-[     679ms] Error: Minified React error #418; visit https://react.dev/errors/418?args[]=text&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
-    at rP (https://roomme.app/_next/static/chunks/4bd1b696-6d7168e1b7defdd9.js:1:34097)
-    at https://roomme.app/_next/static/chunks/4bd1b696-6d7168e1b7defdd9.js:1:117355
-    at im (https://roomme.app/_next/static/chunks/4bd1b696-6d7168e1b7defdd9.js:1:120134)
-    at ic (https://roomme.app/_next/static/chunks/4bd1b696-6d7168e1b7defdd9.js:1:112445)
-    at https://roomme.app/_next/static/chunks/4bd1b696-6d7168e1b7defdd9.js:1:108432
-    at u5 (https://roomme.app/_next/static/chunks/4bd1b696-6d7168e1b7defdd9.js:1:108533)
-    at iH (https://roomme.app/_next/static/chunks/4bd1b696-6d7168e1b7defdd9.js:1:129977)
-    at MessagePort.w (https://roomme.app/_next/static/chunks/684-2005c7b9edc50980.js:1:23998)

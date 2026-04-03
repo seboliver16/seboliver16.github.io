@@ -1,6 +1,0 @@
-- generic [active]:
-  - generic:
-    - main:
-      - paragraph [ref=e2]: This deployment is temporarily paused
-      - paragraph [ref=e3]:
-        - code [ref=e5]: iad1::cz8vx-1775191165099-53a5be6e34da

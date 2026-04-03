@@ -1,1 +1,6 @@
 .DS_Store
+.playwright-mcp/
+*.png
+ref-*.png
+research-*.png
+.claude/
