@@ -330,6 +330,44 @@
     </footer>
   </div>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=5"></script>
+  <script>
+  // Footer scroll animation — inlined to avoid caching issues
+  (function(){
+    var art = document.getElementById('footerArt');
+    if (!art) return;
+    var spans = [].slice.call(art.querySelectorAll('.footer-art-text span'));
+    var ship = art.querySelector('.footer-art-overlay');
+    var ops = [0.05, 0.08, 0.14, 0.22, 0.32, 0.45, 0.65, 1];
+    var last = spans.length - 1;
+
+    function tick() {
+      var r = art.getBoundingClientRect();
+      var vh = window.innerHeight;
+      // 0 when art top = viewport bottom, 1 when art top = viewport top
+      var p = Math.max(0, Math.min(1, 1 - r.top / vh));
+
+      for (var i = 0; i < spans.length; i++) {
+        // each line gets its own slice: staggered by 0.08, width 0.3
+        var lp = Math.max(0, Math.min(1, (p - i * 0.08) / 0.3));
+        // smoothstep
+        var e = lp * lp * (3 - 2 * lp);
+        spans[i].style.cssText = 'display:block;opacity:' + (ops[i] * e) +
+          ';transform:translateY(' + (60 * (1 - e)) + 'px) scale(' + (0.92 + 0.08 * e) + ')';
+        if (i === last && e > 0.5) {
+          spans[i].style.color = 'var(--text)';
+          spans[i].style.webkitTextStroke = '0';
+        }
+      }
+      // SHIP
+      var sp = Math.max(0, Math.min(1, (p - spans.length * 0.08) / 0.3));
+      var se = sp * sp * (3 - 2 * sp);
+      ship.style.cssText += ';opacity:' + se + ';transform:translateY(' + (50 * (1 - se)) + 'px) scale(' + (0.9 + 0.1 * se) + ')';
+    }
+
+    window.addEventListener('scroll', tick, {passive: true});
+    tick();
+  })();
+  </script>
 </body>
 </html>
