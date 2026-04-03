@@ -52,14 +52,17 @@ const cmdResults = document.getElementById('cmdResults');
 
 const sections = [
   { name: 'Bio', section: '.two-col', hint: 'About me' },
-  { name: 'Startups', section: '[data-section="startups"]', hint: 'Companies I started' },
-  { name: 'Projects', section: '[data-section="projects"]', hint: 'Things I built' },
-  { name: 'Experience', section: '[data-section="experience"]', hint: 'Where I worked' },
+  { name: 'Startups', section: '[data-section="startups"]', hint: 'Julie AI, RoomMe' },
+  { name: 'Experience', section: '[data-section="experience"]', hint: 'Amazon, Deloitte, UVA' },
+  { name: 'Content', section: '[data-section="content"]', hint: 'YouTube, TikTok, Instagram' },
   { name: 'Connect', section: '[data-section="connect"]', hint: 'Get in touch' },
-  { name: 'LinkedIn', section: null, hint: 'Open profile', url: 'https://linkedin.com/in/' },
-  { name: 'GitHub', section: null, hint: 'Open profile', url: 'https://github.com/' },
-  { name: 'X / Twitter', section: null, hint: 'Open profile', url: 'https://x.com/' },
-  { name: 'Email', section: null, hint: 'Send email', url: 'mailto:hello@seboliver.dev' },
+  { name: 'LinkedIn', section: null, hint: 'Open profile', url: 'https://www.linkedin.com/in/seb-oliver/' },
+  { name: 'GitHub', section: null, hint: 'Open profile', url: 'https://github.com/seboliver16' },
+  { name: 'X / Twitter', section: null, hint: '@startupseb_', url: 'https://x.com/startupseb_' },
+  { name: 'YouTube', section: null, hint: '@StartUpSeb', url: 'https://www.youtube.com/@StartUpSeb' },
+  { name: 'TikTok', section: null, hint: '@startupsebb', url: 'https://www.tiktok.com/@startupsebb' },
+  { name: 'Instagram', section: null, hint: '@startupseb', url: 'https://www.instagram.com/startupseb/' },
+  { name: 'Email', section: null, hint: 'Send email', url: 'mailto:seb.oliver.recruiting@gmail.com' },
 ];
 
 function togglePalette() {
