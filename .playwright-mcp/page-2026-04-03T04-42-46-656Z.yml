@@ -1,0 +1,456 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - link "Skip to Content" [ref=e5] [cursor=pointer]:
+      - /url: "#content"
+    - generic [ref=e6]:
+      - banner [ref=e7]:
+        - generic [ref=e8]:
+          - heading "Brittany Chiang" [level=1] [ref=e9]:
+            - link "Brittany Chiang" [ref=e10] [cursor=pointer]:
+              - /url: /
+          - heading "Frontend Engineer" [level=2] [ref=e11]
+          - paragraph [ref=e12]: I build accessible, pixel-perfect experiences for the web.
+          - navigation "In-page jump links" [ref=e13]:
+            - list [ref=e14]:
+              - listitem [ref=e15]:
+                - link "About" [ref=e16] [cursor=pointer]:
+                  - /url: "#about"
+                  - generic [ref=e18]: About
+              - listitem [ref=e19]:
+                - link "Experience" [ref=e20] [cursor=pointer]:
+                  - /url: "#experience"
+                  - generic [ref=e22]: Experience
+              - listitem [ref=e23]:
+                - link "Projects" [ref=e24] [cursor=pointer]:
+                  - /url: "#projects"
+                  - generic [ref=e26]: Projects
+        - list "Social media" [ref=e27]:
+          - listitem [ref=e28]:
+            - link "GitHub (opens in a new tab)" [ref=e29] [cursor=pointer]:
+              - /url: https://github.com/bchiang7
+              - generic [ref=e30]: GitHub
+              - img [ref=e31]
+          - listitem [ref=e33]:
+            - link "LinkedIn (opens in a new tab)" [ref=e34] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/bchiang7/
+              - generic [ref=e35]: LinkedIn
+              - img [ref=e36]
+          - listitem [ref=e38]:
+            - link "CodePen (opens in a new tab)" [ref=e39] [cursor=pointer]:
+              - /url: https://codepen.io/bchiang7
+              - generic [ref=e40]: CodePen
+              - img [ref=e41]
+          - listitem [ref=e43]:
+            - link "Instagram (opens in a new tab)" [ref=e44] [cursor=pointer]:
+              - /url: https://instagram.com/bchiang7
+              - generic [ref=e45]: Instagram
+              - img [ref=e46]
+          - listitem [ref=e48]:
+            - link "Goodreads (opens in a new tab)" [ref=e49] [cursor=pointer]:
+              - /url: https://www.goodreads.com/user/show/143480747-brittany-chiang
+              - generic [ref=e50]: Goodreads
+              - img [ref=e51]
+      - main [ref=e53]:
+        - region "About me" [ref=e54]:
+          - heading "About" [level=2] [ref=e56]
+          - generic [ref=e57]:
+            - paragraph [ref=e58]: I’m a frontend engineer with an expertise in building accessible, pixel-perfect user interfaces. I take pride in crafting thoughtful, inclusive products and have a sharp eye for the little details that elevate user experience. I do my best work at the intersection of design and engineering, where great UX meets clean, scalable code.
+            - paragraph [ref=e59]:
+              - text: Currently, I'm on the component library team at
+              - link "Klaviyo (opens in a new tab)" [ref=e60] [cursor=pointer]:
+                - /url: https://www.klaviyo.com/
+                - text: Klaviyo
+              - text: ", where I maintain and evolve the company's design system. I lead engineering efforts across components, tooling, and patterns, partnering closely with designers and engineers to ensure accessibility is built into the foundation of our products."
+            - paragraph [ref=e61]:
+              - text: Previously, I’ve worked across a wide range of environments — from product studios to startups and large tech companies — including
+              - link "huge corporation (opens in a new tab)" [ref=e62] [cursor=pointer]:
+                - /url: https://www.apple.com/apple-music/
+                - text: Apple
+              - text: ","
+              - link "start-up (opens in a new tab)" [ref=e63] [cursor=pointer]:
+                - /url: https://starry.com/
+                - text: Starry Internet
+              - text: ", and"
+              - link "digital product studio (opens in a new tab)" [ref=e64] [cursor=pointer]:
+                - /url: https://upstatement.com/
+                - text: Upstatement
+              - text: . Outside of my day-to-day work, I also created an
+              - link "online video course (opens in a new tab)" [ref=e65] [cursor=pointer]:
+                - /url: https://www.newline.co/courses/build-a-spotify-connected-app
+                - text: online video course
+              - text: a few years ago which walks through building a real-world, API-driven application from scratch. These experiences have shaped how I think about building products that are both well-crafted and widely usable.
+            - paragraph [ref=e66]:
+              - text: In my spare time, you can usually find me climbing, playing tennis, hanging out with my wife and two cats, or running around Hyrule searching for
+              - generic [ref=e67]:
+                - generic [ref=e68]: Korok seeds
+                - generic [ref=e69]: K
+                - generic [ref=e70]: o
+                - generic [ref=e71]: r
+                - generic [ref=e72]: o
+                - generic [ref=e73]: k
+                - generic [ref=e75]: s
+                - generic [ref=e76]: e
+                - generic [ref=e77]: e
+                - generic [ref=e78]: d
+                - generic [ref=e79]: s
+              - text: .
+        - region "Work experience" [ref=e80]:
+          - heading "Experience" [level=2] [ref=e82]
+          - generic [ref=e83]:
+            - list [ref=e84]:
+              - listitem [ref=e85]:
+                - generic [ref=e86]:
+                  - generic "2024 to Present" [ref=e88]: 2024 — Present
+                  - generic [ref=e89]:
+                    - heading "Senior Frontend Engineer, Accessibility at Klaviyo (opens in a new tab)" [level=3] [ref=e90]:
+                      - link "Senior Frontend Engineer, Accessibility at Klaviyo (opens in a new tab)" [ref=e92] [cursor=pointer]:
+                        - /url: https://www.klaviyo.com
+                        - generic [ref=e94]:
+                          - text: Senior Frontend Engineer, Accessibility ·
+                          - generic [ref=e95]:
+                            - text: Klaviyo
+                            - img [ref=e96]
+                    - paragraph [ref=e98]: Build and maintain critical components used to construct Klaviyo’s frontend, across the whole product. Work closely with cross-functional teams, including developers, designers, and product managers, to implement and advocate for best practices in web accessibility.
+                    - list "Technologies used" [ref=e99]:
+                      - listitem [ref=e100]:
+                        - generic [ref=e101]: JavaScript
+                      - listitem [ref=e102]:
+                        - generic [ref=e103]: TypeScript
+                      - listitem [ref=e104]:
+                        - generic [ref=e105]: React
+                      - listitem [ref=e106]:
+                        - generic [ref=e107]: Storybook
+              - listitem [ref=e108]:
+                - generic [ref=e109]:
+                  - generic "2018 to 2024" [ref=e111]: 2018 — 2024
+                  - generic [ref=e112]:
+                    - heading "Lead Engineer at Upstatement (opens in a new tab)" [level=3] [ref=e113]:
+                      - link "Lead Engineer at Upstatement (opens in a new tab)" [ref=e115] [cursor=pointer]:
+                        - /url: https://upstatement.com
+                        - generic [ref=e117]:
+                          - text: Lead Engineer ·
+                          - generic [ref=e118]:
+                            - text: Upstatement
+                            - img [ref=e119]
+                      - generic [ref=e122]: Senior Engineer
+                      - generic [ref=e124]: Engineer
+                    - paragraph [ref=e125]: Build, style, and ship high-quality websites, design systems, mobile apps, and digital experiences for a diverse array of projects for clients including Harvard Business School, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more. Provide leadership within engineering department through close collaboration, knowledge shares, and spearheading the development of internal tools.
+                    - list "Technologies used" [ref=e126]:
+                      - listitem [ref=e127]:
+                        - generic [ref=e128]: JavaScript
+                      - listitem [ref=e129]:
+                        - generic [ref=e130]: TypeScript
+                      - listitem [ref=e131]:
+                        - generic [ref=e132]: HTML & SCSS
+                      - listitem [ref=e133]:
+                        - generic [ref=e134]: React
+                      - listitem [ref=e135]:
+                        - generic [ref=e136]: Next.js
+                      - listitem [ref=e137]:
+                        - generic [ref=e138]: React Native
+                      - listitem [ref=e139]:
+                        - generic [ref=e140]: WordPress
+                      - listitem [ref=e141]:
+                        - generic [ref=e142]: Contentful
+                      - listitem [ref=e143]:
+                        - generic [ref=e144]: Node.js
+                      - listitem [ref=e145]:
+                        - generic [ref=e146]: PHP
+              - listitem [ref=e147]:
+                - generic [ref=e148]:
+                  - generic "July to December 2017" [ref=e150]: July — Dec 2017
+                  - generic [ref=e151]:
+                    - heading "UI Engineer Co-op at Apple (opens in a new tab)" [level=3] [ref=e152]:
+                      - link "UI Engineer Co-op at Apple (opens in a new tab)" [ref=e154] [cursor=pointer]:
+                        - /url: https://www.apple.com/apple-music/
+                        - generic [ref=e156]:
+                          - text: UI Engineer Co-op ·
+                          - generic [ref=e157]:
+                            - text: Apple
+                            - img [ref=e158]
+                    - paragraph [ref=e160]: Developed and styled interactive web apps for Apple Music, including the user interface of Apple Music’s embeddable web player widget for in-browser user authorization and full song playback.
+                    - list "Related links" [ref=e161]:
+                      - listitem [ref=e162]:
+                        - link "MusicKit.js (opens in a new tab)" [ref=e163] [cursor=pointer]:
+                          - /url: https://developer.apple.com/documentation/musickitjs
+                          - img [ref=e164]
+                          - generic [ref=e167]: MusicKit.js
+                      - listitem [ref=e168]:
+                        - link "9to5Mac (opens in a new tab)" [ref=e169] [cursor=pointer]:
+                          - /url: https://9to5mac.com/2018/06/03/apple-music-embeddable-web-player-listen-browser/
+                          - img [ref=e170]
+                          - generic [ref=e173]: 9to5Mac
+                      - listitem [ref=e174]:
+                        - link "The Verge (opens in a new tab)" [ref=e175] [cursor=pointer]:
+                          - /url: https://www.theverge.com/2017/10/5/16433770/facebook-messenger-apple-music-bot-song-streaming
+                          - img [ref=e176]
+                          - generic [ref=e179]: The Verge
+                    - list "Technologies used" [ref=e180]:
+                      - listitem [ref=e181]:
+                        - generic [ref=e182]: Ember
+                      - listitem [ref=e183]:
+                        - generic [ref=e184]: SCSS
+                      - listitem [ref=e185]:
+                        - generic [ref=e186]: JavaScript
+                      - listitem [ref=e187]:
+                        - generic [ref=e188]: MusicKit.js
+              - listitem [ref=e189]:
+                - generic [ref=e190]:
+                  - generic "2016 to 2017" [ref=e192]: 2016 — 2017
+                  - generic [ref=e193]:
+                    - heading "Developer at Scout Studio (opens in a new tab)" [level=3] [ref=e194]:
+                      - link "Developer at Scout Studio (opens in a new tab)" [ref=e196] [cursor=pointer]:
+                        - /url: https://scout.camd.northeastern.edu/
+                        - generic [ref=e198]:
+                          - text: Developer · Scout
+                          - generic [ref=e199]:
+                            - text: Studio
+                            - img [ref=e200]
+                    - paragraph [ref=e202]: Collaborated with other student designers and engineers on pro-bono projects to create new brands, design systems, and websites for organizations in the community.
+                    - list "Technologies used" [ref=e203]:
+                      - listitem [ref=e204]:
+                        - generic [ref=e205]: Jekyll
+                      - listitem [ref=e206]:
+                        - generic [ref=e207]: SCSS
+                      - listitem [ref=e208]:
+                        - generic [ref=e209]: JavaScript
+                      - listitem [ref=e210]:
+                        - generic [ref=e211]: WordPress
+              - listitem [ref=e212]:
+                - generic [ref=e213]:
+                  - generic "July to December 2016" [ref=e215]: July — Dec 2016
+                  - generic [ref=e216]:
+                    - heading "Software Engineer Co-op at Starry (opens in a new tab)" [level=3] [ref=e217]:
+                      - link "Software Engineer Co-op at Starry (opens in a new tab)" [ref=e219] [cursor=pointer]:
+                        - /url: https://starry.com/
+                        - generic [ref=e221]:
+                          - text: Software Engineer Co-op ·
+                          - generic [ref=e222]:
+                            - text: Starry
+                            - img [ref=e223]
+                    - paragraph [ref=e225]: Worked with the UI team to engineer and improve major features of Starry’s customer-facing Android app.
+                    - list "Related links" [ref=e226]:
+                      - listitem [ref=e227]:
+                        - link "Android App (opens in a new tab)" [ref=e228] [cursor=pointer]:
+                          - /url: https://play.google.com/store/apps/details?id=com.starry.management&hl=en_US&gl=US
+                          - img [ref=e229]
+                          - generic [ref=e232]: Android App
+                      - listitem [ref=e233]:
+                        - link "ScreenTime 2.0 (opens in a new tab)" [ref=e234] [cursor=pointer]:
+                          - /url: https://starry.com/blog/product/whats-new-screentime-just-got-better-for-parents
+                          - img [ref=e235]
+                          - generic [ref=e238]: ScreenTime 2.0
+                    - list "Technologies used" [ref=e239]:
+                      - listitem [ref=e240]:
+                        - generic [ref=e241]: Cordova
+                      - listitem [ref=e242]:
+                        - generic [ref=e243]: Backbone
+                      - listitem [ref=e244]:
+                        - generic [ref=e245]: JavaScript
+                      - listitem [ref=e246]:
+                        - generic [ref=e247]: CSS
+              - listitem [ref=e248]:
+                - generic [ref=e249]:
+                  - generic "July to December 2015" [ref=e251]: July — Dec 2015
+                  - generic [ref=e252]:
+                    - heading "Creative Technologist Co-op at MullenLowe U.S. (opens in a new tab)" [level=3] [ref=e253]:
+                      - link "Creative Technologist Co-op at MullenLowe U.S. (opens in a new tab)" [ref=e255] [cursor=pointer]:
+                        - /url: https://us.mullenlowe.com/
+                        - generic [ref=e257]:
+                          - text: Creative Technologist Co-op · MullenLowe
+                          - generic [ref=e258]:
+                            - text: U.S.
+                            - img [ref=e259]
+                    - paragraph [ref=e261]: Developed, maintained, and shipped production code for client websites. Clients included JetBlue, Lovesac, U.S. Cellular, U.S. Department of Defense, and more.
+                    - list "Technologies used" [ref=e262]:
+                      - listitem [ref=e263]:
+                        - generic [ref=e264]: HTML
+                      - listitem [ref=e265]:
+                        - generic [ref=e266]: CSS
+                      - listitem [ref=e267]:
+                        - generic [ref=e268]: JavaScript
+                      - listitem [ref=e269]:
+                        - generic [ref=e270]: jQuery
+            - link "View Full Résumé (opens in a new tab)" [ref=e272] [cursor=pointer]:
+              - /url: /resume.pdf
+              - generic [ref=e273]:
+                - text: View Full
+                - generic [ref=e274]:
+                  - text: Résumé
+                  - img [ref=e275]
+        - region "Selected projects" [ref=e277]:
+          - heading "Projects" [level=2] [ref=e279]
+          - generic [ref=e280]:
+            - list [ref=e281]:
+              - listitem [ref=e282]:
+                - generic [ref=e283]:
+                  - generic [ref=e285]:
+                    - heading "Build a Spotify Connected App (opens in a new tab)" [level=3] [ref=e286]:
+                      - link "Build a Spotify Connected App (opens in a new tab)" [ref=e287] [cursor=pointer]:
+                        - /url: https://www.newline.co/courses/build-a-spotify-connected-app
+                        - generic [ref=e289]:
+                          - text: Build a Spotify Connected
+                          - generic [ref=e290]:
+                            - text: App
+                            - img [ref=e291]
+                    - paragraph [ref=e293]: Video course that teaches how to build a web app with the Spotify Web API. Topics covered include the principles of REST APIs, user auth flows, Node, Express, React, Styled Components, and more.
+                  - img "Build a Spotify Connected App Newline course marketing card" [ref=e294]
+              - listitem [ref=e295]:
+                - generic [ref=e296]:
+                  - generic [ref=e298]:
+                    - heading "Spotify Profile (opens in a new tab)" [level=3] [ref=e299]:
+                      - link "Spotify Profile (opens in a new tab)" [ref=e300] [cursor=pointer]:
+                        - /url: https://spotify-profile.herokuapp.com/
+                        - generic [ref=e302]:
+                          - text: Spotify
+                          - generic [ref=e303]:
+                            - text: Profile
+                            - img [ref=e304]
+                    - paragraph [ref=e306]: Web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.
+                    - link "711 stars on GitHub (opens in a new tab)" [ref=e307] [cursor=pointer]:
+                      - /url: https://github.com/bchiang7/spotify-profile
+                      - img [ref=e308]
+                      - generic [ref=e310]: "711"
+                    - list "Technologies used:" [ref=e311]:
+                      - listitem [ref=e312]:
+                        - generic [ref=e313]: React
+                      - listitem [ref=e314]:
+                        - generic [ref=e315]: Express
+                      - listitem [ref=e316]:
+                        - generic [ref=e317]: Spotify API
+                      - listitem [ref=e318]:
+                        - generic [ref=e319]: Heroku
+                  - img "Spotify Profile app homepage" [ref=e320]
+              - listitem [ref=e321]:
+                - generic [ref=e322]:
+                  - generic [ref=e324]:
+                    - heading "Halcyon Theme (opens in a new tab)" [level=3] [ref=e325]:
+                      - link "Halcyon Theme (opens in a new tab)" [ref=e326] [cursor=pointer]:
+                        - /url: https://halcyon-theme.netlify.app/
+                        - generic [ref=e328]:
+                          - text: Halcyon
+                          - generic [ref=e329]:
+                            - text: Theme
+                            - img [ref=e330]
+                    - paragraph [ref=e332]: Minimal dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more.
+                    - link "Over 100,000 installs on Visual Studio Code Marketplace (opens in a new tab)" [ref=e333] [cursor=pointer]:
+                      - /url: https://marketplace.visualstudio.com/items?itemName=brittanychiang.halcyon-vscode
+                      - img [ref=e334]
+                      - generic [ref=e337]: 100k+ Installs
+                  - img "Halcyon Theme homepage hero with screenshot of VS Code editor" [ref=e338]
+              - listitem [ref=e339]:
+                - generic [ref=e340]:
+                  - generic [ref=e342]:
+                    - heading "brittanychiang.com (v4) (opens in a new tab)" [level=3] [ref=e343]:
+                      - link "brittanychiang.com (v4) (opens in a new tab)" [ref=e344] [cursor=pointer]:
+                        - /url: https://v4.brittanychiang.com/
+                        - generic [ref=e346]:
+                          - text: brittanychiang.com
+                          - generic [ref=e347]:
+                            - text: (v4)
+                            - img [ref=e348]
+                    - paragraph [ref=e350]: An old portfolio site built with Gatsby with 6k+ stars and 3k+ forks
+                    - link "8209 stars on GitHub (opens in a new tab)" [ref=e351] [cursor=pointer]:
+                      - /url: https://github.com/bchiang7/v4
+                      - img [ref=e352]
+                      - generic [ref=e354]: 8,209
+                    - list "Technologies used:" [ref=e355]:
+                      - listitem [ref=e356]:
+                        - generic [ref=e357]: Gatsby
+                      - listitem [ref=e358]:
+                        - generic [ref=e359]: Styled Components
+                      - listitem [ref=e360]:
+                        - generic [ref=e361]: Netlify
+                  - img "brittanychiang.com version 4 hero section" [ref=e362]
+            - link "View Full Project Archive" [ref=e364] [cursor=pointer]:
+              - /url: /archive
+              - generic [ref=e365]:
+                - generic [ref=e366]: View Full Project
+                - generic [ref=e367]:
+                  - text: Archive
+                  - img [ref=e368]
+        - region "Blog posts" [ref=e370]:
+          - heading "Writing" [level=2] [ref=e372]
+          - list [ref=e374]:
+            - listitem [ref=e375]:
+              - generic [ref=e376]:
+                - img "Welcome to Black Parade by My Chemical Romance text with \"Black\" changed to \"AI\"" [ref=e378]
+                - generic [ref=e379]:
+                  - paragraph [ref=e380]: "2026"
+                  - heading "Welcome to the AI Parade (opens in a new tab)" [level=3] [ref=e381]:
+                    - link "Welcome to the AI Parade (opens in a new tab)" [ref=e382] [cursor=pointer]:
+                      - /url: https://medium.com/@bchiang7/welcome-to-the-ai-parade-765f79b00c30
+                      - generic [ref=e384]:
+                        - text: Welcome to the AI
+                        - generic [ref=e385]:
+                          - text: Parade
+                          - img [ref=e386]
+            - listitem [ref=e388]:
+              - generic [ref=e389]:
+                - img "Accessibility icon" [ref=e391]
+                - generic [ref=e392]:
+                  - paragraph [ref=e393]: "2024"
+                  - heading "5 Common Accessibility Pitfalls and How to Avoid Them (opens in a new tab)" [level=3] [ref=e394]:
+                    - link "5 Common Accessibility Pitfalls and How to Avoid Them (opens in a new tab)" [ref=e395] [cursor=pointer]:
+                      - /url: https://klaviyo.tech/5-common-accessibility-pitfalls-and-how-to-avoid-them-e316dfc55ff0
+                      - generic [ref=e397]:
+                        - text: 5 Common Accessibility Pitfalls and How to Avoid
+                        - generic [ref=e398]:
+                          - text: Them
+                          - img [ref=e399]
+            - listitem [ref=e401]:
+              - generic [ref=e402]:
+                - img "Telescope" [ref=e404]
+                - generic [ref=e405]:
+                  - paragraph [ref=e406]: "2020"
+                  - heading "Integrating Algolia Search with WordPress Multisite (opens in a new tab)" [level=3] [ref=e407]:
+                    - link "Integrating Algolia Search with WordPress Multisite (opens in a new tab)" [ref=e408] [cursor=pointer]:
+                      - /url: https://medium.com/stories-from-upstatement/integrating-algolia-search-with-wordpress-multisite-e2dea3ed449c
+                      - generic [ref=e410]:
+                        - text: Integrating Algolia Search with WordPress
+                        - generic [ref=e411]:
+                          - text: Multisite
+                          - img [ref=e412]
+            - listitem [ref=e414]:
+              - generic [ref=e415]:
+                - img "Headless horseman" [ref=e417]
+                - generic [ref=e418]:
+                  - paragraph [ref=e419]: "2019"
+                  - heading "Building a Headless Mobile App CMS From Scratch (opens in a new tab)" [level=3] [ref=e420]:
+                    - link "Building a Headless Mobile App CMS From Scratch (opens in a new tab)" [ref=e421] [cursor=pointer]:
+                      - /url: https://medium.com/stories-from-upstatement/building-a-headless-mobile-app-cms-from-scratch-bab2d17744d9
+                      - generic [ref=e423]:
+                        - text: Building a Headless Mobile App CMS From
+                        - generic [ref=e424]:
+                          - text: Scratch
+                          - img [ref=e425]
+        - paragraph [ref=e428]:
+          - text: Loosely designed in
+          - link "Figma (opens in a new tab)" [ref=e429] [cursor=pointer]:
+            - /url: https://www.figma.com/
+            - text: Figma
+          - text: and coded in
+          - link "Visual Studio Code (opens in a new tab)" [ref=e430] [cursor=pointer]:
+            - /url: https://code.visualstudio.com/
+            - text: Visual Studio Code
+          - text: by yours truly. Built with
+          - link "Next.js (opens in a new tab)" [ref=e431] [cursor=pointer]:
+            - /url: https://nextjs.org/
+            - text: Next.js
+          - text: and
+          - link "Tailwind CSS (opens in a new tab)" [ref=e432] [cursor=pointer]:
+            - /url: https://tailwindcss.com/
+            - text: Tailwind CSS
+          - text: ", deployed with"
+          - link "Vercel (opens in a new tab)" [ref=e433] [cursor=pointer]:
+            - /url: https://vercel.com/
+            - text: Vercel
+          - text: . All text is set in the
+          - link "Inter (opens in a new tab)" [ref=e434] [cursor=pointer]:
+            - /url: https://rsms.me/inter/
+            - text: Inter
+          - text: typeface.
+      - button "Click to time travel Spinning Tardis from Doctor Who" [ref=e436] [cursor=pointer]:
+        - generic [ref=e437]: Click to time travel
+        - img "Spinning Tardis from Doctor Who" [ref=e438]
+  - alert [ref=e439]

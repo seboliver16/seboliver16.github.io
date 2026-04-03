@@ -1,0 +1,461 @@
+- generic [active] [ref=e1]:
+  - article [ref=e2]:
+    - heading "Trans women are women. Trans rights are human rights. Fix your heart or die." [level=1] [ref=e3]:
+      - text: Trans women are women. Trans rights are human rights.
+      - emphasis [ref=e4]: Fix your heart or die
+      - text: .
+  - navigation:
+    - link "✷ ver. ss25 — Go Home":
+      - /url: /
+      - text: ✷ ver. ss25
+      - generic: — Go Home
+    - paragraph: (the Personal site & Portfolio of Henry from online)
+    - link "← go home":
+      - /url: /
+      - text: ←
+      - generic: go home
+  - generic [ref=e6]:
+    - generic [ref=e7]:
+      - generic [ref=e8]:
+        - heading "True Terrors of the New Dark Web" [level=1] [ref=e9]:
+          - generic [ref=e10]: True Terrors
+          - generic [ref=e11]: of the
+          - generic [ref=e12]: New Dark Web
+        - paragraph [ref=e13]: The personal site and portfolio of Denver-based creative web developer and designer Henry Desroches.
+      - generic [ref=e14]: (Scroll with caution and with care.)
+      - generic [ref=e16]:
+        - generic [ref=e17]:
+          - link "Visit the author’s Spotify profile" [ref=e19] [cursor=pointer]:
+            - /url: https://open.spotify.com/user/1239993406?si=tpFk1Vt5Q_yH6qM0E8wjXA
+            - img [ref=e20]
+          - generic [ref=e22]: —
+          - generic [ref=e23]: 48ºF @ N 39º 43’ 31.56” W 104º 58’ 0.94” (Denver, Colorado)
+          - generic [ref=e24]: —
+          - generic [ref=e25]: 2:07 AM
+          - generic [ref=e26]: —
+        - generic [ref=e27]:
+          - link "Visit the author’s Spotify profile" [ref=e29] [cursor=pointer]:
+            - /url: https://open.spotify.com/user/1239993406?si=tpFk1Vt5Q_yH6qM0E8wjXA
+            - img [ref=e30]
+          - generic [ref=e32]: —
+          - generic [ref=e33]: 48ºF @ N 39º 43’ 31.56” W 104º 58’ 0.94” (Denver, Colorado)
+          - generic [ref=e34]: —
+          - generic [ref=e35]: 2:07 AM
+          - generic [ref=e36]: —
+      - navigation [ref=e37]:
+        - paragraph [ref=e38]: Garden
+        - list [ref=e39]:
+          - listitem [ref=e40]:
+            - link "Articles — Polished, complete guides and essays." [ref=e41] [cursor=pointer]:
+              - /url: /writing
+              - generic [ref=e42]: Articles
+              - text: — Polished, complete guides and essays.
+          - listitem [ref=e43]:
+            - link "Notes — The tending of seeds and saplings of ideas" [ref=e44] [cursor=pointer]:
+              - /url: /notes
+              - generic [ref=e45]: Notes
+              - text: — The tending of seeds and saplings of ideas
+          - listitem [ref=e46]:
+            - link "Case Studies — Long-form project write-ups" [ref=e47] [cursor=pointer]:
+              - /url: /work
+              - generic [ref=e48]: Case Studies
+              - text: — Long-form project write-ups
+        - paragraph [ref=e49]: Meta
+        - list [ref=e50]:
+          - listitem [ref=e51]:
+            - link "About — A portrait of the author as a young man" [ref=e52] [cursor=pointer]:
+              - /url: /about
+              - generic [ref=e53]: About
+              - text: — A portrait of the author as a young man
+          - listitem [ref=e54]:
+            - link "Now — Current focus, soaring dreams and steady sightlines" [ref=e55] [cursor=pointer]:
+              - /url: /now
+              - generic [ref=e56]: Now
+              - text: — Current focus, soaring dreams and steady sightlines
+    - generic [ref=e57]:
+      - heading "A brief letter from the editor" [level=2] [ref=e58]
+      - generic [ref=e59]:
+        - paragraph [ref=e60]: dear reader (and in fact, dear friend),
+        - paragraph [ref=e61]: this version of my website represents my first attempt at growing a digital garden — a place for rough drafts and indecipherable scrawling; for seedlings of ideas to be tended and stand tall in the fields.
+        - paragraph [ref=e62]:
+          - text: tread carefully, as the ground
+          - text: may have shifted.
+        - paragraph [ref=e63]:
+          - text: love,
+          - text: henry (from online)
+      - text: A brief letter from the editor
+    - generic [ref=e65]:
+      - heading "About the author About the author About the author" [level=2] [ref=e66]:
+        - generic [ref=e67]: About the author About the author About the author
+      - generic [ref=e68]:
+        - generic [ref=e69]: As the people here grow colder, I turn to my computer, And spend my evenings with it Like a friend. “Hello, I know that you've been feeling tired. I bring you love and deeper understanding.”
+        - generic [ref=e70]: As the people here grow colder, I turn to my computer, And spend my evenings with it Like a friend. “Hello, I know that you've been feeling tired. I bring you love and deeper understanding.”
+      - generic [ref=e71]:
+        - generic [ref=e72]:
+          - generic [ref=e73]:
+            - paragraph [ref=e74]:
+              - text: I’m a creative developer (he/him/él) currently based in
+              - deletion [ref=e75]: New York City
+              - insertion [ref=e76]: Denver, Colorado
+              - text: . I’m really into CSS, animation, accessibility, and deleting code.
+            - paragraph [ref=e77]: I create websites, design systems, and interactive digital experiences.
+          - generic [ref=e78]:
+            - heading "now" [level=3] [ref=e79]
+            - paragraph [ref=e80]:
+              - text: Read more about
+              - link "what I’ve been focused on recently →" [ref=e81] [cursor=pointer]:
+                - /url: /now
+          - generic [ref=e82]:
+            - heading "Availability" [level=3] [ref=e83]
+            - paragraph [ref=e84]: I'm still taking on freelance projects on a case-by-case basis. Reach out and touch faith. ↓
+          - generic [ref=e85]:
+            - heading "Contact" [level=3] [ref=e86]
+            - paragraph [ref=e87]:
+              - text: I’m most active and reachable
+              - link "via email" [ref=e88] [cursor=pointer]:
+                - /url: mailto:yo@henry.codes
+              - text: . You can also
+              - link "check out my resume" [ref=e89] [cursor=pointer]:
+                - /url: https://resume.henry.codes
+              - text: ", if you’re into that sort of thing."
+        - img [ref=e91]
+        - complementary [ref=e94]:
+          - heading "Elsewhere" [level=3] [ref=e95]
+          - list [ref=e96]:
+            - listitem [ref=e97]:
+              - img [ref=e98]
+              - link "Bluesky" [ref=e100] [cursor=pointer]:
+                - /url: https://bsky.app/profile/strange.website
+            - listitem [ref=e101]:
+              - img [ref=e102]
+              - link "GitHub" [ref=e104] [cursor=pointer]:
+                - /url: https://github.com/xdesro/
+            - listitem [ref=e105]:
+              - img [ref=e106]
+              - link "LinkedIn" [ref=e108] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/henrydesroches/
+            - listitem [ref=e109]:
+              - img [ref=e110]
+              - link "Mastodon" [ref=e112] [cursor=pointer]:
+                - /url: https://front-end.social/@henry
+            - listitem [ref=e113]:
+              - img [ref=e114]
+              - link "CodePen" [ref=e116] [cursor=pointer]:
+                - /url: https://codepen.io/xdesro/
+            - listitem [ref=e117]:
+              - img [ref=e118]
+              - link "Resume" [ref=e120] [cursor=pointer]:
+                - /url: https://resume.henry.codes/
+            - listitem [ref=e121]:
+              - img "true" [ref=e122]
+              - link "Twitter":
+                - /url: https://x.com/404boyfriend
+    - generic [ref=e124]:
+      - heading "Selected works" [level=2] [ref=e125]
+      - list [ref=e126]:
+        - listitem [ref=e127]:
+          - article:
+            - text: Coming soon
+            - generic:
+              - text: Stripe Stripe Stripe Stripe Stripe
+              - heading "Stripe Read the case study" [level=1]:
+                - img
+                - generic:
+                  - generic: Stripe
+                - link "Read the case study":
+                  - /url: /work/stripe
+                  - generic: Read the case study
+              - text: Stripe Stripe Stripe Stripe Stripe
+        - listitem [ref=e128]:
+          - article [ref=e129]:
+            - generic [ref=e130]:
+              - text: YouTube YouTube YouTube YouTube YouTube
+              - heading "YouT ube Read the case study" [level=1] [ref=e131]:
+                - img [ref=e132]
+                - generic [ref=e134]:
+                  - generic [ref=e135]: YouT
+                  - generic [ref=e136]: ube
+                - link "Read the case study" [ref=e137] [cursor=pointer]:
+                  - /url: /work/youtube
+                  - generic [ref=e138]: Read the case study
+              - text: YouTube YouTube YouTube YouTube YouTube
+        - listitem [ref=e139]:
+          - article:
+            - text: Coming soon
+            - generic:
+              - text: The New York Times The New York Times The New York Times The New York Times The New York Times
+              - heading "The Ne w York Times Read the case study" [level=1]:
+                - img
+                - generic:
+                  - generic: The Ne
+                  - generic: w York Times
+                - link "Read the case study":
+                  - /url: /work/the-new-york-times
+                  - generic: Read the case study
+              - text: The New York Times The New York Times The New York Times The New York Times The New York Times
+        - listitem [ref=e140]:
+          - article [ref=e141]:
+            - generic [ref=e142]:
+              - text: Matter Matter Matter Matter Matter
+              - heading "Matt er Read the case study" [level=1] [ref=e143]:
+                - img [ref=e144]
+                - generic [ref=e147]:
+                  - generic [ref=e148]: Matt
+                  - generic [ref=e149]: er
+                - link "Read the case study" [ref=e150] [cursor=pointer]:
+                  - /url: /work/matter
+                  - generic [ref=e151]: Read the case study
+              - text: Matter Matter Matter Matter Matter
+        - listitem [ref=e152]:
+          - article [ref=e153]:
+            - generic [ref=e154]:
+              - text: Uber Eats x Taco Bell Uber Eats x Taco Bell Uber Eats x Taco Bell Uber Eats x Taco Bell Uber Eats x Taco Bell
+              - heading "Uber E ats x Taco Bell (Read the case study on OddCommon.com) Read the case study" [level=1] [ref=e155]:
+                - img [ref=e156]
+                - generic [ref=e158]:
+                  - generic [ref=e159]: Uber E
+                  - generic [ref=e160]: ats x Taco Bell
+                  - text: (Read the case study on OddCommon.com)
+                - link "Read the case study" [ref=e161] [cursor=pointer]:
+                  - /url: https://web.archive.org/web/20241229204302/https://oddcommon.com/work/nacho-crystal
+                  - generic [ref=e162]: Read the case study
+              - text: Uber Eats x Taco Bell Uber Eats x Taco Bell Uber Eats x Taco Bell Uber Eats x Taco Bell Uber Eats x Taco Bell
+        - listitem [ref=e163]:
+          - article [ref=e164]:
+            - generic [ref=e165]:
+              - text: Ricky Michiels Casting Ricky Michiels Casting Ricky Michiels Casting Ricky Michiels Casting Ricky Michiels Casting
+              - heading "Ricky M ichiels Casting Read the case study" [level=1] [ref=e166]:
+                - img [ref=e167]
+                - generic [ref=e169]:
+                  - generic [ref=e170]: Ricky M
+                  - generic [ref=e171]: ichiels Casting
+                - link "Read the case study" [ref=e172] [cursor=pointer]:
+                  - /url: /work/ricky-michiels-casting
+                  - generic [ref=e173]: Read the case study
+              - text: Ricky Michiels Casting Ricky Michiels Casting Ricky Michiels Casting Ricky Michiels Casting Ricky Michiels Casting
+        - listitem [ref=e174]:
+          - article [ref=e175]:
+            - generic [ref=e176]:
+              - text: Datalands Datalands Datalands Datalands Datalands
+              - heading "Data lands (See the archived project) Read the case study" [level=1] [ref=e177]:
+                - img [ref=e178]
+                - generic [ref=e180]:
+                  - generic [ref=e181]: Data
+                  - generic [ref=e182]: lands
+                  - text: (See the archived project)
+                - link "Read the case study" [ref=e183] [cursor=pointer]:
+                  - /url: https://datalands.henry.codes/
+                  - generic [ref=e184]: Read the case study
+              - text: Datalands Datalands Datalands Datalands Datalands
+        - listitem [ref=e185]:
+          - article [ref=e186]:
+            - generic [ref=e187]:
+              - text: Jessica Hische Jessica Hische Jessica Hische Jessica Hische Jessica Hische
+              - heading "Jes sica Hische Read the case study" [level=1] [ref=e188]:
+                - img [ref=e189]
+                - generic [ref=e191]:
+                  - generic [ref=e192]: Jes
+                  - generic [ref=e193]: sica Hische
+                - link "Read the case study" [ref=e194] [cursor=pointer]:
+                  - /url: /work/jessica-hische
+                  - generic [ref=e195]: Read the case study
+              - text: Jessica Hische Jessica Hische Jessica Hische Jessica Hische Jessica Hische
+      - link "View all case studies →" [ref=e196] [cursor=pointer]:
+        - /url: /work
+    - generic [ref=e197]:
+      - heading "Articles" [level=2] [ref=e198]
+      - list [ref=e199]:
+        - listitem [ref=e200]:
+          - article [ref=e201] [cursor=pointer]:
+            - generic [ref=e202]:
+              - generic [ref=e203]:
+                - term [ref=e204]: Category
+                - definition [ref=e205]: journal
+              - generic [ref=e206]:
+                - term [ref=e207]: Tags
+                - definition [ref=e208]: rants | road trips
+            - heading "The first thing I did last year was run" [level=1] [ref=e209]
+            - generic:
+              - generic:
+                - term [ref=e210]: Reading Time
+                - definition
+              - generic:
+                - term [ref=e211]: Last updated
+                - definition
+            - link "Read more →" [ref=e212]:
+              - /url: /writing/the-first-thing-i-did-last-year-was-run
+        - listitem [ref=e213]:
+          - article [ref=e214] [cursor=pointer]:
+            - generic [ref=e215]:
+              - generic [ref=e216]:
+                - term [ref=e217]: Category
+                - definition [ref=e218]: journal
+              - generic [ref=e219]:
+                - term [ref=e220]: Tags
+                - definition [ref=e221]: year-in-review | personal
+            - heading "Things I did in 2025 that have nothing to do with the internet" [level=1] [ref=e222]
+            - generic [ref=e223]:
+              - generic [ref=e224]:
+                - term [ref=e225]: Reading Time
+                - definition [ref=e226]: 10 minute read
+              - generic:
+                - term [ref=e227]: Last updated
+                - definition
+            - link "Read more →" [ref=e228]:
+              - /url: /writing/2025
+        - listitem [ref=e229]:
+          - article [ref=e230] [cursor=pointer]:
+            - generic [ref=e231]:
+              - generic [ref=e232]:
+                - term [ref=e233]: Category
+                - definition [ref=e234]: journal
+              - generic [ref=e235]:
+                - term [ref=e236]: Tags
+                - definition [ref=e237]: html | css | javascript | rants
+            - heading "A Website To Destroy All Websites" [level=1] [ref=e238]
+            - generic:
+              - generic:
+                - term [ref=e239]: Reading Time
+                - definition
+              - generic:
+                - term [ref=e240]: Last updated
+                - definition
+            - link "Read more →" [ref=e241]:
+              - /url: /writing/a-website-to-destroy-all-websites
+        - listitem [ref=e242]:
+          - article [ref=e243] [cursor=pointer]:
+            - generic [ref=e244]:
+              - generic [ref=e245]:
+                - term [ref=e246]: Category
+                - definition [ref=e247]: journal
+              - generic [ref=e248]:
+                - term [ref=e249]: Tags
+                - definition [ref=e250]: rants | labor | the other world
+            - heading "Economics & labor rights in AI skepticism" [level=1] [ref=e251]
+            - generic [ref=e252]:
+              - generic [ref=e253]:
+                - term [ref=e254]: Reading Time
+                - definition [ref=e255]: 6 minute read
+              - generic:
+                - term [ref=e256]: Last updated
+                - definition
+            - link "Read more →" [ref=e257]:
+              - /url: /writing/economics-and-labor-rights-in-ai-skepticism
+        - listitem [ref=e258]:
+          - article [ref=e259] [cursor=pointer]:
+            - generic [ref=e260]:
+              - generic [ref=e261]:
+                - term [ref=e262]: Category
+                - definition [ref=e263]: tutorial
+              - generic [ref=e264]:
+                - term [ref=e265]: Tags
+                - definition [ref=e266]: indieweb | webmentions
+            - heading "How to collect Webmentions for your site" [level=1] [ref=e267]
+            - generic [ref=e268]:
+              - generic [ref=e269]:
+                - term [ref=e270]: Reading Time
+                - definition [ref=e271]: 4 minute read
+              - generic:
+                - term [ref=e272]: Last updated
+                - definition
+            - link "Read more →" [ref=e273]:
+              - /url: /writing/collecting-webmentions
+        - listitem [ref=e274]:
+          - article [ref=e275] [cursor=pointer]:
+            - generic [ref=e276]:
+              - generic [ref=e277]:
+                - term [ref=e278]: Category
+                - definition [ref=e279]: journal
+              - generic [ref=e280]:
+                - term [ref=e281]: Tags
+                - definition [ref=e282]: rants | civic duty | the other world
+            - heading "Well, what if I'm wrong?" [level=1] [ref=e283]
+            - generic [ref=e284]:
+              - generic [ref=e285]:
+                - term [ref=e286]: Reading Time
+                - definition [ref=e287]: 5 minute read
+              - generic:
+                - term [ref=e288]: Last updated
+                - definition
+            - link "Read more →" [ref=e289]:
+              - /url: /writing/well-what-if-im-wrong
+      - link "View all articles →" [ref=e290] [cursor=pointer]:
+        - /url: /writing
+  - contentinfo [ref=e291]:
+    - navigation [ref=e292]:
+      - generic [ref=e293]:
+        - generic [ref=e294]: ✷ ver. ss25
+        - link "Home" [ref=e295] [cursor=pointer]:
+          - /url: /
+      - generic [ref=e296]:
+        - generic [ref=e297]: Garden
+        - generic [ref=e298]:
+          - link "Articles" [ref=e299] [cursor=pointer]:
+            - /url: /writing
+          - text: Polished, complete guides and essays.
+        - generic [ref=e300]:
+          - link "Notes" [ref=e301] [cursor=pointer]:
+            - /url: /notes
+          - text: The tending of seeds and saplings of ideas
+        - generic [ref=e302]:
+          - link "Case Studies" [ref=e303] [cursor=pointer]:
+            - /url: /work
+          - text: Long-form project write-ups
+      - generic [ref=e304]:
+        - generic [ref=e305]: Meta
+        - generic [ref=e306]:
+          - link "About" [ref=e307] [cursor=pointer]:
+            - /url: /about
+          - text: A portrait of the author as a young man
+        - generic [ref=e308]:
+          - link "Now" [ref=e309] [cursor=pointer]:
+            - /url: /now
+          - text: Current focus, soaring dreams and steady sightlines
+        - generic [ref=e310]:
+          - link "RSS" [ref=e311] [cursor=pointer]:
+            - /url: /rss
+          - text: Carefully-crafted and homegrown XML feeds
+        - generic [ref=e312]:
+          - link "Links" [ref=e313] [cursor=pointer]:
+            - /url: /links
+          - text: Paths for stranger pastures on the WWW
+      - generic [ref=e314]:
+        - generic [ref=e315]: Elsewhere
+        - list [ref=e316]:
+          - listitem [ref=e317]:
+            - img [ref=e318]
+            - link "Bluesky" [ref=e320] [cursor=pointer]:
+              - /url: https://bsky.app/profile/strange.website
+          - listitem [ref=e321]:
+            - img [ref=e322]
+            - link "GitHub" [ref=e324] [cursor=pointer]:
+              - /url: https://github.com/xdesro/
+          - listitem [ref=e325]:
+            - img [ref=e326]
+            - link "LinkedIn" [ref=e328] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/henrydesroches/
+          - listitem [ref=e329]:
+            - img [ref=e330]
+            - link "Mastodon" [ref=e332] [cursor=pointer]:
+              - /url: https://front-end.social/@henry
+          - listitem [ref=e333]:
+            - img [ref=e334]
+            - link "CodePen" [ref=e336] [cursor=pointer]:
+              - /url: https://codepen.io/xdesro/
+          - listitem [ref=e337]:
+            - img [ref=e338]
+            - link "Resume" [ref=e340] [cursor=pointer]:
+              - /url: https://resume.henry.codes/
+          - listitem [ref=e341]:
+            - img [ref=e342]
+            - link "Twitter":
+              - /url: https://x.com/404boyfriend
+      - generic [ref=e344]:
+        - generic [ref=e345]: Contact
+        - link "yo@henry.codes" [ref=e346] [cursor=pointer]:
+          - /url: mailto:yo@henry.codes
+    - generic [ref=e347]:
+      - 'link "`© ${new Date().getCurrentYear()}`" [ref=e348] [cursor=pointer]':
+        - /url: /writing/i-know-about-the-date-in-the-footer/
+      - generic [ref=e349]: "made with :emoji: in Denver, Colorado"
+    - img [ref=e351]

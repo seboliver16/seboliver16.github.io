@@ -1,0 +1,11 @@
+[     624ms] Error: Minified React error #418; visit https://react.dev/errors/418?args[]=text&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at rR (https://paco.me/_next/static/chunks/518fb8e4bea859d9.js:1:39934)
+    at rO (https://paco.me/_next/static/chunks/518fb8e4bea859d9.js:1:40967)
+    at https://paco.me/_next/static/chunks/518fb8e4bea859d9.js:1:124287
+    at ik (https://paco.me/_next/static/chunks/518fb8e4bea859d9.js:1:129158)
+    at ib (https://paco.me/_next/static/chunks/518fb8e4bea859d9.js:1:120948)
+    at https://paco.me/_next/static/chunks/518fb8e4bea859d9.js:1:120732
+    at iv (https://paco.me/_next/static/chunks/518fb8e4bea859d9.js:1:120740)
+    at io (https://paco.me/_next/static/chunks/518fb8e4bea859d9.js:1:116115)
+    at iX (https://paco.me/_next/static/chunks/518fb8e4bea859d9.js:1:139247)
+    at MessagePort.R (https://paco.me/_next/static/chunks/518fb8e4bea859d9.js:1:3092)

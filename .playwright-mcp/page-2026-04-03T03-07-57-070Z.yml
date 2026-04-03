@@ -1,0 +1,511 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - complementary [ref=e7]:
+        - generic [ref=e8]:
+          - generic [ref=e9]:
+            - link [ref=e10] [cursor=pointer]:
+              - /url: /
+              - img [ref=e12]
+            - button "Seb.oliver.10@gmail.com's Account" [ref=e17] [cursor=pointer]:
+              - paragraph [ref=e18]: Seb.oliver.10@gmail.com's Account
+              - img [ref=e20]
+          - navigation [ref=e23]:
+            - generic [ref=e27]:
+              - button "Quick search..." [ref=e29] [cursor=pointer]:
+                - generic [ref=e30]:
+                  - img [ref=e31]
+                  - generic [ref=e33]: Quick search...
+                  - generic [ref=e34]: ⌘K
+              - generic [ref=e1280]:
+                - link "Back to Domains" [ref=e1283] [cursor=pointer]:
+                  - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/domains/overview
+                  - generic [ref=e1284]:
+                    - img [ref=e1285]
+                    - generic [ref=e1287]: Back to Domains
+                - list [ref=e1290]:
+                  - listitem [ref=e1291]:
+                    - link "Overview" [ref=e1292] [cursor=pointer]:
+                      - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/seboliver.dev/
+                      - generic [ref=e1293]:
+                        - img [ref=e1294]
+                        - generic [ref=e1297]: Overview
+                  - listitem [ref=e1298]:
+                    - button "Recents" [ref=e1299] [cursor=pointer]:
+                      - generic [ref=e1300]:
+                        - img [ref=e1301]
+                        - generic [ref=e1304]: Recents
+                        - img [ref=e1305]
+                    - list [ref=e1307]:
+                      - listitem [ref=e1309]:
+                        - link "Registrations Domains" [ref=e1310] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/domains/registrations
+                          - generic [ref=e1311]:
+                            - generic [ref=e1312]: Registrations
+                            - generic [ref=e1314]: Domains
+                        - button "Pin" [ref=e1316] [cursor=pointer]:
+                          - generic [ref=e1317]:
+                            - img [ref=e1318]
+                            - img [ref=e1323]
+                      - listitem [ref=e1325]:
+                        - link "Overview Domains" [ref=e1326] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/domains/overview
+                          - generic [ref=e1327]:
+                            - generic [ref=e1328]: Overview
+                            - generic [ref=e1330]: Domains
+                        - button "Pin" [ref=e1332] [cursor=pointer]:
+                          - generic [ref=e1333]:
+                            - img [ref=e1334]
+                            - img [ref=e1339]
+                      - listitem [ref=e1341]:
+                        - link "Registrations Domains" [ref=e1342] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/registrar/register
+                          - generic [ref=e1343]:
+                            - generic [ref=e1344]: Registrations
+                            - generic [ref=e1346]: Domains
+                        - button "Pin" [ref=e1348] [cursor=pointer]:
+                          - generic [ref=e1349]:
+                            - img [ref=e1350]
+                            - img [ref=e1355]
+                  - listitem [ref=e1357]:
+                    - button "AI Crawl Control" [ref=e1358] [cursor=pointer]:
+                      - generic [ref=e1359]:
+                        - img [ref=e1360]
+                        - generic [ref=e1363]: AI Crawl Control
+                        - img [ref=e1364]
+                    - list [ref=e1366]:
+                      - listitem [ref=e1368]:
+                        - link "Crawlers" [ref=e1369] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/seboliver.dev/ai/bots
+                          - generic [ref=e1370]: Crawlers
+                      - listitem [ref=e1371]:
+                        - link "Robots.txt" [ref=e1372] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/seboliver.dev/ai/robots
+                          - generic [ref=e1373]: Robots.txt
+                  - listitem [ref=e1374]:
+                    - button "Log Explorer" [ref=e1375] [cursor=pointer]:
+                      - generic [ref=e1376]:
+                        - img [ref=e1377]
+                        - generic [ref=e1380]: Log Explorer
+                        - img [ref=e1381]
+                    - list [ref=e1383]:
+                      - listitem [ref=e1385]:
+                        - link "Log search" [ref=e1386] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/seboliver.dev/log-explorer/log-search
+                          - generic [ref=e1387]: Log search
+                  - listitem [ref=e1388]:
+                    - button "Analytics & logs" [ref=e1389] [cursor=pointer]:
+                      - generic [ref=e1390]:
+                        - img [ref=e1391]
+                        - generic [ref=e1394]: Analytics & logs
+                        - img [ref=e1395]
+                    - list [ref=e1397]:
+                      - listitem [ref=e1399]:
+                        - link "HTTP Traffic" [ref=e1400] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/seboliver.dev/analytics/traffic
+                          - generic [ref=e1401]: HTTP Traffic
+                      - listitem [ref=e1402]:
+                        - link "Web analytics" [ref=e1403] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/seboliver.dev/analytics/web/overview
+                          - generic [ref=e1404]: Web analytics
+                      - listitem [ref=e1405]:
+                        - link "Performance" [ref=e1406] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/seboliver.dev/analytics/performance
+                          - generic [ref=e1407]: Performance
+                      - listitem [ref=e1408]:
+                        - link "Workers" [ref=e1409] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/seboliver.dev/analytics/workers
+                          - generic [ref=e1410]: Workers
+                  - listitem [ref=e1411]:
+                    - button "DNS" [ref=e1412] [cursor=pointer]:
+                      - generic [ref=e1413]:
+                        - img [ref=e1414]
+                        - generic [ref=e1416]: DNS
+                        - img [ref=e1417]
+                    - list [ref=e1419]:
+                      - listitem [ref=e1421]:
+                        - link "Records" [ref=e1422] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/seboliver.dev/dns/records
+                          - generic [ref=e1423]: Records
+                      - listitem [ref=e1424]:
+                        - link "Analytics" [ref=e1425] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/seboliver.dev/dns/analytics
+                          - generic [ref=e1426]: Analytics
+                      - listitem [ref=e1427]:
+                        - link "Settings" [ref=e1428] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/seboliver.dev/dns/settings
+                          - generic [ref=e1429]: Settings
+                  - listitem [ref=e1430]:
+                    - button "Email" [ref=e1431] [cursor=pointer]:
+                      - generic [ref=e1432]:
+                        - img [ref=e1433]
+                        - generic [ref=e1437]: Email
+                        - img [ref=e1438]
+                    - list [ref=e1440]:
+                      - listitem [ref=e1442]:
+                        - link "Email Routing" [ref=e1443] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/seboliver.dev/email/routing
+                          - generic [ref=e1444]: Email Routing
+                      - listitem [ref=e1445]:
+                        - link "Email Security" [ref=e1446] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/seboliver.dev/email/security
+                          - generic [ref=e1447]: Email Security
+                  - listitem [ref=e1448]:
+                    - button "SSL/TLS" [ref=e1449] [cursor=pointer]:
+                      - generic [ref=e1450]:
+                        - img [ref=e1451]
+                        - generic [ref=e1454]: SSL/TLS
+                        - img [ref=e1455]
+                    - list [ref=e1457]:
+                      - listitem [ref=e1459]:
+                        - link "Overview" [ref=e1460] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/seboliver.dev/ssl-tls
+                          - generic [ref=e1461]: Overview
+                      - listitem [ref=e1462]:
+                        - link "Edge Certificates" [ref=e1463] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/seboliver.dev/ssl-tls/edge-certificates
+                          - generic [ref=e1464]: Edge Certificates
+                      - listitem [ref=e1465]:
+                        - link "Origin Server" [ref=e1466] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/seboliver.dev/ssl-tls/origin
+                          - generic [ref=e1467]: Origin Server
+                      - listitem [ref=e1468]:
+                        - link "Custom Hostnames" [ref=e1469] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/seboliver.dev/ssl-tls/custom-hostnames
+                          - generic [ref=e1470]: Custom Hostnames
+                  - listitem [ref=e1471]:
+                    - button "Security" [ref=e1472] [cursor=pointer]:
+                      - generic [ref=e1473]:
+                        - img [ref=e1474]
+                        - generic [ref=e1476]: Security
+                        - img [ref=e1477]
+                    - list [ref=e1479]:
+                      - listitem [ref=e1481]:
+                        - link "Overview" [ref=e1482] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/seboliver.dev/security/overview
+                          - generic [ref=e1483]: Overview
+                      - listitem [ref=e1484]:
+                        - link "Analytics" [ref=e1485] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/seboliver.dev/security/analytics
+                          - generic [ref=e1486]: Analytics
+                      - listitem [ref=e1487]:
+                        - link "Web assets" [ref=e1488] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/seboliver.dev/security/web-assets
+                          - generic [ref=e1489]: Web assets
+                      - listitem [ref=e1490]:
+                        - link "Security rules" [ref=e1491] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/seboliver.dev/security/security-rules
+                          - generic [ref=e1492]: Security rules
+                      - listitem [ref=e1493]:
+                        - link "Settings" [ref=e1494] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/seboliver.dev/security/settings
+                          - generic [ref=e1495]: Settings
+                  - listitem [ref=e1496]:
+                    - link "Access" [ref=e1497] [cursor=pointer]:
+                      - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/seboliver.dev/access
+                      - generic [ref=e1498]:
+                        - img [ref=e1499]
+                        - generic [ref=e1502]: Access
+                  - listitem [ref=e1503]:
+                    - button "Speed" [ref=e1504] [cursor=pointer]:
+                      - generic [ref=e1505]:
+                        - img [ref=e1506]
+                        - generic [ref=e1508]: Speed
+                        - img [ref=e1509]
+                    - list [ref=e1511]:
+                      - listitem [ref=e1513]:
+                        - link "Observatory Beta" [ref=e1514] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/seboliver.dev/speed
+                          - generic [ref=e1515]: Observatory
+                          - generic [ref=e1517]: Beta
+                      - listitem [ref=e1518]:
+                        - link "Real user monitoring" [ref=e1519] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/seboliver.dev/speed/rum
+                          - generic [ref=e1520]: Real user monitoring
+                      - listitem [ref=e1521]:
+                        - link "Synthetic monitoring Beta" [ref=e1522] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/seboliver.dev/speed/test
+                          - generic [ref=e1523]: Synthetic monitoring
+                          - generic [ref=e1525]: Beta
+                      - listitem [ref=e1526]:
+                        - link "Settings" [ref=e1527] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/seboliver.dev/speed/optimization
+                          - generic [ref=e1528]: Settings
+                      - listitem [ref=e1529]:
+                        - link "Smart Shield" [ref=e1530] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/seboliver.dev/speed/smart-shield
+                          - generic [ref=e1531]: Smart Shield
+                  - listitem [ref=e1532]:
+                    - button "Caching" [ref=e1533] [cursor=pointer]:
+                      - generic [ref=e1534]:
+                        - img [ref=e1535]
+                        - generic [ref=e1540]: Caching
+                        - img [ref=e1541]
+                    - list [ref=e1543]:
+                      - listitem [ref=e1545]:
+                        - link "Overview" [ref=e1546] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/seboliver.dev/caching
+                          - generic [ref=e1547]: Overview
+                      - listitem [ref=e1548]:
+                        - link "Configuration" [ref=e1549] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/seboliver.dev/caching/configuration
+                          - generic [ref=e1550]: Configuration
+                      - listitem [ref=e1551]:
+                        - link "Cache Rules" [ref=e1552] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/seboliver.dev/caching/cache-rules
+                          - generic [ref=e1553]: Cache Rules
+                      - listitem [ref=e1554]:
+                        - link "Tiered Cache" [ref=e1555] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/seboliver.dev/caching/tiered-cache
+                          - generic [ref=e1556]: Tiered Cache
+                      - listitem [ref=e1557]:
+                        - link "Cache Reserve" [ref=e1558] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/seboliver.dev/caching/cache-reserve
+                          - generic [ref=e1559]: Cache Reserve
+                  - listitem [ref=e1560]:
+                    - link "Workers Routes" [ref=e1561] [cursor=pointer]:
+                      - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/seboliver.dev/workers
+                      - generic [ref=e1562]:
+                        - img [ref=e1563]
+                        - generic [ref=e1567]: Workers Routes
+                  - listitem [ref=e1568]:
+                    - button "Rules" [ref=e1569] [cursor=pointer]:
+                      - generic [ref=e1570]:
+                        - img [ref=e1571]
+                        - generic [ref=e1574]: Rules
+                        - img [ref=e1575]
+                    - list [ref=e1577]:
+                      - listitem [ref=e1579]:
+                        - link "Overview" [ref=e1580] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/seboliver.dev/rules/overview
+                          - generic [ref=e1581]: Overview
+                      - listitem [ref=e1582]:
+                        - link "Snippets" [ref=e1583] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/seboliver.dev/rules/snippets
+                          - generic [ref=e1584]: Snippets
+                      - listitem [ref=e1585]:
+                        - link "Cloud Connector Beta" [ref=e1586] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/seboliver.dev/rules/cloud-connector
+                          - generic [ref=e1587]: Cloud Connector
+                          - generic [ref=e1589]: Beta
+                      - listitem [ref=e1590]:
+                        - link "Trace Beta" [ref=e1591] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/seboliver.dev/rules/trace/search
+                          - generic [ref=e1592]: Trace
+                          - generic [ref=e1594]: Beta
+                      - listitem [ref=e1595]:
+                        - link "Page Rules" [ref=e1596] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/seboliver.dev/rules/page-rules
+                          - generic [ref=e1597]: Page Rules
+                      - listitem [ref=e1598]:
+                        - link "Settings" [ref=e1599] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/seboliver.dev/rules/settings
+                          - generic [ref=e1600]: Settings
+                  - listitem [ref=e1601]:
+                    - link "Error Pages New" [ref=e1602] [cursor=pointer]:
+                      - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/seboliver.dev/error-pages
+                      - generic [ref=e1603]:
+                        - img [ref=e1604]
+                        - generic [ref=e1607]: Error Pages
+                        - generic [ref=e1609]: New
+                  - listitem [ref=e1610]:
+                    - link "Network" [ref=e1611] [cursor=pointer]:
+                      - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/seboliver.dev/network
+                      - generic [ref=e1612]:
+                        - img [ref=e1613]
+                        - generic [ref=e1616]: Network
+                  - listitem [ref=e1617]:
+                    - button "Traffic" [ref=e1618] [cursor=pointer]:
+                      - generic [ref=e1619]:
+                        - img [ref=e1620]
+                        - generic [ref=e1622]: Traffic
+                        - img [ref=e1623]
+                    - list [ref=e1625]:
+                      - listitem [ref=e1627]:
+                        - link "Argo Smart Routing" [ref=e1628] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/seboliver.dev/traffic
+                          - generic [ref=e1629]: Argo Smart Routing
+                      - listitem [ref=e1630]:
+                        - link "Load Balancing" [ref=e1631] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/seboliver.dev/traffic/load-balancing
+                          - generic [ref=e1632]: Load Balancing
+                      - listitem [ref=e1633]:
+                        - link "Load Balancing Analytics" [ref=e1634] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/seboliver.dev/traffic/load-balancing-analytics
+                          - generic [ref=e1635]: Load Balancing Analytics
+                      - listitem [ref=e1636]:
+                        - link "Health Checks" [ref=e1637] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/seboliver.dev/traffic/health-checks
+                          - generic [ref=e1638]: Health Checks
+                      - listitem [ref=e1639]:
+                        - link "Waiting Room" [ref=e1640] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/seboliver.dev/traffic/waiting-rooms
+                          - generic [ref=e1641]: Waiting Room
+                  - listitem [ref=e1642]:
+                    - link "Web3" [ref=e1643] [cursor=pointer]:
+                      - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/seboliver.dev/web3
+                      - generic [ref=e1644]:
+                        - img [ref=e1645]
+                        - generic [ref=e1648]: Web3
+                  - listitem [ref=e1649]
+                  - listitem [ref=e1651]:
+                    - button "Manage account" [ref=e1652] [cursor=pointer]:
+                      - generic [ref=e1653]:
+                        - img [ref=e1654]
+                        - generic [ref=e1657]: Manage account
+                        - img [ref=e1658]
+                    - list [ref=e1660]:
+                      - listitem [ref=e1662]:
+                        - link "Members" [ref=e1663] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/members
+                          - generic [ref=e1664]: Members
+                      - listitem [ref=e1665]:
+                        - link "Billing" [ref=e1666] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/billing
+                          - generic [ref=e1667]: Billing
+                      - listitem [ref=e1668]:
+                        - link "Account API tokens" [ref=e1669] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/api-tokens
+                          - generic [ref=e1670]: Account API tokens
+                      - listitem [ref=e1671]:
+                        - link "Audit logs" [ref=e1672] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/audit-log
+                          - generic [ref=e1673]: Audit logs
+                      - listitem [ref=e1674]:
+                        - link "Notifications" [ref=e1675] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/notifications
+                          - generic [ref=e1676]: Notifications
+                      - listitem [ref=e1677]:
+                        - link "Blocked content" [ref=e1678] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/blocked-content
+                          - generic [ref=e1679]: Blocked content
+                      - listitem [ref=e1680]:
+                        - link "Abuse reports Beta" [ref=e1681] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/abuse-reports
+                          - generic [ref=e1682]: Abuse reports
+                          - generic [ref=e1684]: Beta
+                      - listitem [ref=e1685]:
+                        - link "Carbon Impact Report" [ref=e1686] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/carbon
+                          - generic [ref=e1687]: Carbon Impact Report
+                      - listitem [ref=e1688]:
+                        - link "Configurations" [ref=e1689] [cursor=pointer]:
+                          - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/configurations
+                          - generic [ref=e1690]: Configurations
+        - button "Collapse sidebar" [expanded] [ref=e534] [cursor=pointer]:
+          - img
+      - generic [ref=e535]:
+        - banner [ref=e536]:
+          - generic [ref=e1691]:
+            - button "seboliver.dev" [ref=e1693] [cursor=pointer]:
+              - generic [ref=e1694]: seboliver.dev
+              - img [ref=e1695]
+            - button "Star domain" [ref=e1698] [cursor=pointer]:
+              - img "Star domain" [ref=e1699]
+            - button "Free" [ref=e1702] [cursor=pointer]
+          - generic [ref=e544]:
+            - button "Ask AI" [ref=e545] [cursor=pointer]:
+              - img [ref=e546]
+              - generic [ref=e548]: Ask AI
+            - button "Support" [ref=e549] [cursor=pointer]:
+              - img [ref=e550]
+              - generic [ref=e552]: Support
+            - button "User menu" [ref=e553] [cursor=pointer]:
+              - img [ref=e554]
+        - contentinfo [ref=e1151]:
+          - list [ref=e1153]:
+            - listitem [ref=e1154]:
+              - link "Support" [ref=e1155] [cursor=pointer]:
+                - /url: https://support.cloudflare.com
+            - listitem [ref=e1156]:
+              - link "System status" [ref=e1157] [cursor=pointer]:
+                - /url: https://www.cloudflarestatus.com
+            - listitem [ref=e1158]:
+              - link "Careers" [ref=e1159] [cursor=pointer]:
+                - /url: https://www.cloudflare.com/careers/
+            - listitem [ref=e1160]:
+              - link "Terms of Use" [ref=e1161] [cursor=pointer]:
+                - /url: https://www.cloudflare.com/website-terms/
+            - listitem [ref=e1162]:
+              - link "Report Security Issues" [ref=e1163] [cursor=pointer]:
+                - /url: https://www.cloudflare.com/disclosure/
+            - listitem [ref=e1164]:
+              - link "Privacy Policy" [ref=e1165] [cursor=pointer]:
+                - /url: https://www.cloudflare.com/privacypolicy/
+            - listitem [ref=e1166]:
+              - button "A blue and white pill with a checkmark and an x, representing privacy choices Your Privacy Choices" [ref=e1167] [cursor=pointer]:
+                - img "A blue and white pill with a checkmark and an x, representing privacy choices" [ref=e1168]
+                - text: Your Privacy Choices
+            - listitem [ref=e1169]:
+              - generic [ref=e1170]: © 2026 Cloudflare, Inc.
+    - generic [ref=e1172]:
+      - generic [ref=e1174]:
+        - button "New conversation" [ref=e1177] [cursor=pointer]:
+          - generic [ref=e1178]: New conversation
+          - img [ref=e1179]
+        - generic [ref=e1181]:
+          - button "New chat" [ref=e1182] [cursor=pointer]:
+            - img [ref=e1183]
+          - button "Expand sidebar" [ref=e1185] [cursor=pointer]:
+            - img [ref=e1186]
+          - button "Close sidebar" [ref=e1188] [cursor=pointer]:
+            - img [ref=e1189]
+      - generic [ref=e1191]:
+        - generic [ref=e1192]:
+          - paragraph [ref=e1193]: Need more help?
+          - link "Support" [ref=e1194] [cursor=pointer]:
+            - /url: /b82ac7968a160d3fdd5bf00c4ff3e3e2/support
+            - button "Support" [ref=e1195]
+        - generic [ref=e1197]:
+          - generic [ref=e1208]:
+            - heading "Good evening." [level=3] [ref=e1209]
+            - paragraph [ref=e1210]: What are we doing today?
+          - generic [ref=e1211]:
+            - button "Orange vs Gray Cloud What is the difference?" [ref=e1212] [cursor=pointer]:
+              - img [ref=e1214]
+              - generic [ref=e1216]:
+                - generic [ref=e1217]: Orange vs Gray Cloud
+                - generic [ref=e1218]: What is the difference?
+              - img [ref=e1220]
+            - button "Transfer a domain Walk me through the process" [ref=e1222] [cursor=pointer]:
+              - img [ref=e1224]
+              - generic [ref=e1226]:
+                - generic [ref=e1227]: Transfer a domain
+                - generic [ref=e1228]: Walk me through the process
+              - img [ref=e1230]
+            - button "Environment variables Add or update secrets" [ref=e1232] [cursor=pointer]:
+              - img [ref=e1234]
+              - generic [ref=e1236]:
+                - generic [ref=e1237]: Environment variables
+                - generic [ref=e1238]: Add or update secrets
+              - img [ref=e1240]
+            - button "Create an API token Set up API access" [ref=e1242] [cursor=pointer]:
+              - img [ref=e1244]
+              - generic [ref=e1246]:
+                - generic [ref=e1247]: Create an API token
+                - generic [ref=e1248]: Set up API access
+              - img [ref=e1250]
+            - button "Bind R2 to a Worker Connect object storage" [ref=e1252] [cursor=pointer]:
+              - img [ref=e1254]
+              - generic [ref=e1256]:
+                - generic [ref=e1257]: Bind R2 to a Worker
+                - generic [ref=e1258]: Connect object storage
+              - img [ref=e1260]
+        - generic [ref=e1262]:
+          - generic [ref=e1264]:
+            - paragraph [ref=e1265]:
+              - text: Chats are recorded to improve the service and are processed in accordance with our
+              - link "Privacy Policy" [ref=e1266] [cursor=pointer]:
+                - /url: https://www.cloudflare.com/privacypolicy/
+              - text: .
+            - button "Close privacy notice" [ref=e1267] [cursor=pointer]:
+              - img [ref=e1268]
+          - generic [ref=e1271]:
+            - textbox "What can we help you with?" [ref=e1272]
+            - generic [ref=e1273]:
+              - button "Settings" [ref=e1274] [cursor=pointer]:
+                - img [ref=e1275]
+              - button "Submit" [disabled] [ref=e1277]:
+                - img [ref=e1278]
+  - generic:
+    - region "Notifications"

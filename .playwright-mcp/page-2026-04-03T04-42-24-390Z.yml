@@ -1,0 +1,135 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - link "Regpit Regpit Anti-money laundering process-management platform 2024–2025 Studio Lenzing" [ref=e3] [cursor=pointer]:
+      - /url: /work/regpit
+      - img "Regpit" [ref=e4]
+      - generic [ref=e6]:
+        - heading "Regpit" [level=2] [ref=e7]
+        - paragraph [ref=e8]: Anti-money laundering process-management platform
+      - generic [ref=e9]:
+        - time [ref=e10]: 2024–2025
+        - paragraph [ref=e11]: Studio Lenzing
+    - link "Otherhomes video player Otherhomes Unique and curated real-estate showcase 2024 Studio Lenzing" [ref=e12] [cursor=pointer]:
+      - /url: /work/otherhomes
+      - img "Otherhomes" [ref=e13]
+      - region "video player" [ref=e16]:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - img
+      - generic [ref=e21]:
+        - heading "Otherhomes" [level=2] [ref=e22]
+        - paragraph [ref=e23]: Unique and curated real-estate showcase
+      - generic [ref=e24]:
+        - time [ref=e25]: "2024"
+        - paragraph [ref=e26]: Studio Lenzing
+    - link "Dash0 Dash0 OpenTelemetry-native real-time observability platform 2023–2025 Studio Lenzing" [ref=e27] [cursor=pointer]:
+      - /url: /work/dash0
+      - img "Dash0" [ref=e28]
+      - generic [ref=e30]:
+        - heading "Dash0" [level=2] [ref=e31]
+        - paragraph [ref=e32]: OpenTelemetry-native real-time observability platform
+      - generic [ref=e33]:
+        - time [ref=e34]: 2023–2025
+        - paragraph [ref=e35]: Studio Lenzing
+    - link "The Raum Objects video player The Raum Objects Interactive presentation of sculptural furniture 2023 Studio Lenzing" [ref=e36] [cursor=pointer]:
+      - /url: /work/theraumobjects
+      - img "The Raum Objects" [ref=e37]
+      - region "video player" [ref=e40]:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - img
+      - generic [ref=e45]:
+        - heading "The Raum Objects" [level=2] [ref=e46]
+        - paragraph [ref=e47]: Interactive presentation of sculptural furniture
+      - generic [ref=e48]:
+        - time [ref=e49]: "2023"
+        - paragraph [ref=e50]: Studio Lenzing
+    - link "Justmatch Justmatch AI-powered and data-based job matching app 2023 Studio Lenzing" [ref=e51] [cursor=pointer]:
+      - /url: /work/justmatch
+      - img "Justmatch" [ref=e52]
+      - generic [ref=e54]:
+        - heading "Justmatch" [level=2] [ref=e55]
+        - paragraph [ref=e56]: AI-powered and data-based job matching app
+      - generic [ref=e57]:
+        - time [ref=e58]: "2023"
+        - paragraph [ref=e59]: Studio Lenzing
+    - generic [ref=e60]:
+      - heading "Writing" [level=2] [ref=e61]
+      - list [ref=e62]:
+        - listitem [ref=e63]:
+          - link "On Feeling Oct 30, 2025" [ref=e64] [cursor=pointer]:
+            - /url: /writing/on-feeling
+            - generic [ref=e65]: On Feeling
+            - generic [ref=e66]: Oct 30, 2025
+        - listitem [ref=e67]:
+          - link "Blog Questions Challenge Mar 15, 2025" [ref=e68] [cursor=pointer]:
+            - /url: /writing/blog-questions-challenge
+            - generic [ref=e69]: Blog Questions Challenge
+            - generic [ref=e70]: Mar 15, 2025
+        - listitem [ref=e71]:
+          - link "2024–2025 Dec 31, 2024" [ref=e72] [cursor=pointer]:
+            - /url: /writing/2024-2025
+            - generic [ref=e73]: 2024–2025
+            - generic [ref=e74]: Dec 31, 2024
+        - listitem [ref=e75]:
+          - link "Connection Mar 1, 2024" [ref=e76] [cursor=pointer]:
+            - /url: /writing/connection
+            - generic [ref=e77]: Connection
+            - generic [ref=e78]: Mar 1, 2024
+        - listitem [ref=e79]:
+          - link "Only A Lifetime Jun 2, 2023" [ref=e80] [cursor=pointer]:
+            - /url: /writing/only-a-lifetime
+            - generic [ref=e81]: Only A Lifetime
+            - generic [ref=e82]: Jun 2, 2023
+        - listitem [ref=e83]:
+          - link "House of 1000 Mirrors May 31, 2023" [ref=e84] [cursor=pointer]:
+            - /url: /writing/1000-mirrors
+            - generic [ref=e85]: House of 1000 Mirrors
+            - generic [ref=e86]: May 31, 2023
+        - listitem [ref=e87]:
+          - link "Happy Pride Month May 31, 2023" [ref=e88] [cursor=pointer]:
+            - /url: /writing/pride
+            - generic [ref=e89]: Happy Pride Month
+            - generic [ref=e90]: May 31, 2023
+        - listitem [ref=e91]:
+          - link "The Creative Gap Mar 1, 2023" [ref=e92] [cursor=pointer]:
+            - /url: /writing/creative-gap
+            - generic [ref=e93]: The Creative Gap
+            - generic [ref=e94]: Mar 1, 2023
+  - contentinfo [ref=e95]:
+    - heading "Linus Rogge" [level=1] [ref=e96]:
+      - link "Linus Rogge" [ref=e97] [cursor=pointer]:
+        - /url: /
+    - generic [ref=e99]:
+      - paragraph [ref=e100]: I design digital products and websites with a focus on clarity and structure. For me, design is a dialogue between users, designers, and developers—where strategy and aesthetics work together to create something that feels effortless.
+      - paragraph [ref=e101]: Subtle, but with great impact.
+      - button "Information" [ref=e102] [cursor=pointer]
+    - generic [ref=e115]:
+      - generic [ref=e116]:
+        - text: Hamburg, Europe
+        - text: 6.42 am, Mist at 2°C
+      - paragraph [ref=e117]: “Music is the language of the spirit.” Kahlil Gibran
+      - list [ref=e118]:
+        - listitem [ref=e119]:
+          - link "Archive" [ref=e120] [cursor=pointer]:
+            - /url: https://archive.saman.design
+        - listitem [ref=e121]:
+          - link "Inventory" [ref=e122] [cursor=pointer]:
+            - /url: https://inventory.linusrogge.com
+        - listitem [ref=e123]:
+          - link "Cosmos" [ref=e124] [cursor=pointer]:
+            - /url: https://cosmos.so/linusrogge
+        - listitem [ref=e125]:
+          - link "Email" [ref=e126] [cursor=pointer]:
+            - /url: mailto:linus@linusrogge.com
+        - listitem [ref=e127]:
+          - link "Colophon" [ref=e128] [cursor=pointer]:
+            - /url: /colophon
+        - listitem [ref=e129]:
+          - link "Imprint" [ref=e130] [cursor=pointer]:
+            - /url: /imprint
+  - alert [ref=e131]

@@ -1,0 +1,351 @@
+- generic [active] [ref=e1]:
+  - main [ref=e4]:
+    - navigation [ref=e5]:
+      - generic [ref=e6]:
+        - link "Kyle Ledbetter" [ref=e8] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e9]: Kyle Ledbetter
+        - img [ref=e12] [cursor=pointer]
+    - generic [ref=e16]:
+      - img "Kyle Ledbetter" [ref=e19]
+      - heading "Kyle Ledbetter" [level=1] [ref=e22]
+    - article [ref=e23]:
+      - heading "Co-Founder & CEO of Dreambase.ai" [level=2] [ref=e24]:
+        - text: Co-Founder & CEO of
+        - link "Dreambase.ai" [ref=e25] [cursor=pointer]:
+          - /url: http://dreambase.ai
+      - heading "An AI-Augmented Founder & Seasoned Design Leader" [level=3] [ref=e26]
+      - generic [ref=e27]:
+        - generic [ref=e28]:
+          - paragraph [ref=e29]:
+            - text: The visionary behind
+            - link "Dream, Inc." [ref=e30] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/aliases-inc/
+            - text: ", a revolutionary startup at the forefront of building AI native analytic products. He's empowering individuals and organizations to unlock their creative potential in the AI era. With over two decades of experience leading design teams at tech giants and founding the first Responsible AI Governance Platform, Kyle brings a unique blend of innovation and pragmatism to the evolving landscape of human-AI collaboration."
+          - list [ref=e32]:
+            - listitem [ref=e33]: Leading the charge for AI-native startups and workflows
+            - listitem [ref=e34]: Transforming challenges into opportunities for growth
+            - listitem [ref=e35]: Evolving mindsets to flourish in the age of AI
+            - listitem [ref=e36]: Listening to the dreams of users and amplify them with technology
+            - listitem [ref=e37]: Building lasting relationships between humans and AI
+          - heading "CONTACT RESUME" [level=2] [ref=e39]:
+            - link "CONTACT" [ref=e40] [cursor=pointer]:
+              - /url: mailto:inquiries@kyleledbetter.com
+            - link "RESUME" [ref=e41] [cursor=pointer]:
+              - /url: /resume
+        - img "image" [ref=e46]
+      - generic [ref=e49]:
+        - heading "Career" [level=3] [ref=e51]:
+          - generic [ref=e52]: Career
+        - generic [ref=e53]:
+          - generic [ref=e54] [cursor=pointer]:
+            - link [ref=e55]:
+              - /url: /career/aliases-inc-ai-augmentation-hybrid-centered-design
+            - generic [ref=e56]:
+              - img [ref=e58]
+              - text: Dreambase.ai - Revolutionary Generative AI Solutions
+            - generic [ref=e60]:
+              - paragraph [ref=e61]: AskDream.ai
+              - paragraph [ref=e62]: 2024 - present
+              - paragraph [ref=e63]: CEO & Co-Founder
+          - generic [ref=e64] [cursor=pointer]:
+            - link [ref=e65]:
+              - /url: /career/credo-ai-responsible-ai-design
+            - generic [ref=e66]:
+              - img [ref=e68]
+              - text: Credo AI - Responsible AI Design
+            - generic [ref=e70]:
+              - paragraph [ref=e71]: Credo AI
+              - paragraph [ref=e72]: 2021 - 2024
+              - paragraph [ref=e73]: VP of Design
+          - generic [ref=e74] [cursor=pointer]:
+            - link [ref=e75]:
+              - /url: /career/teradata-ux-organization-building
+            - generic [ref=e76]:
+              - img [ref=e78]
+              - text: Teradata - UX Organization Building
+            - generic [ref=e80]:
+              - paragraph [ref=e81]: Teradata
+              - paragraph [ref=e82]: 2019 - 2021
+              - paragraph [ref=e83]: Senior Director of User Experience
+          - generic [ref=e84] [cursor=pointer]:
+            - link [ref=e85]:
+              - /url: /career/teradata-developer-platform-experience
+            - generic [ref=e86]:
+              - img [ref=e88]
+              - text: Teradata - Developer Platform Experience
+            - generic [ref=e90]:
+              - paragraph [ref=e91]: Teradata
+              - paragraph [ref=e92]: 2016 - 2019
+              - paragraph [ref=e93]: Director, User Experience
+          - generic [ref=e94] [cursor=pointer]:
+            - link [ref=e95]:
+              - /url: /career/teradata-architecting-an-enterprise-ui-platform
+            - generic [ref=e96]:
+              - img [ref=e98]
+              - text: Teradata - Architecting an Enterprise UI Platform
+            - generic [ref=e100]:
+              - paragraph [ref=e101]: Teradata
+              - paragraph [ref=e102]: 2014 - 2016
+              - paragraph [ref=e103]: UX Architect
+          - generic [ref=e104] [cursor=pointer]:
+            - link [ref=e105]:
+              - /url: /career/microstrategy-reimagining-a-leading-bi-product
+            - generic [ref=e106]:
+              - img [ref=e108]
+              - text: MicroStrategy - Reimagining a leading BI Product
+            - generic [ref=e110]:
+              - paragraph [ref=e111]: MicroStrategy
+              - paragraph [ref=e112]: "2014"
+              - paragraph [ref=e113]: Senior UX Designer
+          - generic [ref=e114] [cursor=pointer]:
+            - link [ref=e115]:
+              - /url: /career/sears-incubating-streaming-data-products
+            - generic [ref=e116]:
+              - img [ref=e118]
+              - text: Sears - Incubating Streaming Data Products
+            - generic [ref=e120]:
+              - paragraph [ref=e121]: Sears Holdings
+              - paragraph [ref=e122]: "2013"
+              - paragraph [ref=e123]: Principal UX Designer
+          - generic [ref=e124] [cursor=pointer]:
+            - link [ref=e125]:
+              - /url: /career/ebay-ux-lead-for-ebay-technology
+            - generic [ref=e126]:
+              - img [ref=e128]
+              - text: eBay - UX Lead for eBay Technology
+            - generic [ref=e130]:
+              - paragraph [ref=e131]: eBay
+              - paragraph [ref=e132]: 2010 - 2012
+              - paragraph [ref=e133]: Principal Usability Engineer
+          - generic [ref=e134] [cursor=pointer]:
+            - link [ref=e135]:
+              - /url: /career/joomla-reinvented-ux-for-a-massive-open-source-cms
+            - generic [ref=e136]:
+              - img [ref=e138]
+              - text: Joomla - Reinvented UX for a massive open-source CMS
+            - generic [ref=e140]:
+              - paragraph [ref=e141]: Joomla!
+              - paragraph [ref=e142]: 2009 - 2011
+              - paragraph [ref=e143]: Lead UX Designer
+          - generic [ref=e144] [cursor=pointer]:
+            - link [ref=e145]:
+              - /url: /career/boutique-web-design-when-the-web-was-young
+            - generic [ref=e146]:
+              - img [ref=e148]
+              - text: Boutique web design when the web was young
+            - generic [ref=e150]:
+              - paragraph [ref=e151]: Pixel Praise
+              - paragraph [ref=e152]: 2000 - 2007
+              - paragraph [ref=e153]: Parnter
+      - generic [ref=e155]:
+        - heading "Presentations & Speaking" [level=3] [ref=e157]:
+          - generic [ref=e158]: Presentations & Speaking
+        - generic [ref=e159]:
+          - generic [ref=e160] [cursor=pointer]:
+            - link "Supra Insider Interview" [ref=e161]:
+              - /url: /presentations/supra-insider-interview
+            - generic [ref=e162]:
+              - img "Supra Insider Interview"
+            - generic:
+              - generic:
+                - generic:
+                  - img
+                - text: Supra Insider Interview
+          - generic [ref=e163] [cursor=pointer]:
+            - link "WDC - Agency Over AI Agents" [ref=e164]:
+              - /url: /presentations/wdc-agency-over-ai-agents
+            - generic [ref=e165]:
+              - img "WDC - Agency Over AI Agents"
+            - generic:
+              - generic:
+                - generic:
+                  - img
+                - text: WDC - Agency Over AI Agents
+          - generic [ref=e166] [cursor=pointer]:
+            - link "DDX San Diego - Augmented Design" [ref=e167]:
+              - /url: /presentations/ddx-san-diego
+            - generic [ref=e168]:
+              - img "DDX San Diego - Augmented Design"
+            - generic:
+              - generic:
+                - generic:
+                  - img
+                - text: DDX San Diego - Augmented Design
+          - generic [ref=e169] [cursor=pointer]:
+            - link "Teradata Universe Keynote" [ref=e170]:
+              - /url: /presentations/teradata-universe-keynote
+            - generic [ref=e171]:
+              - img "Teradata Universe Keynote"
+            - generic:
+              - generic:
+                - generic:
+                  - img
+                - text: Teradata Universe Keynote
+          - generic [ref=e172] [cursor=pointer]:
+            - link "American Marketing Association" [ref=e173]:
+              - /url: /presentations/american-marketing-association
+            - generic [ref=e174]:
+              - img "American Marketing Association"
+            - generic:
+              - generic:
+                - generic:
+                  - img
+                - text: American Marketing Association
+          - generic [ref=e175] [cursor=pointer]:
+            - link "Tech People Podcast Interview" [ref=e176]:
+              - /url: /presentations/tech-people-podcast-interview
+            - generic [ref=e177]:
+              - img "Tech People Podcast Interview"
+            - generic:
+              - generic:
+                - generic:
+                  - img
+                - text: Tech People Podcast Interview
+          - generic [ref=e178] [cursor=pointer]:
+            - link "UX + Dev Summit" [ref=e179]:
+              - /url: /presentations/ux-dev-summit
+            - generic [ref=e180]:
+              - img "UX + Dev Summit"
+            - generic:
+              - generic:
+                - generic:
+                  - img
+                - text: UX + Dev Summit
+      - heading "Blogs & Publications" [level=3] [ref=e183]
+      - paragraph [ref=e185]:
+        - link "Aliases - It’s ok to dream again." [ref=e186] [cursor=pointer]:
+          - /url: https://www.aliases.co/blog/its-ok-to-dream-again
+      - paragraph [ref=e187]:
+        - link "Aliases - Our Top 5 Image Generation Models" [ref=e188] [cursor=pointer]:
+          - /url: https://www.aliases.co/blog/top-5-image-generation-models-on-replicate-com
+      - paragraph [ref=e189]:
+        - link "Generative AI for Designer-Developers — Supercharge Your Workflow with ChatGPT, Midjourney, and beyond!" [ref=e190] [cursor=pointer]:
+          - /url: https://kyleledbetter.medium.com/generative-ai-for-designer-developers-supercharge-your-workflow-with-chatgpt-midjourney-and-ab171a1de4f5
+      - paragraph [ref=e191]:
+        - 'link "Designing Truly Human-Centered AI: Credo AI" [ref=e192] [cursor=pointer]':
+          - /url: https://www.credo.ai/blog/designing-truly-human-centered-ai
+      - paragraph [ref=e193]:
+        - link "R.A.D.A.R. — UX Design Wrapped with Architecture & Research" [ref=e194] [cursor=pointer]:
+          - /url: https://kyleledbetter.medium.com/r-a-d-a-r-ux-design-wrapped-with-architecture-research-f9a507e83f56
+      - paragraph [ref=e195]:
+        - link "A Renewed Focus on User Experience at Teradata" [ref=e196] [cursor=pointer]:
+          - /url: https://www.teradata.com/Blogs/A-Renewed-Focus-on-User-Experience-at-Teradata
+      - paragraph [ref=e197]:
+        - 'link "Embracing the Darkness: Vantage Developer" [ref=e198] [cursor=pointer]':
+          - /url: https://www.teradata.com/Blogs/Embracing-the-darkness-Vantage-Developer
+      - paragraph [ref=e199]:
+        - 'link "Announcing Covalent: An Open-Source Angular 2.0 Material UI Platform by Teradata" [ref=e200] [cursor=pointer]':
+          - /url: https://medium.com/covalent-ui/announcing-covalent-an-open-source-angular-2-0-material-ui-platform-by-teradata-ea77776e75cd
+      - paragraph [ref=e201]:
+        - link "9 reasons why we’re doubling down on Material Design for our enterprise web apps" [ref=e202] [cursor=pointer]:
+          - /url: https://kyleledbetter.medium.com/why-we-re-doubling-down-on-material-design-for-our-enterprise-web-apps-ce7d36d498db
+      - paragraph [ref=e203]:
+        - link "Medium profile" [ref=e204] [cursor=pointer]:
+          - /url: https://kyleledbetter.medium.com/
+      - generic [ref=e207]:
+        - heading "UX Process & Innovation" [level=3] [ref=e209]:
+          - generic [ref=e210]: UX Process & Innovation
+        - generic [ref=e211]:
+          - generic [ref=e212] [cursor=pointer]:
+            - link "AI Native Tech Stack" [ref=e213]:
+              - /url: /ux/ai-native-tech-stack
+            - generic [ref=e214]:
+              - img "AI Native Tech Stack"
+            - generic:
+              - generic:
+                - generic:
+                  - img
+                - text: AI Native Tech Stack
+          - generic [ref=e215] [cursor=pointer]:
+            - link "Human-Centered AI (HCAI)" [ref=e216]:
+              - /url: /ux/human-centered-ai-hcai
+            - generic [ref=e217]:
+              - img "Human-Centered AI (HCAI)"
+            - generic:
+              - generic:
+                - generic:
+                  - img
+                - text: Human-Centered AI (HCAI)
+          - generic [ref=e218] [cursor=pointer]:
+            - link "UX R.A.D.A.R. Process" [ref=e219]:
+              - /url: /ux/ux-radar-process
+            - generic [ref=e220]:
+              - img "UX R.A.D.A.R. Process"
+            - generic:
+              - generic:
+                - generic:
+                  - img
+                - text: UX R.A.D.A.R. Process
+          - generic [ref=e221] [cursor=pointer]:
+            - link "#OneUX Enterprise UX Inclusion" [ref=e222]:
+              - /url: /ux/oneux-enterprise-ux-inclusion
+            - generic [ref=e223]:
+              - img "#OneUX Enterprise UX Inclusion"
+            - generic:
+              - generic:
+                - generic:
+                  - img
+                - text: "#OneUX Enterprise UX Inclusion"
+          - generic [ref=e224] [cursor=pointer]:
+            - link "UX Toolkit" [ref=e225]:
+              - /url: /ux/ux-toolkit
+            - generic [ref=e226]:
+              - img "UX Toolkit"
+            - generic:
+              - generic:
+                - generic:
+                  - img
+                - text: UX Toolkit
+          - generic [ref=e227] [cursor=pointer]:
+            - link "Persona Project" [ref=e228]:
+              - /url: /ux/persona-project
+            - generic [ref=e229]:
+              - img "Persona Project"
+            - generic:
+              - generic:
+                - generic:
+                  - img
+                - text: Persona Project
+          - generic [ref=e230] [cursor=pointer]:
+            - link "UX Summits & Workshops" [ref=e231]:
+              - /url: /ux/ux-summits-workshops
+            - generic [ref=e232]:
+              - img "UX Summits & Workshops"
+            - generic:
+              - generic:
+                - generic:
+                  - img
+                - text: UX Summits & Workshops
+          - generic [ref=e233] [cursor=pointer]:
+            - link "Super Hero Agile" [ref=e234]:
+              - /url: /ux/super-hero-agile
+            - generic [ref=e235]:
+              - img "Super Hero Agile"
+            - generic:
+              - generic:
+                - generic:
+                  - img
+                - text: Super Hero Agile
+      - generic [ref=e238]:
+        - paragraph [ref=e240]:
+          - text: Profiles
+          - link "LinkedIn" [ref=e241] [cursor=pointer]:
+            - /url: http://linkedin.com/in/kyleledbetter
+          - link "Twitter" [ref=e242] [cursor=pointer]:
+            - /url: https://twitter.com/kyleledbetter
+          - link "Github" [ref=e243] [cursor=pointer]:
+            - /url: http://github.com/kyleledbetter
+          - link "Medium" [ref=e244] [cursor=pointer]:
+            - /url: https://kyleledbetter.medium.com/
+        - generic [ref=e245]:
+          - paragraph [ref=e246]: © Kyle Ledbetter
+          - link "Resume" [ref=e247] [cursor=pointer]:
+            - /url: /resume
+            - img [ref=e249]
+            - generic [ref=e251]: Resume
+          - link "Portfolio" [ref=e252] [cursor=pointer]:
+            - /url: /portfolio
+            - img [ref=e254]
+            - generic [ref=e256]: Portfolio
+  - alert [ref=e260]

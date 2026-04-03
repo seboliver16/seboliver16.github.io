@@ -1,0 +1,11 @@
+[    2047ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://dash.cloudflare.com/api/v4/accounts/b82ac7968a160d3fdd5bf00c4ff3e3e2/access/organizations:0
+[    2305ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://dash.cloudflare.com/api/v4/accounts/b82ac7968a160d3fdd5bf00c4ff3e3e2/access/organizations:0
+[    2808ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://dash.cloudflare.com/api/v4/accounts/b82ac7968a160d3fdd5bf00c4ff3e3e2/access/organizations:0
+[    2966ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://dash.cloudflare.com/api/v4/zones/f03dee82cdac8f03d240b2fa6362b93d/subscription:0
+[    3271ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://r.stripe.com/b:0
+[    3271ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://r.stripe.com/b:0
+[    3274ms] FetchError: Error fetching https://r.stripe.com/b: Failed to fetch
+    at https://js.stripe.com/v3/fingerprinted/js/shared-e-77bc8e89bc5fd2ef523b268cf28dd7e1.js:1:243963
+[    3275ms] FetchError: Error fetching https://r.stripe.com/b: Failed to fetch
+    at https://js.stripe.com/v3/fingerprinted/js/shared-e-77bc8e89bc5fd2ef523b268cf28dd7e1.js:1:243963
+[    3678ms] [LOG] WebSocket connected to: ws.support-chat.cloudflare.dev @ https://dash.cloudflare.com/cf-283347cf5c5e217f.js:2

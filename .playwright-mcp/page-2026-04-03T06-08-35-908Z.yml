@@ -1,0 +1,169 @@
+- generic [ref=e2]:
+  - navigation:
+    - generic [ref=e3]:
+      - heading "Tom MacWright" [level=2] [ref=e4]:
+        - link "Tom MacWright" [ref=e5] [cursor=pointer]:
+          - /url: https://macwright.com/
+      - list [ref=e6]:
+        - listitem [ref=e7]:
+          - link "Writing" [ref=e8] [cursor=pointer]:
+            - /url: https://macwright.com/writing/
+        - listitem [ref=e9]:
+          - link "Reading" [ref=e10] [cursor=pointer]:
+            - /url: https://macwright.com/reading/
+        - listitem [ref=e11]:
+          - link "Photos" [ref=e12] [cursor=pointer]:
+            - /url: https://macwright.com/photos/
+        - listitem [ref=e13]:
+          - link "Projects" [ref=e14] [cursor=pointer]:
+            - /url: https://macwright.com/projects/
+        - listitem [ref=e15]:
+          - link "Drawings" [ref=e16] [cursor=pointer]:
+            - /url: https://macwright.com/drawings/
+        - listitem [ref=e17]:
+          - link "Micro" [ref=e18] [cursor=pointer]:
+            - /url: https://macwright.com/micro/
+        - listitem [ref=e19]:
+          - link "About" [ref=e20] [cursor=pointer]:
+            - /url: https://macwright.com/about/
+  - generic [ref=e21]:
+    - button "Auto" [ref=e22]
+    - button "Light" [ref=e23]
+    - button "Dark" [ref=e24]
+  - generic [ref=e25]:
+    - link "Writing ⇢" [ref=e26] [cursor=pointer]:
+      - /url: https://macwright.com/writing/
+    - generic [ref=e27]:
+      - link "Recently" [ref=e29] [cursor=pointer]:
+        - /url: https://macwright.com/2026/04/01/recently
+      - time [ref=e30]: 2026-04-01
+      - link "I haven't made anything with AT Proto yet" [ref=e32] [cursor=pointer]:
+        - /url: https://macwright.com/2026/03/16/atproto
+      - time [ref=e33]: 2026-03-16
+      - link "Recently" [ref=e35] [cursor=pointer]:
+        - /url: https://macwright.com/2026/03/01/recently
+      - time [ref=e36]: 2026-03-01
+      - link "New tote bag" [ref=e38] [cursor=pointer]:
+        - /url: https://macwright.com/2026/02/25/new-tote
+      - time [ref=e39]: 2026-02-25
+      - link "Color dithering" [ref=e41] [cursor=pointer]:
+        - /url: https://macwright.com/2026/02/22/color-dithering
+      - time [ref=e42]: 2026-02-22
+      - link "Recently" [ref=e44] [cursor=pointer]:
+        - /url: https://macwright.com/2026/02/03/recently
+      - time [ref=e45]: 2026-02-03
+      - link "Sketches" [ref=e47] [cursor=pointer]:
+        - /url: https://macwright.com/2026/01/31/sketches
+      - time [ref=e48]: 2026-01-31
+      - link "Theme selector" [ref=e50] [cursor=pointer]:
+        - /url: https://macwright.com/2025/12/09/theme-selector
+      - time [ref=e51]: 2025-12-09
+      - link "A brief history of specifiers and protocols" [ref=e53] [cursor=pointer]:
+        - /url: https://macwright.com/2025/12/08/module-specifiers-and-protocols
+      - time [ref=e54]: 2025-12-08
+      - link "2025 Year in Review" [ref=e56] [cursor=pointer]:
+        - /url: https://macwright.com/2025/12/07/year-in-review
+      - time [ref=e57]: 2025-12-07
+    - link "Micro ⇢" [ref=e58] [cursor=pointer]:
+      - /url: https://macwright.com/micro/
+    - generic [ref=e59]:
+      - link "How to contribute to open source" [ref=e61] [cursor=pointer]:
+        - /url: https://macwright.com/2026/03/26/oss-contributions
+      - time [ref=e62]: 2026-03-26
+      - 'link "Effect notes: PRs, progress, and joys" [ref=e64] [cursor=pointer]':
+        - /url: https://macwright.com/2026/03/18/effect-devlog
+      - time [ref=e65]: 2026-03-18
+      - link "Placemark & OSS Changelog" [ref=e67] [cursor=pointer]:
+        - /url: https://macwright.com/2026/03/15/oss-changelog
+      - time [ref=e68]: 2026-03-15
+      - link "ROOTS - Return Old Online Things to your own Site" [ref=e70] [cursor=pointer]:
+        - /url: https://macwright.com/2026/03/12/roots
+      - time [ref=e71]: 2026-03-12
+      - link "Reactionary AI Centrism" [ref=e73] [cursor=pointer]:
+        - /url: https://macwright.com/2026/02/12/reactionary-ai-centrism
+      - time [ref=e74]: 2026-02-12
+    - link "Photos ⇢" [ref=e75] [cursor=pointer]:
+      - /url: https://macwright.com/photos/
+    - generic [ref=e76]:
+      - generic [ref=e77]:
+        - link "Harpers Ferry":
+          - /url: https://macwright.com/2025/10/13/harpers-ferry
+          - generic:
+            - img "Harpers Ferry"
+      - generic [ref=e78]:
+        - link "Along the C&O trail":
+          - /url: https://macwright.com/2025/09/26/vertical-trees
+          - generic:
+            - img "Along the C&O trail"
+      - generic [ref=e79]:
+        - link "Tree down the C&O trail":
+          - /url: https://macwright.com/2025/09/26/tree-down
+          - generic:
+            - img "Tree down the C&O trail"
+      - generic [ref=e80]:
+        - link "Sorrel Ridge down the C&O trail":
+          - /url: https://macwright.com/2025/09/26/sorrell-ridge
+          - generic:
+            - img "Sorrel Ridge down the C&O trail"
+      - generic [ref=e81]:
+        - link "Along the C&O trail":
+          - /url: https://macwright.com/2025/09/26/riding
+          - generic:
+            - img "Along the C&O trail"
+    - link "Drawings ⇢" [ref=e82] [cursor=pointer]:
+      - /url: https://macwright.com/drawings/
+    - generic [ref=e83]:
+      - generic [ref=e84]:
+        - link "Titanic":
+          - /url: https://macwright.com/2026/03/31/titanic
+          - generic:
+            - img "Titanic"
+      - generic [ref=e85]:
+        - link "Mushrooms":
+          - /url: https://macwright.com/2026/03/25/mushrooms
+          - generic:
+            - img "Mushrooms"
+      - generic [ref=e86]:
+        - link "Portraits":
+          - /url: https://macwright.com/2026/03/17/landscape
+          - generic:
+            - img "Portraits"
+      - generic [ref=e87]:
+        - link "David Lynch":
+          - /url: https://macwright.com/2026/03/16/lynch
+          - generic:
+            - img "David Lynch"
+      - generic [ref=e88]:
+        - link "Portraits":
+          - /url: https://macwright.com/2026/03/02/more-faces
+          - generic:
+            - img "Portraits"
+    - link "Reading ⇢" [ref=e89] [cursor=pointer]:
+      - /url: https://macwright.com/reading/
+    - generic [ref=e90]:
+      - link "Shop Class as Soulcraft" [ref=e92] [cursor=pointer]:
+        - /url: https://macwright.com/2026/03/01/shop-class-as-soulcraft
+      - generic [ref=e93]: Matthew B. Crawford
+      - time [ref=e94]: 2026-03-01
+      - img [ref=e96]
+      - link "Apple in China" [ref=e103] [cursor=pointer]:
+        - /url: https://macwright.com/2026/02/11/apple-in-china
+      - generic [ref=e104]: Patrick McGee
+      - time [ref=e105]: 2026-02-11
+      - img [ref=e107]
+      - link "Six Centuries of Type and Printing" [ref=e114] [cursor=pointer]:
+        - /url: https://macwright.com/2026/02/01/six-centuries-of-type-and-printing
+      - generic [ref=e115]: Glenn Fleishman
+      - time [ref=e116]: 2026-02-01
+      - img [ref=e118]
+      - link "Pageboy" [ref=e124] [cursor=pointer]:
+        - /url: https://macwright.com/2026/01/14/pageboy
+      - generic [ref=e125]: Elliot Page
+      - time [ref=e126]: 2026-01-14
+      - img [ref=e128]
+      - link "Every Day Is For The Thief" [ref=e134] [cursor=pointer]:
+        - /url: https://macwright.com/2026/01/10/every-day-is-for-the-thief
+      - generic [ref=e135]: Teju Cole
+      - time [ref=e136]: 2026-01-10
+      - img [ref=e138]
+    - img [ref=e144]

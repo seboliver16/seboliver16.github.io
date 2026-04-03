@@ -1,0 +1,450 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e5]: Public Preview
+      - generic [ref=e6]: ·
+      - link "Watch demo" [ref=e7] [cursor=pointer]:
+        - /url: /#demo
+    - banner [ref=e9]:
+      - generic [ref=e10]:
+        - link "J Julie" [ref=e11] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e13]: J
+          - generic [ref=e14]: Julie
+        - navigation [ref=e15]:
+          - link "How it works" [ref=e16] [cursor=pointer]:
+            - /url: "#how-it-works"
+            - text: How it works
+          - link "Demo" [ref=e18] [cursor=pointer]:
+            - /url: "#demo"
+            - text: Demo
+          - link "Pricing" [ref=e20] [cursor=pointer]:
+            - /url: "#pricing"
+            - text: Pricing
+          - link "FAQ" [ref=e22] [cursor=pointer]:
+            - /url: "#faq"
+            - text: FAQ
+        - generic [ref=e24]:
+          - link "Sign in" [ref=e25] [cursor=pointer]:
+            - /url: /signin
+          - link "Get Started" [ref=e26] [cursor=pointer]:
+            - /url: /signup
+    - generic [ref=e27]:
+      - generic [ref=e29]:
+        - heading "Find anyone, anywhere, powered by AI." [level=1] [ref=e30]:
+          - generic [ref=e31]: Find anyone,
+          - generic [ref=e32]: anywhere, powered by AI.
+        - generic [ref=e33]:
+          - generic [ref=e35]:
+            - generic [ref=e36]:
+              - img [ref=e37]
+              - textbox "Describe who you're looking for..." [ref=e40]
+            - button "Search" [ref=e41]:
+              - text: Search
+              - img [ref=e42]
+          - generic [ref=e44]:
+            - generic [ref=e45]: "Try:"
+            - button "\"Founders at AI startups in San Francisco\"" [ref=e46]
+        - paragraph [ref=e47]: The autonomous agent that finds, qualifies, and reaches professionals across sales, recruiting, marketing, and research.
+      - generic [ref=e52]:
+        - generic [ref=e53]:
+          - heading "Why teams choose Julie" [level=2] [ref=e54]
+          - paragraph [ref=e55]: Traditional prospecting is slow and manual. Julie reasons like a researcher but operates at the speed of code, giving you a competitive edge across every outreach campaign.
+        - generic [ref=e56]:
+          - generic [ref=e57]:
+            - img [ref=e58]
+            - generic [ref=e61]: Global Reach
+            - generic [ref=e62]: Access 500M+ profiles worldwide
+          - generic [ref=e63]:
+            - img [ref=e64]
+            - generic [ref=e67]: Verified Emails
+            - generic [ref=e68]: Waterfall enrichment from 20+ sources
+          - generic [ref=e69]:
+            - img [ref=e70]
+            - generic [ref=e73]: Multi-Channel
+            - generic [ref=e74]: Email sequences & follow-ups
+          - generic [ref=e75]:
+            - img [ref=e76]
+            - generic [ref=e79]: Track Results
+            - generic [ref=e80]: Full pipeline visibility
+    - generic [ref=e82]:
+      - generic [ref=e83]:
+        - heading "One platform, endless possibilities" [level=2] [ref=e84]
+        - paragraph [ref=e85]: From VCs sourcing founders to recruiters finding talent, Julie adapts to your workflow.
+      - generic [ref=e86]:
+        - button "Investing" [ref=e87]:
+          - img [ref=e88]
+          - text: Investing
+        - button "Sales" [ref=e91]:
+          - img [ref=e92]
+          - text: Sales
+        - button "Recruiting" [ref=e96]:
+          - img [ref=e97]
+          - text: Recruiting
+        - button "Marketing" [ref=e102]:
+          - img [ref=e103]
+          - text: Marketing
+        - button "Research" [ref=e106]:
+          - img [ref=e107]
+          - text: Research
+        - button "Finance" [ref=e110]:
+          - img [ref=e111]
+          - text: Finance
+      - generic [ref=e116]:
+        - generic [ref=e117]:
+          - generic [ref=e119]: VC Investor
+          - heading "Identify promising founders and executives for deal sourcing" [level=3] [ref=e120]
+          - generic [ref=e121]:
+            - generic [ref=e122]: Example Query
+            - paragraph [ref=e123]: "\"Find me Founders in San Francisco from Ivy Leagues in companies with less than 20 people in AI\""
+        - generic [ref=e124]:
+          - generic [ref=e125]:
+            - generic [ref=e126]:
+              - img [ref=e127]
+              - generic [ref=e130]: Found 3 matches
+            - generic [ref=e131]: High Relevance
+          - generic [ref=e132]:
+            - generic [ref=e133]:
+              - generic [ref=e134]:
+                - generic [ref=e135]:
+                  - generic [ref=e136]: SC
+                  - generic [ref=e137]:
+                    - heading "Sarah Chen" [level=5] [ref=e138]
+                    - paragraph [ref=e139]: Founder & CEO @ Nexus AI
+                - generic [ref=e140]:
+                  - img [ref=e141]
+                  - text: 98%
+              - generic [ref=e143]:
+                - generic [ref=e144]: Stanford MBA
+                - generic [ref=e145]: Ex-Google
+                - generic [ref=e146]: Series A
+            - generic [ref=e147]:
+              - generic [ref=e148]:
+                - generic [ref=e149]:
+                  - generic [ref=e150]: MW
+                  - generic [ref=e151]:
+                    - heading "Marcus Williams" [level=5] [ref=e152]
+                    - paragraph [ref=e153]: Co-founder @ Synthia
+                - generic [ref=e154]: 94%
+              - generic [ref=e155]:
+                - generic [ref=e156]: Harvard CS
+                - generic [ref=e157]: YC W24
+                - generic [ref=e158]: 12 employees
+            - generic [ref=e159]:
+              - generic [ref=e160]:
+                - generic [ref=e161]:
+                  - generic [ref=e162]: ER
+                  - generic [ref=e163]:
+                    - heading "Elena Rodriguez" [level=5] [ref=e164]
+                    - paragraph [ref=e165]: CEO @ DataForge
+                - generic [ref=e166]: 91%
+              - generic [ref=e167]:
+                - generic [ref=e168]: MIT PhD
+                - generic [ref=e169]: Ex-Meta AI
+                - generic [ref=e170]: Pre-seed
+    - generic [ref=e172]:
+      - generic [ref=e173]:
+        - heading "See Julie in action" [level=2] [ref=e174]
+        - paragraph [ref=e175]: Watch how Julie transforms a simple query into qualified experts in minutes.
+      - generic [ref=e177]:
+        - generic [ref=e178]: Your browser does not support the video tag.
+        - button "Play video" [ref=e179] [cursor=pointer]:
+          - img [ref=e181]
+    - generic [ref=e183]:
+      - generic [ref=e186]:
+        - generic [ref=e187]:
+          - generic [ref=e188]:
+            - heading "The outreach engine that never stops." [level=2] [ref=e189]:
+              - text: The outreach engine
+              - text: that never stops.
+            - paragraph [ref=e190]: Automate the tedious parts of prospecting. Julie finds, qualifies, and engages professionals while you focus on closing.
+          - generic [ref=e191]:
+            - button "Describe your target Tell Julie who you're looking for using natural language. She understands job titles, companies, skills, locations, and complex criteria." [ref=e193]:
+              - heading "Describe your target" [level=3] [ref=e195]
+              - paragraph [ref=e196]: Tell Julie who you're looking for using natural language. She understands job titles, companies, skills, locations, and complex criteria.
+            - button "AI finds matches Julie scans millions of profiles to find the perfect matches, not just keyword hits. She ranks them by fit to your specific requirements." [ref=e198]:
+              - heading "AI finds matches" [level=3] [ref=e200]
+              - paragraph [ref=e201]: Julie scans millions of profiles to find the perfect matches, not just keyword hits. She ranks them by fit to your specific requirements.
+            - button "Automated outreach Julie crafts personalized email sequences and follows up automatically. You get notified when prospects engage." [ref=e203]:
+              - heading "Automated outreach" [level=3] [ref=e205]
+              - paragraph [ref=e206]: Julie crafts personalized email sequences and follows up automatically. You get notified when prospects engage.
+        - generic [ref=e209]:
+          - generic [ref=e215]: julie.ai/campaign/prospecting
+          - generic [ref=e219]:
+            - generic [ref=e220]:
+              - generic [ref=e221]:
+                - generic [ref=e222]: J
+                - generic [ref=e223]:
+                  - generic [ref=e224]: Julie AI
+                  - generic [ref=e225]: Online
+              - img [ref=e227]
+            - generic [ref=e231]:
+              - generic [ref=e233]: I need to find decision makers at mid-market companies in the midwest who are currently using a competitor's product.
+              - generic [ref=e234]:
+                - generic [ref=e235]: J
+                - generic [ref=e236]:
+                  - paragraph [ref=e237]: "Got it! I'll target the following profile:"
+                  - generic [ref=e238]:
+                    - generic [ref=e239]:
+                      - generic [ref=e240]: "Titles:"
+                      - generic [ref=e241]: VP, Director, Head of
+                    - generic [ref=e242]:
+                      - generic [ref=e243]: "Region:"
+                      - generic [ref=e244]: Midwest (IL, OH, MI, WI, MN)
+                    - generic [ref=e245]:
+                      - generic [ref=e246]: "Size:"
+                      - generic [ref=e247]: 100-1000 employees
+      - generic [ref=e250]:
+        - paragraph [ref=e251]: With Deep Industry Experience
+        - generic [ref=e252]:
+          - img "Amazon Web Services" [ref=e254]
+          - img "Bain & Company" [ref=e256]
+          - img "Deloitte" [ref=e258]
+          - img "Merrill Lynch" [ref=e260]
+          - img "PwC" [ref=e262]
+      - generic [ref=e265]:
+        - generic [ref=e266]:
+          - heading "The most accurate emails. Period." [level=2] [ref=e267]:
+            - text: The most accurate emails.
+            - text: Period.
+          - paragraph [ref=e268]: We aggregate 20+ premium data sources using waterfall enrichment. If one provider doesn't have the email, we try the next. Automatically.
+          - generic [ref=e269]:
+            - generic [ref=e270]:
+              - img [ref=e271]
+              - generic [ref=e274]: Triple-verified before delivery
+            - generic [ref=e275]:
+              - img [ref=e276]
+              - generic [ref=e279]: <1% bounce rate guarantee
+            - generic [ref=e280]:
+              - img [ref=e281]
+              - generic [ref=e284]: Catch-all domain validation
+        - generic [ref=e286]:
+          - generic [ref=e287]:
+            - generic [ref=e288]: 20+
+            - generic [ref=e289]: Data Sources
+          - generic [ref=e290]:
+            - generic [ref=e291]: Apollo ·
+            - generic [ref=e292]: ZoomInfo ·
+            - generic [ref=e293]: Clearbit ·
+            - generic [ref=e294]: Hunter ·
+            - generic [ref=e295]: Lusha ·
+            - generic [ref=e296]: RocketReach ·
+            - generic [ref=e297]: Cognism ·
+            - generic [ref=e298]: Kaspr
+            - generic [ref=e299]: + 12 more
+      - generic [ref=e301]:
+        - generic [ref=e302]:
+          - paragraph [ref=e303]: Pricing
+          - heading "Simple, transparent pricing" [level=2] [ref=e304]
+          - paragraph [ref=e305]: Pay only for the profiles you reveal. No hidden fees. Scale up or down as your team grows.
+        - generic [ref=e306]:
+          - generic [ref=e308]:
+            - generic [ref=e309]:
+              - heading "Free" [level=3] [ref=e310]
+              - paragraph [ref=e311]: For testing the waters
+            - generic [ref=e312]: $0
+            - list [ref=e314]:
+              - listitem [ref=e315]:
+                - img [ref=e316]
+                - generic [ref=e318]: 10 credits included
+              - listitem [ref=e319]:
+                - img [ref=e320]
+                - generic [ref=e322]: AI-powered search
+              - listitem [ref=e323]:
+                - img [ref=e324]
+                - generic [ref=e326]: Email outreach sequences
+              - listitem [ref=e327]:
+                - img [ref=e328]
+                - generic [ref=e330]: Basic filters
+            - link "Get Started" [ref=e331] [cursor=pointer]:
+              - /url: /signup?redirect=/dashboard?tab=billing
+          - generic [ref=e333]:
+            - generic [ref=e334]:
+              - heading "Starter" [level=3] [ref=e335]
+              - paragraph [ref=e336]: For solo researchers
+            - generic [ref=e338]:
+              - generic [ref=e339]: $10
+              - generic [ref=e340]: /mo
+            - list [ref=e342]:
+              - listitem [ref=e343]:
+                - img [ref=e344]
+                - generic [ref=e346]: 100 credits/month
+              - listitem [ref=e347]:
+                - img [ref=e348]
+                - generic [ref=e350]: Unused credits roll over
+              - listitem [ref=e351]:
+                - img [ref=e352]
+                - generic [ref=e354]: Advanced filters
+              - listitem [ref=e355]:
+                - img [ref=e356]
+                - generic [ref=e358]: Email support
+              - listitem [ref=e359]:
+                - img [ref=e360]
+                - generic [ref=e362]: Top up anytime
+            - link "Get Started" [ref=e363] [cursor=pointer]:
+              - /url: /signup?redirect=/dashboard?tab=billing
+          - generic [ref=e366]:
+            - generic [ref=e367]:
+              - generic [ref=e368]:
+                - heading "Growth" [level=3] [ref=e369]
+                - generic [ref=e370]: Popular
+              - paragraph [ref=e371]: Scale your outreach
+            - generic [ref=e372]:
+              - generic [ref=e373]:
+                - generic [ref=e374]: $45
+                - generic [ref=e375]: /mo
+              - paragraph [ref=e376]: 500 credits
+            - generic [ref=e377]:
+              - slider [ref=e378] [cursor=pointer]: "1"
+              - generic [ref=e379]:
+                - generic [ref=e380]: "200"
+                - generic [ref=e381]: 5k+
+            - list [ref=e383]:
+              - listitem [ref=e384]:
+                - img [ref=e385]
+                - generic [ref=e387]: Everything in Starter
+              - listitem [ref=e388]:
+                - img [ref=e389]
+                - generic [ref=e391]: Volume discounts up to 60%
+              - listitem [ref=e392]:
+                - img [ref=e393]
+                - generic [ref=e395]: Team collaboration
+              - listitem [ref=e396]:
+                - img [ref=e397]
+                - generic [ref=e399]: Priority support
+              - listitem [ref=e400]:
+                - img [ref=e401]
+                - generic [ref=e403]: CSV export
+            - link "Get Started" [ref=e404] [cursor=pointer]:
+              - /url: /signup?redirect=/dashboard?tab=billing
+          - generic [ref=e406]:
+            - generic [ref=e407]:
+              - heading "Pro" [level=3] [ref=e408]
+              - paragraph [ref=e409]: Full expert network
+            - generic [ref=e410]: Custom
+            - list [ref=e412]:
+              - listitem [ref=e413]:
+                - img [ref=e414]
+                - generic [ref=e416]: Unlimited discovery & outreach
+              - listitem [ref=e417]:
+                - img [ref=e418]
+                - generic [ref=e420]: Pay only when experts complete calls
+              - listitem [ref=e421]:
+                - img [ref=e422]
+                - generic [ref=e424]: Expert payouts & compliance
+              - listitem [ref=e425]:
+                - img [ref=e426]
+                - generic [ref=e428]: Call scheduling & calendar
+              - listitem [ref=e429]:
+                - img [ref=e430]
+                - generic [ref=e432]: Custom questionnaires
+              - listitem [ref=e433]:
+                - img [ref=e434]
+                - generic [ref=e436]: Dedicated success manager
+            - link "Contact Sales" [ref=e437] [cursor=pointer]:
+              - /url: /contact?subject=Pro%20Plan%20Inquiry
+        - generic [ref=e438]:
+          - paragraph [ref=e439]: "Free, Starter & Growth: 0.5 credits per fast search, 1 credit per thinking search, 1 credit per enrich + send. No email found = no credit charged."
+          - paragraph [ref=e440]: "Pro (Expert Network): Unlimited usage. Billed per completed expert call."
+      - generic [ref=e443]:
+        - generic [ref=e444]:
+          - generic [ref=e445]:
+            - heading "Questions?" [level=2] [ref=e446]
+            - paragraph [ref=e447]: Everything you need to know about the platform and billing.
+          - generic [ref=e448]:
+            - link "Contact us Get help within 24 hours" [ref=e449] [cursor=pointer]:
+              - /url: /contact
+              - img [ref=e451]
+              - generic [ref=e454]:
+                - generic [ref=e455]: Contact us
+                - generic [ref=e456]: Get help within 24 hours
+            - link "Book a demo Schedule a walkthrough" [ref=e457] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e459]
+              - generic [ref=e461]:
+                - generic [ref=e462]: Book a demo
+                - generic [ref=e463]: Schedule a walkthrough
+        - generic [ref=e465]:
+          - generic [ref=e467]:
+            - button "What is Julie?" [ref=e468]:
+              - generic [ref=e469]: What is Julie?
+              - img [ref=e471]
+            - generic [ref=e473]: Julie is an AI-powered expert discovery platform that helps professional services teams find and connect with industry specialists for due diligence and research projects.
+          - generic [ref=e475]:
+            - button "Who is this for?" [ref=e476]:
+              - generic [ref=e477]: Who is this for?
+              - img [ref=e479]
+            - generic [ref=e481]: Built specifically for PE, Consulting, and VC professionals conducting due diligence, market research, and strategic analysis.
+          - generic [ref=e483]:
+            - button "How quickly can I connect with experts?" [ref=e484]:
+              - generic [ref=e485]: How quickly can I connect with experts?
+              - img [ref=e487]
+            - generic [ref=e489]: Our AI typically identifies relevant experts within 2 minutes, with most expert calls scheduled within 24-48 hours.
+          - generic [ref=e491]:
+            - button "How does pricing work?" [ref=e492]:
+              - generic [ref=e493]: How does pricing work?
+              - img [ref=e495]
+            - generic [ref=e497]: Transparent, project-based pricing with no hidden fees or setup costs. Contact us for detailed pricing tailored to your needs.
+      - generic [ref=e498]:
+        - generic [ref=e499]:
+          - generic [ref=e500]:
+            - img [ref=e501]
+            - generic [ref=e503]: Start Free
+          - heading "Ready to transform your outreach?" [level=2] [ref=e504]:
+            - text: Ready to transform your
+            - text: outreach?
+          - paragraph [ref=e505]: Join thousands of sales, recruiting, and marketing teams using Julie to connect with the right people, faster.
+          - generic [ref=e506]:
+            - link "Start Discovery" [ref=e507] [cursor=pointer]:
+              - /url: /signup
+              - text: Start Discovery
+              - img [ref=e508]
+            - link "Book a Demo" [ref=e510] [cursor=pointer]:
+              - /url: /contact?subject=Demo%20Request
+        - generic: JULIE AI
+    - contentinfo [ref=e511]:
+      - generic [ref=e512]:
+        - generic [ref=e514]:
+          - generic [ref=e515]:
+            - generic [ref=e516]:
+              - generic [ref=e518]: J
+              - generic [ref=e519]: Julie
+            - paragraph [ref=e520]: Advanced AI Agent for Expert Discovery
+            - paragraph [ref=e521]: Find the right expert to accelerate your research.
+          - generic [ref=e522]:
+            - heading "Product" [level=3] [ref=e523]
+            - list [ref=e524]:
+              - listitem [ref=e525]:
+                - link "Dashboard" [ref=e526] [cursor=pointer]:
+                  - /url: /dashboard
+              - listitem [ref=e527]:
+                - link "Expert" [ref=e528] [cursor=pointer]:
+                  - /url: /expert
+              - listitem [ref=e529]:
+                - link "Company" [ref=e530] [cursor=pointer]:
+                  - /url: /company
+          - generic [ref=e531]:
+            - heading "About" [level=3] [ref=e532]
+            - list [ref=e533]:
+              - listitem [ref=e534]:
+                - link "About" [ref=e535] [cursor=pointer]:
+                  - /url: /about
+              - listitem [ref=e536]:
+                - link "Contact" [ref=e537] [cursor=pointer]:
+                  - /url: /contact
+          - generic [ref=e538]:
+            - heading "Resources" [level=3] [ref=e539]
+            - list [ref=e540]:
+              - listitem [ref=e541]:
+                - link "Documentation" [ref=e542] [cursor=pointer]:
+                  - /url: /documentation
+              - listitem [ref=e543]:
+                - link "Privacy" [ref=e544] [cursor=pointer]:
+                  - /url: /privacy
+              - listitem [ref=e545]:
+                - link "Terms" [ref=e546] [cursor=pointer]:
+                  - /url: /terms
+        - generic [ref=e547]:
+          - generic [ref=e548]: Julie AI — Vol. I — 2026
+          - generic [ref=e549]: sebastian@julieai.dev
+  - alert [ref=e550]

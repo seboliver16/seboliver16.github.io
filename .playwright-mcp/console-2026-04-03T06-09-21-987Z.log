@@ -1,0 +1,28 @@
+[    1514ms] [WARNING] Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently @ https://labs.ramp.com/assets/main-C60RB053.js:3402
+[    1551ms] [LOG] %c                                    #%
+                                    *++#
+                                    *-:-*%
+                                   %#:---=+
+                                   #+:-===+#
+                                  @#.====+*#
+                                  #=-====+*#
+                                 %+-===+++*
+                                @*--==++++#
+                               #*:==+++==*
+                              #+:=+++++=+@
+                             #+:=+++++=+
+                           #*--++++++++#
+                          #+-=++++++=+%
+                        #*:=++++++++#
+                      #+-=+++++++*+%
+                   #*=-=++++++***#
+                #*=:=+++++****##%
+            #**=:=+++++++***#%@
+    @#*#*+=---=+++++++++**#%%
+%*--:---==++++++++++*+*##%@   #+=========+#
+ @#====+++++++++++++#%#@    #+-+*********+=*%
+   %#==+++++++**#%%%@    #*==**************+=*#
+     %######%%%%@     %#==++++***************++#%
+                     %#########%###%%###########%% background: linear-gradient(45deg, #C0C0C0, #E8E8E8, #A8A8A8, #D3D3D3); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-family: monospace; font-size: 12px; line-height: 12px; letter-spacing: unset; font-weight: bold; @ https://labs.ramp.com/assets/vendor-utils-Cp7dp4lM.js:7
+[    1551ms] [LOG] %cWe're hiring at Ramp! font-size: 14px; font-weight: 700; @ https://labs.ramp.com/assets/vendor-utils-Cp7dp4lM.js:7
+[    1551ms] [LOG] %chttps://jobs.ashbyhq.com/ramp?utm_source=RampLabs font-size: 12px; font-weight: normal; @ https://labs.ramp.com/assets/vendor-utils-Cp7dp4lM.js:7

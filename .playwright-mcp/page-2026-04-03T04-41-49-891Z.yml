@@ -1,0 +1,150 @@
+- generic [active] [ref=e1]:
+  - banner:
+    - navigation [ref=e2]:
+      - list [ref=e3]:
+        - listitem [ref=e4]:
+          - link "Home" [ref=e5] [cursor=pointer]:
+            - /url: /
+        - listitem [ref=e6]:
+          - link "Products" [ref=e7] [cursor=pointer]:
+            - /url: /products/
+        - listitem [ref=e8]:
+          - link "Free Resources" [ref=e9] [cursor=pointer]:
+            - /url: /free-resources/
+        - listitem [ref=e10]:
+          - link "Posts" [ref=e11] [cursor=pointer]:
+            - /url: /posts/
+        - listitem [ref=e12]:
+          - link "About" [ref=e13] [cursor=pointer]:
+            - /url: /about/
+        - listitem [ref=e14]:
+          - link "Newsletter" [ref=e15] [cursor=pointer]:
+            - /url: /newsletter/
+  - banner [ref=e16]:
+    - img "Dan Mall" [ref=e17]
+    - img "Dan Mall" [ref=e20]
+    - list [ref=e21]:
+      - listitem [ref=e22]: April 2026
+      - listitem [ref=e23]: Philadelphia
+      - listitem [ref=e24]: Loading…
+  - generic [ref=e26]:
+    - heading "Showing you how to use design to live a better life." [level=2] [ref=e28]
+    - img "Dan Mall" [ref=e30]
+  - generic [ref=e34]:
+    - heading "Dan Mall Teaches" [level=1] [ref=e35]
+    - paragraph [ref=e36]: Join 66,800+ subscribers and get tips, tricks, and tools about design systems, process, and leadership, delivered to your inbox every Friday.
+    - generic [ref=e39]:
+      - textbox "Email Address" [ref=e41]
+      - button "Subscribe" [ref=e42] [cursor=pointer]:
+        - generic [ref=e43]: Subscribe
+  - generic [ref=e44]:
+    - heading "Products" [level=1] [ref=e45]:
+      - link "Products" [ref=e46] [cursor=pointer]:
+        - /url: /products/
+    - paragraph [ref=e47]: My courses and books have helped designers at some of the world’s most recognized companies.
+    - generic [ref=e49]:
+      - generic [ref=e50]:
+        - img [ref=e51]
+        - img [ref=e58]
+        - img [ref=e60]
+        - img [ref=e62]
+        - img [ref=e72]
+        - img [ref=e74]
+        - img [ref=e77]
+        - img [ref=e91]
+        - img [ref=e95]
+        - img [ref=e105]
+        - img [ref=e114]
+        - img [ref=e122]
+      - generic [ref=e160]:
+        - heading "Scaling Design Systems Scaling Design Systems" [level=2] [ref=e161]:
+          - link "Scaling Design Systems Scaling Design Systems" [ref=e162] [cursor=pointer]:
+            - /url: https://dribbble.com/courses/design-systems?discount=design-systems-course-30-off&amp;utm_medium=facilitator&amp;utm_source=danmall
+            - img "Scaling Design Systems" [ref=e163]
+            - text: Scaling Design Systems
+        - paragraph [ref=e164]: An 8-week course with Dribbble on the fundamentals of designing and coding design systems from scratch.
+        - generic:
+          - paragraph:
+            - time
+  - generic [ref=e166]:
+    - heading "Greatest Hits" [level=1] [ref=e167]
+    - paragraph [ref=e168]: I’ve been writing about design since 2005. Here are some of my most popular articles.
+    - list [ref=e169]:
+      - listitem [ref=e170]:
+        - link "Content & Display Patterns" [ref=e171] [cursor=pointer]:
+          - /url: /posts/content-display-patterns/
+      - listitem [ref=e172]:
+        - link "Answers to Common Design Questions" [ref=e173] [cursor=pointer]:
+          - /url: /posts/answers-to-common-design-questions/
+      - listitem [ref=e174]:
+        - link "What is a Design System?" [ref=e175] [cursor=pointer]:
+          - /url: /posts/what-is-a-design-system/
+      - listitem [ref=e176]:
+        - link "Stealing Your Way to Original Designs" [ref=e177] [cursor=pointer]:
+          - /url: /posts/stealing-your-way-to-original-designs/
+      - listitem [ref=e178]:
+        - link "The Folly of Design System Foundations" [ref=e179] [cursor=pointer]:
+          - /url: /posts/folly-of-design-system-foundations/
+  - complementary [ref=e180]:
+    - generic [ref=e181]:
+      - generic [ref=e182]:
+        - paragraph [ref=e183]:
+          - strong [ref=e184]: "I’m Dan Mall:"
+          - text: creative director, designer, founder, entrepreneur, and author. I ran design systems consultancy
+          - link "SuperFriendly" [ref=e185] [cursor=pointer]:
+            - /url: https://superfriendly.com/
+          - link "for over a decade" [ref=e186] [cursor=pointer]:
+            - /url: /posts/superfri-end/
+          - text: . Now I share as much as I can to create better opportunities for people who wouldn’t have them otherwise. Currently creating
+          - link "Great Job!" [ref=e187] [cursor=pointer]:
+            - /url: https://greatjob.kids/
+          - text: and
+          - link "Design System University" [ref=e188] [cursor=pointer]:
+            - /url: https://designsystem.university/
+          - text: .
+          - link "Learn more about me" [ref=e189] [cursor=pointer]:
+            - /url: /about/
+          - text: .
+        - paragraph [ref=e190]:
+          - text: This site is built on
+          - link "Eleventy" [ref=e191] [cursor=pointer]:
+            - /url: https://www.11ty.dev/
+          - text: ", hosted on"
+          - link "Netlify" [ref=e192] [cursor=pointer]:
+            - /url: https://www.netlify.com/
+          - text: ", and typeset in"
+          - link "Fabriga" [ref=e193] [cursor=pointer]:
+            - /url: https://luxtypo.com/collections/fabriga
+          - text: by LuxTypo,
+          - link "Ecra" [ref=e194] [cursor=pointer]:
+            - /url: https://www.dstype.com/fonts/ecra
+          - text: by DSType, and
+          - link "Space Mono" [ref=e195] [cursor=pointer]:
+            - /url: https://www.colophon-foundry.org/custom/spacemono/
+          - text: by Colophon.
+        - paragraph [ref=e196]: Black Lives Matter.
+      - generic [ref=e198]:
+        - term [ref=e199]: EM
+        - definition [ref=e200]:
+          - link "dan@danmall.com" [ref=e201] [cursor=pointer]:
+            - /url: mailto:dan@danmall.com
+        - term [ref=e202]: TW
+        - definition [ref=e203]:
+          - link "@DanMall" [ref=e204] [cursor=pointer]:
+            - /url: https://twitter.com/danmall
+        - term [ref=e205]: IG
+        - definition [ref=e206]:
+          - link "@DanMallTeaches" [ref=e207] [cursor=pointer]:
+            - /url: https://www.instagram.com/danmallteaches/
+        - term [ref=e208]: YT
+        - definition [ref=e209]:
+          - link "@DanMallTeaches" [ref=e210] [cursor=pointer]:
+            - /url: https://www.youtube.com/c/danmallteaches
+      - paragraph [ref=e212]:
+        - text: © 2005 – 2026 Dan Mall Teaches. All rights reserved. Thou shalt not steal—but feel free to
+        - link "remix" [ref=e213] [cursor=pointer]:
+          - /url: /posts/stealing-your-way-to-original-designs/
+        - text: .
+        - link "Privacy Policy" [ref=e214] [cursor=pointer]:
+          - /url: /privacy/
+        - text: .

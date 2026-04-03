@@ -1,0 +1,51 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - main [ref=e3]:
+      - generic [ref=e5]:
+        - link "Devouring Details" [ref=e6] [cursor=pointer]:
+          - /url: https://www.devouringdetails.com
+          - generic [ref=e7]: Devouring Details
+          - heading [level=3] [ref=e10]: DD
+        - link "Craft" [ref=e12] [cursor=pointer]:
+          - /url: /craft
+          - generic [ref=e13]: Craft
+          - heading [level=3] [ref=e16]: Craft
+        - link "History of Software Design" [ref=e17] [cursor=pointer]:
+          - /url: https://historyofsoftware.org
+          - generic [ref=e18]: History of Software Design
+          - img [ref=e21]
+        - link "Projects" [ref=e23] [cursor=pointer]:
+          - /url: /projects
+          - generic [ref=e24]: Projects
+          - heading "Projects" [level=3] [ref=e28]
+        - paragraph [ref=e32]:
+          - text: Make it fast.
+          - text: Make it beautiful.
+          - text: Make it consistent.
+          - text: Make it carefully.
+          - text: Make it timeless.
+          - text: Make it soulful.
+          - text: Make it.
+        - generic [ref=e36]:
+          - link "Twitter" [ref=e37] [cursor=pointer]:
+            - /url: https://twitter.com/raunofreiberg
+          - link "2023" [ref=e38] [cursor=pointer]:
+            - /url: https://2023.rauno.me
+          - link "2022" [ref=e39] [cursor=pointer]:
+            - /url: https://2022.rauno.me
+          - link "GitHub" [ref=e40] [cursor=pointer]:
+            - /url: https://github.com/raunofreiberg
+          - button "Copy email" [ref=e41]:
+            - generic [ref=e42]:
+              - paragraph [ref=e43]: Email
+              - paragraph [ref=e44]: Copied
+          - region [ref=e45]
+      - img [ref=e46] [cursor=pointer]
+    - generic [ref=e49]:
+      - link:
+        - /url: /
+      - link:
+        - /url: /craft
+      - link:
+        - /url: /projects
+  - alert [ref=e70]

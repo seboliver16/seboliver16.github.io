@@ -1,0 +1,14 @@
+[     772ms] [WARNING] Media Chrome: No style sheet found on style tag of JSHandle@node @ https://linusrogge.com/_next/static/chunks/43695beadc6cd984.js:111
+[     774ms] [WARNING] Media Chrome: No style sheet found on style tag of JSHandle@node @ https://linusrogge.com/_next/static/chunks/43695beadc6cd984.js:111
+[     781ms] Error: Minified React error #418; visit https://react.dev/errors/418?args[]=text&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at rK (https://linusrogge.com/_next/static/chunks/94bde6376cf279be.js:1:45800)
+    at rY (https://linusrogge.com/_next/static/chunks/94bde6376cf279be.js:1:46833)
+    at https://linusrogge.com/_next/static/chunks/94bde6376cf279be.js:1:140553
+    at sp (https://linusrogge.com/_next/static/chunks/94bde6376cf279be.js:1:145714)
+    at sc (https://linusrogge.com/_next/static/chunks/94bde6376cf279be.js:1:137054)
+    at https://linusrogge.com/_next/static/chunks/94bde6376cf279be.js:1:131883
+    at u9 (https://linusrogge.com/_next/static/chunks/94bde6376cf279be.js:1:131984)
+    at sV (https://linusrogge.com/_next/static/chunks/94bde6376cf279be.js:1:158498)
+    at MessagePort.z (https://linusrogge.com/_next/static/chunks/94bde6376cf279be.js:1:7345)
+[    1178ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://linusrogge.com/api/music:0
+[    1179ms] [WARNING] No song data or API error: {status: 403, ok: false, data: Object} @ https://linusrogge.com/_next/static/chunks/85e9417d83ebeec0.js:0

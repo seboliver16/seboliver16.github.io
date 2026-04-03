@@ -1,0 +1,308 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e4]:
+    - navigation [ref=e5]:
+      - img [ref=e7]
+      - generic [ref=e11]:
+        - link "About Craig" [ref=e12] [cursor=pointer]:
+          - /url: /about/
+        - link "Books" [ref=e13] [cursor=pointer]:
+          - /url: /books/
+        - text: "&"
+        - link "Essays" [ref=e14] [cursor=pointer]:
+          - /url: /essays/
+        - link "Shop!" [ref=e15] [cursor=pointer]:
+          - /url: https://shop.specialprojects.jp
+      - generic [ref=e16]:
+        - link "“Special Projects” Membership" [ref=e17] [cursor=pointer]:
+          - /url: /membership/
+        - generic [ref=e18]:
+          - text: "Podcasts:"
+          - link "On Margins" [ref=e19] [cursor=pointer]:
+            - /url: /onmargins/
+          - text: "&"
+          - link "SW945" [ref=e20] [cursor=pointer]:
+            - /url: https://sw945.craigmod.com
+        - generic [ref=e21]:
+          - generic [ref=e22]:
+            - link "Newsletters" [ref=e23] [cursor=pointer]:
+              - /url: /newsletters/
+            - text: ":"
+          - link "Roden" [ref=e24] [cursor=pointer]:
+            - /url: /roden/
+          - text: "&"
+          - link "Ridgeline" [ref=e25] [cursor=pointer]:
+            - /url: /ridgeline/
+      - generic [ref=e26]:
+        - link "Bluesky" [ref=e27] [cursor=pointer]:
+          - /url: https://bsky.app/profile/craigmod.com
+          - img [ref=e28]
+        - link "Instagram" [ref=e30] [cursor=pointer]:
+          - /url: https://instagram.com/craigmod/
+          - img [ref=e31]
+        - link "Threads" [ref=e33] [cursor=pointer]:
+          - /url: https://threads.net/@craigmod/
+          - img "Threads" [ref=e34]
+  - generic [ref=e36]:
+    - generic [ref=e37]:
+      - link [ref=e39] [cursor=pointer]:
+        - /url: /books/things_become_other_things/
+        - img [ref=e40]
+      - generic [ref=e42]:
+        - heading "Things Become Other Things" [level=3] [ref=e43]
+        - heading "A Memoir of Walking Japan" [level=4] [ref=e44]
+        - paragraph [ref=e45]:
+          - text: Published by
+          - link "Random House" [ref=e46] [cursor=pointer]:
+            - /url: https://www.penguinrandomhouse.com/books/751123/things-become-other-things-by-craig-mod/
+          - text: — 2025
+        - paragraph [ref=e47]:
+          - strong [ref=e48]:
+            - text: A
+            - emphasis [ref=e49]: Kirkus Reviews
+            - text: "&"
+            - emphasis [ref=e50]: Shelf Awareness
+            - text: BEST BOOK OF THE YEAR
+            - emphasis [ref=e51]: Smithsonian Magazine
+            - text: TOP-10 NONFICTION BOOK OF 2025
+        - paragraph [ref=e52]:
+          - text: For lifelong walkers and Japanophiles who crave a sense of wonder off the tourist map,
+          - emphasis [ref=e53]: Things Become Other Things
+          - text: is a photo-rich narrative that shows how ordinary countryside lanes transform into portals of culture.
+        - paragraph [ref=e54]: "Nab a copy at:"
+        - paragraph
+        - list [ref=e55]:
+          - listitem [ref=e56]:
+            - link "Amazon" [ref=e57] [cursor=pointer]:
+              - /url: https://amzn.to/3z1CjSt
+          - listitem [ref=e58]:
+            - link "Bookshop.org" [ref=e59] [cursor=pointer]:
+              - /url: https://bookshop.org/p/books/things-become-other-things-a-memoir-craig-mod/21707235?ean=9780593732540
+          - listitem [ref=e60]:
+            - link "Apple Books" [ref=e61] [cursor=pointer]:
+              - /url: https://books.apple.com/us/book/things-become-other-things/id6618121918
+          - listitem [ref=e62]:
+            - link "Barnes & Noble" [ref=e63] [cursor=pointer]:
+              - /url: https://www.barnesandnoble.com/w/things-become-other-things-craig-mod/1146138224?ean=9780593732540
+        - paragraph
+    - generic [ref=e65]:
+      - link [ref=e68] [cursor=pointer]:
+        - /url: https://shop.specialprojects.jp/products/kissa-by-kissa-6th-ed
+        - img [ref=e69]
+      - generic [ref=e70]:
+        - heading "Kissa by Kissa" [level=3] [ref=e71]
+        - paragraph [ref=e72]:
+          - emphasis [ref=e73]: A thousand kilometer walk from Tokyo to Kyoto and beyond.
+        - paragraph [ref=e74]: "128 pp., 40 full-color photographs, printed and hand-bound in Japan, 1st ed. (2020): 1,000 signed copies. Current edition: 5th."
+        - paragraph [ref=e75]:
+          - link "Purchase online." [ref=e76] [cursor=pointer]:
+            - /url: https://shop.specialprojects.jp/products/kissa-by-kissa-6th-ed
+    - generic [ref=e78]:
+      - link "Craig Mod in his messy Tokyo studio 2025" [ref=e80] [cursor=pointer]:
+        - /url: /about/
+        - img "Craig Mod in his messy Tokyo studio 2025" [ref=e81]
+      - generic [ref=e82]:
+        - paragraph [ref=e83]:
+          - text: I'm the author of several books including
+          - link "Things Become Other Things" [ref=e84] [cursor=pointer]:
+            - /url: /books/things_become_other_things/
+            - emphasis [ref=e85]: Things Become Other Things
+          - text: (SP 2023, Random House 2025), and
+          - link "Kissa by Kissa" [ref=e86] [cursor=pointer]:
+            - /url: https://shop.specialprojects.jp/products/kissa-by-kissa-6th-ed
+            - emphasis [ref=e87]: Kissa by Kissa
+          - text: (SP 2020).
+        - paragraph [ref=e88]: Much of my writing chronicles my giant walks across Japan, a country that has been my home since 2000.
+        - paragraph [ref=e89]:
+          - text: "Just to prove I'm not some total nudnik: I also write for"
+          - emphasis [ref=e90]: The New York Times, The Atlantic, Eater,
+          - text: and other "big, fancy" publications.
+        - paragraph [ref=e91]: "Want even more dorky, formal status callouts? Sure: I've been a MacDowell, VCCA, Tin House, and Ragdale writing fellow."
+        - paragraph [ref=e92]: (In the end, the only thing that matters is the quality and care of work you put out into the world.)
+        - paragraph [ref=e93]: My books occupy the intersection between "classic photography books," narrative non-fiction essays, and auto-fiction (to use that kinda cursed moniker).
+        - paragraph [ref=e94]: "My rules: Lightness above weightiness, elevate everyone you encounter."
+        - separator [ref=e95]
+        - paragraph [ref=e96]: "Anyway, thanks for visiting my little nook on the web. And please consider subscribing to my newsletters:"
+        - list [ref=e97]:
+          - listitem [ref=e98]:
+            - link "Roden" [ref=e99] [cursor=pointer]:
+              - /url: /roden/
+              - emphasis [ref=e100]: Roden
+            - text: ": Monthly — photography × literature × tech × film"
+          - listitem [ref=e101]:
+            - link "Ridgeline" [ref=e102] [cursor=pointer]:
+              - /url: /ridgeline/
+              - emphasis [ref=e103]: Ridgeline
+            - text: ": Weekly — walking × Japan"
+        - paragraph [ref=e104]: Always one-click to unsub. (Plus — I never look at unsubscription data so you don't even have to worry about hurting my feelings.)
+        - paragraph [ref=e105]: "Join some ~40,000+ other subscribers:"
+        - generic [ref=e107]:
+          - generic [ref=e108]:
+            - textbox "Email" [ref=e110]:
+              - /placeholder: email address
+            - generic [ref=e111]:
+              - generic [ref=e112]:
+                - checkbox "Roden (monthly)" [checked] [ref=e113] [cursor=pointer]
+                - generic [ref=e114] [cursor=pointer]:
+                  - strong [ref=e115]: Roden
+                  - text: (monthly)
+              - generic [ref=e116]:
+                - checkbox "Ridgeline (weekly)" [checked] [ref=e117] [cursor=pointer]
+                - generic [ref=e118] [cursor=pointer]:
+                  - strong [ref=e119]: Ridgeline
+                  - text: (weekly)
+          - button "Subscribe" [ref=e120] [cursor=pointer]:
+            - generic [ref=e123]: Subscribe
+    - generic [ref=e126]:
+      - heading "Published Essays" [level=2] [ref=e127]
+      - paragraph [ref=e128]:
+        - text: I publish a bunch of
+        - link "essays and articles" [ref=e129] [cursor=pointer]:
+          - /url: /essays/
+        - text: "on this site, but also elsewhere. A selection:"
+      - list [ref=e130]:
+        - listitem [ref=e131]:
+          - link "“A Long Walk in a Fading Corner of Japan”" [ref=e132] [cursor=pointer]:
+            - /url: https://www.nytimes.com/2022/04/25/travel/japan-kii-peninsula-pilgrimage-routes.html
+          - text: ","
+          - emphasis [ref=e133]: The New York Times
+          - text: (2022)
+        - listitem [ref=e134]:
+          - link "“Last of the Kumano Kodō Kissaten”" [ref=e135] [cursor=pointer]:
+            - /url: https://www.japantimes.co.jp/life/2021/08/07/food/kissaten-kumano-kodo-trail-coffee/
+          - text: ","
+          - emphasis [ref=e136]: Japan Times
+          - text: (2021)
+        - listitem [ref=e137]:
+          - link "“The Glorious, Almost-Disconnected Boredom of My Walk in Japan”" [ref=e138] [cursor=pointer]:
+            - /url: https://www.wired.com/story/six-weeks-100s-miles-hours-glorious-boredom-japan/
+          - text: ","
+          - emphasis [ref=e139]: WIRED
+          - text: ", (2019)"
+        - listitem [ref=e140]:
+          - link "“The Healing Power of Code”" [ref=e141] [cursor=pointer]:
+            - /url: https://www.wired.com/story/healing-power-javascript-code-programming/
+          - text: ","
+          - emphasis [ref=e142]: WIRED
+          - text: (2021)
+        - listitem [ref=e143]:
+          - link "“How I Mastered the Art of Ventilating my Home”" [ref=e144] [cursor=pointer]:
+            - /url: https://www.theatlantic.com/health/archive/2020/09/diy-ventilation-home-pandemic/616150/
+          - text: ","
+          - emphasis [ref=e145]: The Atlantic
+          - text: (2020)
+        - listitem [ref=e146]:
+          - link "“The Facebook-Loving Farmers of Myanmar”" [ref=e147] [cursor=pointer]:
+            - /url: https://www.theatlantic.com/technology/archive/2016/01/the-facebook-loving-farmers-of-myanmar/424812/
+          - text: ","
+          - emphasis [ref=e148]: The Atlantic
+          - text: (2016)
+      - separator [ref=e149]
+      - heading "Pizza Toast" [level=2] [ref=e150]
+      - paragraph [ref=e151]:
+        - text: I made a little film on pizza toast and
+        - emphasis [ref=e152]: kissaten
+        - text: "culture:"
+      - 'button "Pizza Toast & Coffee: Kissa Būgen" [ref=e154] [cursor=pointer]':
+        - generic [ref=e155]: "Pizza Toast & Coffee: Kissa Būgen"
+      - separator [ref=e156]
+      - paragraph [ref=e157]:
+        - text: Preceding that film, the 1st ed. of my new book,
+        - link "Kissa by Kissa" [ref=e158] [cursor=pointer]:
+          - /url: https://shop.specialprojects.jp/products/kissa-by-kissa
+          - emphasis [ref=e159]: Kissa by Kissa
+        - text: (2020), sold out in 48 hours. The
+        - link "2nd ed." [ref=e160] [cursor=pointer]:
+          - /url: https://shop.specialprojects.jp/products/kissa-by-kissa-2nd-ed
+        - text: sold out in May, 2021. The
+        - link "third edition" [ref=e161] [cursor=pointer]:
+          - /url: https://shop.specialprojects.jp/products/kissa-by-kissa-3rd-ed
+        - text: is also sold out (August, 2022). And now, unbelievably, we're on a
+        - link "fourth fifth edition!" [ref=e162] [cursor=pointer]:
+          - /url: https://shop.specialprojects.jp/products/kissa-by-kissa-5th-ed
+          - emphasis [ref=e163]: fourth
+          - text: fifth edition!
+      - paragraph [ref=e164]: "You can watch a short documentary I made on the making of this book:"
+      - 'button "Pizza Toast & Coffee: Kissa Būgen" [ref=e166] [cursor=pointer]':
+        - generic [ref=e167]: "Pizza Toast & Coffee: Kissa Būgen"
+      - paragraph [ref=e168]:
+        - text: The campaign was run on Shopify using my open source crowdfunding templates —
+        - link "Craigstarter" [ref=e169] [cursor=pointer]:
+          - /url: https://github.com/cmod/craigstarter
+        - text: . Please let me know if you use them!
+      - paragraph [ref=e170]:
+        - text: I run a membership program called
+        - link "SPECIAL PROJECTS" [ref=e171] [cursor=pointer]:
+          - /url: /membership/
+        - text: and it provides the emotional and financial backbone for almost all of the work I do. SP members get access to all sorts of SPECIAL stuff (work livestreams, "board member" meetings, members-only podcasts, and more).
+      - separator [ref=e172]
+  - generic [ref=e174]:
+    - heading "Popular Essays" [level=3] [ref=e175]
+    - link "Yamaguchi Once More Returning to Yamaguchi-city to say hello" [ref=e177] [cursor=pointer]:
+      - /url: /ridgeline/182/
+      - heading "Yamaguchi Once More" [level=4] [ref=e179]
+      - heading "Returning to Yamaguchi-city to say hello" [level=5] [ref=e180]
+    - link "Hack the Cover Book covers in a digital world" [ref=e182] [cursor=pointer]:
+      - /url: /journal/hack_the_cover/
+      - heading "Hack the Cover" [level=4] [ref=e184]
+      - heading "Book covers in a digital world" [level=5] [ref=e185]
+    - link "Memberships Work What I learned during the third year of running my SPECIAL PROJECTS membership program" [ref=e187] [cursor=pointer]:
+      - /url: /essays/memberships_work/
+      - heading "Memberships Work" [level=4] [ref=e189]
+      - heading "What I learned during the third year of running my SPECIAL PROJECTS membership program" [level=5] [ref=e190]
+    - link "On Being a Good Newsletterer Notes and tips on how not to be a newsletter ding dong" [ref=e192] [cursor=pointer]:
+      - /url: /essays/on_writing_good_newsletters/
+      - heading "On Being a Good Newsletterer" [level=4] [ref=e194]
+      - heading "Notes and tips on how not to be a newsletter ding dong" [level=5] [ref=e195]
+  - generic [ref=e199]:
+    - heading "Recent Essays" [level=2] [ref=e200]
+    - list [ref=e201]:
+      - listitem [ref=e202]:
+        - link "Software Bonkers The year is 2026 and I can't stop building" [ref=e203] [cursor=pointer]:
+          - /url: /essays/software_bonkers/
+          - heading "Software Bonkers" [level=3] [ref=e204]
+          - heading "The year is 2026 and I can't stop building" [level=4] [ref=e205]
+      - listitem [ref=e206]:
+        - link "The Seventh Year of Running my Membership Program The goodness of a membership program compounds, and starts paying big dividends" [ref=e207] [cursor=pointer]:
+          - /url: /essays/memberships_year_seven/
+          - heading "The Seventh Year of Running my Membership Program" [level=3] [ref=e208]
+          - heading "The goodness of a membership program compounds, and starts paying big dividends" [level=4] [ref=e209]
+      - listitem [ref=e210]:
+        - link "My 'Rules' for Running My Membership Program Six years of running SPECIAL PROJECTS. Here are my \"rules\" that guide the program." [ref=e211] [cursor=pointer]:
+          - /url: /essays/membership_rules/
+          - heading "My 'Rules' for Running My Membership Program" [level=3] [ref=e212]
+          - heading "Six years of running SPECIAL PROJECTS. Here are my \"rules\" that guide the program." [level=4] [ref=e213]
+      - listitem [ref=e214]:
+        - link "Five Years of Memberships I've been running the SPECIAL PROJECTS membership program for five years; here's what I know." [ref=e215] [cursor=pointer]:
+          - /url: /essays/memberships_year_five/
+          - heading "Five Years of Memberships" [level=3] [ref=e216]
+          - heading "I've been running the SPECIAL PROJECTS membership program for five years; here's what I know." [level=4] [ref=e217]
+      - listitem [ref=e218]:
+        - 'link "Running a Membership Program: Four Years In Everything I''ve learned in the first four years of running SPECIAL PROJECTS" [ref=e219] [cursor=pointer]':
+          - /url: /essays/memberships_year_four/
+          - 'heading "Running a Membership Program: Four Years In" [level=3] [ref=e220]'
+          - heading "Everything I've learned in the first four years of running SPECIAL PROJECTS" [level=4] [ref=e221]
+      - listitem [ref=e222]:
+        - link "Drumming Returning to drumming after a fourteen-year break" [ref=e223] [cursor=pointer]:
+          - /url: /essays/drumming/
+          - heading "Drumming" [level=3] [ref=e224]
+          - heading "Returning to drumming after a fourteen-year break" [level=4] [ref=e225]
+  - contentinfo [ref=e227]:
+    - generic [ref=e228]:
+      - paragraph [ref=e229]:
+        - text: Whacked together by
+        - link "Craig Mod" [ref=e230] [cursor=pointer]:
+          - /url: /about/
+        - text: since 2002
+      - paragraph [ref=e231]:
+        - link "Threads" [ref=e232] [cursor=pointer]:
+          - /url: https://threads.net/@craigmod/
+          - img "Threads" [ref=e233]
+        - link "Bluesky" [ref=e235] [cursor=pointer]:
+          - /url: https://bsky.app/profile/craigmod.com
+          - img [ref=e236]
+        - link "Instagram" [ref=e238] [cursor=pointer]:
+          - /url: https://instagram.com/craigmod/
+          - img [ref=e239]
+        - link "ionicons-v5_logos" [ref=e241] [cursor=pointer]:
+          - /url: /index.xml
+          - img "ionicons-v5_logos" [ref=e242]

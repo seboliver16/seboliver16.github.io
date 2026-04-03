@@ -1,0 +1,31 @@
+[    1275ms] [LOG] setting gppString to not opted out no GPC @ https://api.consentjs.datagrail.io/b8f6c3bf-2519-4023-963a-974547789e46/gpp-usnat.js:39
+[    1752ms] [LOG] null @ https://assets.production.linktr.ee/client-brfp/br-fp-script.js:0
+[    2046ms] [LOG] Lottie Value: 03. Miles-Lottie.json @ https://linktr.ee/:1063
+[    2046ms] [LOG] Lottie Value: 02. Koy-updated-Lottie.json @ https://linktr.ee/:1063
+[    2046ms] [LOG] Lottie Value: 04. Pistakio-Lottie.json @ https://linktr.ee/:1063
+[    2046ms] [LOG] Lottie Value: 05-Zay-Lottie.json @ https://linktr.ee/:1063
+[    2046ms] [LOG] Lottie Value: 01. Kelsey-updated.json @ https://linktr.ee/:1063
+[    2046ms] [LOG] Lottie Value: 03. Miles-Lottie.json @ https://linktr.ee/:1063
+[    2046ms] [LOG] Lottie Value: 02. Koy-updated-Lottie.json @ https://linktr.ee/:1063
+[    2149ms] [WARNING] pixel already configured. @ https://pixel.byspotify.com/ping.min.js:0
+[    2242ms] Uncaught The pagetype parameter is required when you include the prodid parameter.
+    at UET.throwError (https://bat.bing.com/bat.js:0:26545)
+    at UET.validateDataObjectNew (https://bat.bing.com/bat.js:0:31984)
+    at UET.evt (https://bat.bing.com/bat.js:0:35529)
+    at UET._push (https://bat.bing.com/bat.js:0:16964)
+    at UET.checkuetHostdocumentload (https://bat.bing.com/bat.js:0:7903)
+    at UET.containerCheckLoad (https://bat.bing.com/bat.js:0:54650)
+    at UET.containerOnLoad (https://bat.bing.com/bat.js:0:54389)
+[    3256ms] [ERROR] Attestation check for Attribution Reporting on https://www.facebook.com failed. @ https://linktr.ee/:0
+[    8888ms] [WARNING] Statsig: browserId not found after maximum retries @ :15
+[   22276ms] [ERROR] Access to fetch at 'https://api-sr.amplitude.com/sessions/v2/track?device_id=78d4f8a5-44a4-4c47-8622-701502343aa5&session_id=1775191170819&type=replay' from origin 'https://linktr.ee' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ https://linktr.ee/:0
+[   22277ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://api-sr.amplitude.com/sessions/v2/track?device_id=78d4f8a5-44a4-4c47-8622-701502343aa5&session_id=1775191170819&type=replay:0
+[   22278ms] [WARNING] Amplitude Logger [Warn]: TypeError: Failed to fetch @ https://cdn.amplitude.com/libs/analytics-browser-2.36.7-min.js.gz:0
+[   32234ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://api-sr.amplitude.com/sessions/v2/track?device_id=78d4f8a5-44a4-4c47-8622-701502343aa5&session_id=1775191170819&type=replay:0
+[   32234ms] [WARNING] Amplitude Logger [Warn]: TypeError: Failed to fetch @ https://cdn.amplitude.com/libs/analytics-browser-2.36.7-min.js.gz:0
+[   32235ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://api-sr.amplitude.com/sessions/v2/track?device_id=78d4f8a5-44a4-4c47-8622-701502343aa5&session_id=1775191170819&type=replay:0
+[   32235ms] [WARNING] Amplitude Logger [Warn]: TypeError: Failed to fetch @ https://cdn.amplitude.com/libs/analytics-browser-2.36.7-min.js.gz:0
+[   32236ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://api-sr.amplitude.com/sessions/v2/track?device_id=78d4f8a5-44a4-4c47-8622-701502343aa5&session_id=1775191170819&type=replay:0
+[   32236ms] [WARNING] Amplitude Logger [Warn]: TypeError: Failed to fetch @ https://cdn.amplitude.com/libs/analytics-browser-2.36.7-min.js.gz:0
+[   32237ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://api-sr.amplitude.com/sessions/v2/track?device_id=78d4f8a5-44a4-4c47-8622-701502343aa5&session_id=1775191170819&type=replay:0
+[   32237ms] [WARNING] Amplitude Logger [Warn]: TypeError: Failed to fetch @ https://cdn.amplitude.com/libs/analytics-browser-2.36.7-min.js.gz:0

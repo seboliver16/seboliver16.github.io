@@ -1,0 +1,132 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - link "U.S. Graphics Company" [ref=e6] [cursor=pointer]:
+        - /url: /
+        - heading "U.S. Graphics Company" [level=1] [ref=e7]
+      - img "U.S. Graphics Company Logo" [ref=e9]
+    - navigation [ref=e10]:
+      - list [ref=e11]:
+        - listitem [ref=e12]:
+          - link "Office" [ref=e13] [cursor=pointer]:
+            - /url: /
+            - text: Office
+        - listitem [ref=e15]:
+          - link "Products" [ref=e16] [cursor=pointer]:
+            - /url: /products
+        - listitem [ref=e17]:
+          - link "Catalog" [ref=e18] [cursor=pointer]:
+            - /url: /catalog
+        - listitem [ref=e19]:
+          - link "Extras!" [ref=e20] [cursor=pointer]:
+            - /url: /extras
+        - listitem [ref=e21]:
+          - link "Sitemap" [ref=e22] [cursor=pointer]:
+            - /url: /sitemap
+        - listitem [ref=e23]:
+          - link "Login" [ref=e24] [cursor=pointer]:
+            - /url: /auth/login
+  - main [ref=e25]:
+    - generic [ref=e26]:
+      - heading "Office" [level=2] [ref=e27]
+      - separator [ref=e28]
+      - generic [ref=e29]:
+        - generic [ref=e30]:
+          - paragraph [ref=e31]: Engineering graphics for professionals.
+          - blockquote [ref=e32]:
+            - emphasis [ref=e33]: Graphics
+            - text: — Visual representation of information, as in graphic art and illustration, in design and manufacture, in typesetting; relentlessly pursuing accurate and truthful interpretation.
+          - paragraph [ref=e34]: We anchor our ethos, judgment, and our efforts in the fundamentals of graphics, its purpose, and its utility.
+          - paragraph [ref=e35]:
+            - link "Inquiry →" [ref=e36] [cursor=pointer]:
+              - /url: mailto:inquiry@usgraphics.com?subject=Customer inquiry
+            - text: (We're not accepting any consignments)
+        - generic [ref=e37]:
+          - heading "Design philosophy" [level=2] [ref=e38]
+          - table [ref=e39]:
+            - rowgroup
+            - rowgroup [ref=e40]:
+              - row "Emergent over prescribed aesthetics." [ref=e41]:
+                - cell "Emergent over prescribed aesthetics." [ref=e42]
+              - row "Expose state and inner workings." [ref=e43]:
+                - cell "Expose state and inner workings." [ref=e44]
+              - row "Dense, not sparse." [ref=e45]:
+                - cell "Dense, not sparse." [ref=e46]
+              - row "Explicit is better than implicit." [ref=e47]:
+                - cell "Explicit is better than implicit." [ref=e48]
+              - row "Engineered for human vision and perception." [ref=e49]:
+                - cell "Engineered for human vision and perception." [ref=e50]
+              - row "Regiment functionalism." [ref=e51]:
+                - cell "Regiment functionalism." [ref=e52]
+              - row "Performance is design." [ref=e53]:
+                - cell "Performance is design." [ref=e54]:
+                  - text: Performance
+                  - emphasis [ref=e55]: is
+                  - text: design.
+              - row "Verbosity over opacity." [ref=e56]:
+                - cell "Verbosity over opacity." [ref=e57]
+              - row "Ignore design trends. Timeless and unfashionable." [ref=e58]:
+                - cell "Ignore design trends. Timeless and unfashionable." [ref=e59]
+              - row "Flat, not hierarchical." [ref=e60]:
+                - cell "Flat, not hierarchical." [ref=e61]
+              - row "Diametrically opposite of minimalism, as complex as it needs to be." [ref=e62]:
+                - cell "Diametrically opposite of minimalism, as complex as it needs to be." [ref=e63]
+              - row "Driven by objective reasoning and common sense." [ref=e64]:
+                - cell "Driven by objective reasoning and common sense." [ref=e65]
+              - row "Don't infantilize users." [ref=e66]:
+                - cell "Don't infantilize users." [ref=e67]
+      - heading "Frontpage Banner" [level=2] [ref=e68]
+      - separator [ref=e69]
+      - generic [ref=e70]:
+        - generic [ref=e71]:
+          - paragraph [ref=e72]:
+            - img "New!" [ref=e73]
+            - text: Berkeley Mono v2 release is here!
+          - paragraph [ref=e74]: New v2 version features 120 font styles including condensed widths, Supertype™ compiler and more!
+          - paragraph [ref=e75]:
+            - link "TX-02 Berkeley Mono™ →" [ref=e76] [cursor=pointer]:
+              - /url: /products/berkeley-mono
+        - link "Berkeley Mono Marketing" [ref=e78] [cursor=pointer]:
+          - /url: /products/berkeley-mono
+          - img "Berkeley Mono Marketing" [ref=e79]
+      - heading "Projects" [level=2] [ref=e80]
+      - separator [ref=e81]
+      - generic [ref=e82]:
+        - img "swissmicros" [ref=e84]
+        - img "diskgraph" [ref=e86]
+        - img "isomatic" [ref=e88]
+        - img "machine-universal" [ref=e90]
+        - img "berkeley-graphics" [ref=e92]
+        - img "die-rechner" [ref=e94]
+        - img "standard-ai" [ref=e96]
+        - img "function-office" [ref=e98]
+        - img "swissgraph" [ref=e100]
+        - img "lextype" [ref=e102]
+        - img "turing-core" [ref=e104]
+        - img "made-in-democracy" [ref=e106]
+        - img "labo" [ref=e108]
+        - img "schriftguide" [ref=e110]
+        - img "swiss-technical" [ref=e112]
+        - img "turimatic" [ref=e114]
+      - heading "Imprint" [level=2] [ref=e115]
+      - separator [ref=e116]
+      - paragraph [ref=e117]:
+        - text: U.S. Graphics Company is the office of
+        - link "Neil Panchal" [ref=e118] [cursor=pointer]:
+          - /url: https://neil.computer
+        - text: .
+      - generic [ref=e121]:
+        - img "Seal of the Arizona Corporation Commission" [ref=e123]
+        - paragraph [ref=e125]:
+          - text: U.S. Graphics, LLC.
+          - text: "AZCC Entity ID: 23616171"
+          - text: Phoenix, Arizona, USA.
+  - contentinfo [ref=e127]:
+    - separator [ref=e129]
+    - generic [ref=e131]:
+      - text: © Copyright 2026, U.S. Graphics, LLC. All Rights Reserved. MADE IN U.S.A. Follow us on X
+      - link "@usgraphics" [ref=e132] [cursor=pointer]:
+        - /url: https://x.com/usgraphics
+      - text: .
+    - link "PROD v2.16.16" [ref=e134] [cursor=pointer]:
+      - /url: /engineering
