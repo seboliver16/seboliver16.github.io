@@ -635,68 +635,45 @@ kbd {
 .footer-art {
   text-align: center;
   padding: 0;
-  overflow: hidden;
 }
 
+/* Ghost trail — faintest at top, more visible going down */
 .footer-art-text {
   font-family: var(--mono);
   font-weight: 800;
   font-size: clamp(4.5rem, 13vw, 8rem);
   letter-spacing: -0.04em;
-  line-height: 0.82;
+  line-height: 0.78;
   user-select: none;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--border);
 }
 
-/* First span = solid black BUILD, rest = outlined trail fading out */
-.footer-art-text span {
-  display: block;
-  will-change: opacity;
-}
+.footer-art-text span { display: block; }
+.footer-art-text span:nth-child(1) { opacity: 0.06; }
+.footer-art-text span:nth-child(2) { opacity: 0.12; }
+.footer-art-text span:nth-child(3) { opacity: 0.22; }
+.footer-art-text span:nth-child(4) { opacity: 0.4; -webkit-text-stroke-width: 1.5px; }
 
-.footer-art-text span:nth-child(1) {
+/* Solid BUILD */
+.footer-art-solid {
+  font-family: var(--mono);
+  font-weight: 800;
+  font-size: clamp(4.5rem, 13vw, 8rem);
+  letter-spacing: -0.04em;
+  line-height: 0.78;
   color: var(--text);
 }
 
-.footer-art-text span:nth-child(2) {
-  color: transparent;
-  -webkit-text-stroke: 1.5px var(--text-mid);
-  opacity: 0.5;
-}
-
-.footer-art-text span:nth-child(3) {
-  color: transparent;
-  -webkit-text-stroke: 1px var(--border);
-  opacity: 0.35;
-}
-
-.footer-art-text span:nth-child(4) {
-  color: transparent;
-  -webkit-text-stroke: 1px var(--border);
-  opacity: 0.2;
-}
-
-.footer-art-text span:nth-child(5) {
-  color: transparent;
-  -webkit-text-stroke: 1px var(--border);
-  opacity: 0.1;
-}
-
-.footer-art-text span:nth-child(6) {
-  color: transparent;
-  -webkit-text-stroke: 1px var(--border);
-  opacity: 0.05;
-}
-
+/* SHIP — blue, right under BUILD, no gap */
 .footer-art-ship {
   font-family: var(--mono);
   font-weight: 800;
   font-size: clamp(4.5rem, 13vw, 8rem);
   letter-spacing: -0.04em;
+  line-height: 0.78;
   color: var(--accent);
-  line-height: 1;
-  margin-top: 0.1em;
   text-shadow: 0 0 60px rgba(37, 99, 235, 0.15);
-  will-change: opacity;
 }
 
 /* Info bar below art */
