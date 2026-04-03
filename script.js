@@ -2,67 +2,6 @@
    SEBASTIAN OLIVER — Interactive Script
    ============================================ */
 
-// ---- Footer art: scroll-driven accordion ----
-// Uses page scroll fraction (not viewport position) so it works on short pages
-(function() {
-  var art = document.getElementById('footerArt');
-  if (!art) return;
-  var spans = [].slice.call(art.querySelectorAll('.footer-art-text span'));
-  var ship = art.querySelector('.footer-art-overlay');
-  var ops = [0.05, 0.08, 0.14, 0.22, 0.32, 0.45, 0.65, 1];
-  var ticking = false;
-
-  function update() {
-    ticking = false;
-    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    var maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-    if (maxScroll <= 0) return;
-
-    // p: 0 at 40% page scroll, 1 at 100% page scroll
-    // Footer animation occupies the last 60% of scrolling
-    var scrollFrac = scrollTop / maxScroll;
-    var p = (scrollFrac - 0.4) / 0.6;
-    p = p < 0 ? 0 : p > 1 ? 1 : p;
-
-    for (var i = 0; i < spans.length; i++) {
-      // Stagger: each line starts 0.08 later
-      var lp = (p - i * 0.08) / 0.3;
-      lp = lp < 0 ? 0 : lp > 1 ? 1 : lp;
-      // Smoothstep
-      var e = lp * lp * (3 - 2 * lp);
-
-      spans[i].style.transform = 'scaleY(' + e + ')';
-      spans[i].style.opacity = ops[i] * e;
-
-      if (i === spans.length - 1) {
-        spans[i].style.color = e > 0.5 ? 'var(--text)' : '';
-        spans[i].style.webkitTextStroke = e > 0.5 ? '0' : '';
-      }
-      if (i === spans.length - 2) {
-        spans[i].style.webkitTextStrokeWidth = e > 0.5 ? '1.5px' : '';
-      }
-    }
-
-    // SHIP follows after last line
-    var sP = (p - spans.length * 0.08) / 0.3;
-    sP = sP < 0 ? 0 : sP > 1 ? 1 : sP;
-    var sE = sP * sP * (3 - 2 * sP);
-    ship.style.opacity = sE;
-    ship.style.transform = 'translateY(' + (8 * (1 - sE)) + 'px)';
-  }
-
-  function onScroll() {
-    if (!ticking) {
-      ticking = true;
-      requestAnimationFrame(update);
-    }
-  }
-
-  window.addEventListener('scroll', onScroll, { passive: true });
-  window.addEventListener('resize', update, { passive: true });
-  update();
-})();
-
 // ---- Expandable entries ----
 document.querySelectorAll('[data-expandable]').forEach(entry => {
   const row = entry.querySelector('.entry-row');
