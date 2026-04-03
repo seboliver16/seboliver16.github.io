@@ -624,71 +624,87 @@ kbd {
    ============================================ */
 
 .footer {
-  margin-top: 2rem;
+  margin-top: 6rem;
   font-family: var(--mono);
   font-size: 0.7rem;
   color: var(--text-light);
-  overflow: hidden;
 }
 
-/* Footer typographic art */
+/* Footer typographic art — tall scroll zone so text stays sticky */
 .footer-art {
   text-align: center;
   padding: 0;
+  height: 110vh;
+  overflow: clip;
 }
 
 .footer-art-text {
+  position: sticky;
+  top: 25vh;
   font-family: var(--mono);
   font-weight: 800;
-  font-size: clamp(4.5rem, 13vw, 8rem);
+  font-size: clamp(4rem, 12vw, 8rem);
   letter-spacing: -0.04em;
-  line-height: 0.82;
+  line-height: 0.78;
   user-select: none;
 }
 
-.footer-art-text span { display: block; }
-
-/* ---- Scroll-driven animation via CSS (no JS) ---- */
-@keyframes revealGhost { from { opacity: 0; } }
-@keyframes revealSolid { from { opacity: 0; } }
-@keyframes revealShip  { from { opacity: 0; } }
-
-/* Ghost trail — outlined, faintest at top */
+/* Ghost trail — absolutely positioned upward from BUILD, behind solid */
 .footer-art-text .ghost {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 0;
   color: transparent;
   -webkit-text-stroke: 1px var(--border);
-  animation: revealGhost linear both;
-  animation-timeline: scroll(root);
+  opacity: 0;
 }
+/* 20 ghosts packed tight — 0.3em spacing upward */
+.footer-art-text .ghost:nth-child(1)  { transform: translateY(-6.0em); }
+.footer-art-text .ghost:nth-child(2)  { transform: translateY(-5.7em); }
+.footer-art-text .ghost:nth-child(3)  { transform: translateY(-5.4em); }
+.footer-art-text .ghost:nth-child(4)  { transform: translateY(-5.1em); }
+.footer-art-text .ghost:nth-child(5)  { transform: translateY(-4.8em); }
+.footer-art-text .ghost:nth-child(6)  { transform: translateY(-4.5em); }
+.footer-art-text .ghost:nth-child(7)  { transform: translateY(-4.2em); }
+.footer-art-text .ghost:nth-child(8)  { transform: translateY(-3.9em); }
+.footer-art-text .ghost:nth-child(9)  { transform: translateY(-3.6em); }
+.footer-art-text .ghost:nth-child(10) { transform: translateY(-3.3em); }
+.footer-art-text .ghost:nth-child(11) { transform: translateY(-3.0em); }
+.footer-art-text .ghost:nth-child(12) { transform: translateY(-2.7em); }
+.footer-art-text .ghost:nth-child(13) { transform: translateY(-2.4em); }
+.footer-art-text .ghost:nth-child(14) { transform: translateY(-2.1em); -webkit-text-stroke-width: 1.1px; }
+.footer-art-text .ghost:nth-child(15) { transform: translateY(-1.8em); -webkit-text-stroke-width: 1.2px; }
+.footer-art-text .ghost:nth-child(16) { transform: translateY(-1.5em); -webkit-text-stroke-width: 1.3px; }
+.footer-art-text .ghost:nth-child(17) { transform: translateY(-1.2em); -webkit-text-stroke-width: 1.4px; }
+.footer-art-text .ghost:nth-child(18) { transform: translateY(-0.9em); -webkit-text-stroke-width: 1.5px; }
+.footer-art-text .ghost:nth-child(19) { transform: translateY(-0.6em); -webkit-text-stroke-width: 1.6px; }
+.footer-art-text .ghost:nth-child(20) { transform: translateY(-0.3em); -webkit-text-stroke-width: 1.7px; }
 
-/* Each ghost: different target opacity + scroll range */
-/* ghost 4 (closest to BUILD) reveals first, ghost 1 (faintest) last */
-.footer-art-text .ghost:nth-child(4) { opacity: 0.45; -webkit-text-stroke-width: 1.5px; animation-range: 40% 55%; }
-.footer-art-text .ghost:nth-child(3) { opacity: 0.25; animation-range: 45% 60%; }
-.footer-art-text .ghost:nth-child(2) { opacity: 0.12; animation-range: 50% 65%; }
-.footer-art-text .ghost:nth-child(1) { opacity: 0.06; animation-range: 55% 70%; }
-
-/* Solid BUILD — appears first */
+/* Solid BUILD — always visible, in front of ghosts */
 .footer-art-text .solid {
+  display: block;
+  position: relative;
+  z-index: 1;
   color: var(--text);
-  animation: revealSolid linear both;
-  animation-timeline: scroll(root);
-  animation-range: 25% 45%;
 }
 
-/* SHIP — appears last */
+/* SHIP — start hidden, in front of ghosts */
 .footer-art-text .ship {
+  position: relative;
+  z-index: 1;
+  display: block;
   color: var(--accent);
   text-shadow: 0 0 60px rgba(37, 99, 235, 0.15);
-  animation: revealShip linear both;
-  animation-timeline: scroll(root);
-  animation-range: 65% 85%;
+  opacity: 0;
 }
 
-/* Info bar below art */
+/* Info bar below art — negative margin eats blank zone space */
 .footer-info {
+  margin-top: -30vh;
   padding: 2rem 0;
   border-top: 2px solid var(--text);
+  position: relative;
 }
 
 .footer-cols {
@@ -878,8 +894,7 @@ kbd {
   }
 
   .footer-art {
-    height: 30vh;
-    min-height: 200px;
+    height: 100vh;
   }
 
   .footer-cols {

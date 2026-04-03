@@ -287,7 +287,7 @@
     <footer class="footer">
       <!-- Giant typographic art -->
       <div class="footer-art" id="footerArt">
-        <div class="footer-art-text"><span class="ghost">BUILD</span><span class="ghost">BUILD</span><span class="ghost">BUILD</span><span class="ghost">BUILD</span><span class="solid">BUILD</span><span class="ship">SHIP.</span></div>
+        <div class="footer-art-text"><span class="ghost">BUILD</span><span class="ghost">BUILD</span><span class="ghost">BUILD</span><span class="ghost">BUILD</span><span class="ghost">BUILD</span><span class="ghost">BUILD</span><span class="ghost">BUILD</span><span class="ghost">BUILD</span><span class="ghost">BUILD</span><span class="ghost">BUILD</span><span class="ghost">BUILD</span><span class="ghost">BUILD</span><span class="ghost">BUILD</span><span class="ghost">BUILD</span><span class="ghost">BUILD</span><span class="ghost">BUILD</span><span class="ghost">BUILD</span><span class="ghost">BUILD</span><span class="ghost">BUILD</span><span class="ghost">BUILD</span><span class="solid">BUILD</span><span class="ship">SHIP.</span></div>
       </div>
 
       <!-- Info bar -->
@@ -330,8 +330,55 @@
   </div>
 
   <script>
-  /* Footer animation is pure CSS (animation-timeline: scroll) — no JS needed */
+  /* Footer scroll animation — sticky text + local scroll progress */
   (function(){
+    var zone = document.getElementById('footerArt');
+    if (!zone) return;
+    var art    = zone.querySelector('.footer-art-text');
+    var ghosts = art.querySelectorAll('.ghost');
+    var solid  = art.querySelector('.solid');
+    var ship   = art.querySelector('.ship');
+
+    /* 15 ghosts — target opacities (faintest at top, strongest near BUILD) */
+    var n = ghosts.length;
+    var ghostTargets = [];
+    for (var i = 0; i < n; i++) {
+      ghostTargets.push(0.06 + (0.55 - 0.06) * (i / (n - 1)));
+    }
+
+    function clamp01(v){ return v<0?0:v>1?1:v; }
+    function rp(p,s,e){ return clamp01((p-s)/(e-s)); }
+    function lerp(a,b,t){ return a+(b-a)*t; }
+
+    function update(){
+      var rect = zone.getBoundingClientRect();
+      var vh   = window.innerHeight;
+      /* sticky top offset matches CSS top: 25vh */
+      var stickyTop = Math.round(vh * 0.25);
+      /* progress 0 = zone top hits stickyTop, 1 = scroll zone exhausted */
+      var scrollDist = stickyTop + zone.offsetHeight - vh;
+      var p = clamp01((stickyTop - rect.top) / scrollDist);
+
+      /* 1. BUILD is always visible — no animation needed */
+
+      /* 2. Ghost trail grows UPWARD from BUILD (closest ghost = last index) */
+      for (var i = n - 1; i >= 0; i--) {
+        var rank = n - 1 - i;
+        var start = rank * (0.55 / (n - 1));
+        var end   = start + 0.15;
+        ghosts[i].style.opacity = lerp(0, ghostTargets[i], rp(p, start, end));
+      }
+
+      /* 3. SHIP appears last */
+      var sh = rp(p, 0.70, 0.90);
+      ship.style.opacity = lerp(0,1,sh);
+    }
+
+    var ticking = false;
+    window.addEventListener('scroll', function(){
+      if(!ticking){ requestAnimationFrame(function(){ update(); ticking=false; }); ticking=true; }
+    }, {passive:true});
+    update();
   })();
 
   /* === Rest of site JS (expandable entries, clock, cmd palette) === */
