@@ -2,37 +2,48 @@
    SEBASTIAN OLIVER — Interactive Script
    ============================================ */
 
-// ---- Footer art scroll parallax ----
+// ---- Footer art scroll animation ----
 const footerArt = document.getElementById('footerArt');
 if (footerArt) {
-  const artText = footerArt.querySelector('.footer-art-text');
+  const spans = footerArt.querySelectorAll('.footer-art-text span');
   const overlay = footerArt.querySelector('.footer-art-overlay');
+
+  // Start hidden
+  spans.forEach(span => {
+    span.style.transition = 'transform 0.8s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.8s ease';
+    span.style.transform = 'translateY(40px) scaleY(0.8)';
+    span.style.opacity = '0';
+  });
+  if (overlay) {
+    overlay.style.transition = 'transform 0.9s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.9s ease';
+    overlay.style.transform = 'translateY(30px)';
+    overlay.style.opacity = '0';
+  }
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        window.addEventListener('scroll', animateFooter);
-        animateFooter();
-      } else {
-        window.removeEventListener('scroll', animateFooter);
+        // Stagger each BUILD line cascading in
+        spans.forEach((span, i) => {
+          setTimeout(() => {
+            span.style.transform = 'translateY(0) scaleY(1)';
+            // Restore the CSS opacity (set by nth-child rules)
+            span.style.opacity = '';
+          }, i * 40);
+        });
+        // SHIP comes in last
+        if (overlay) {
+          setTimeout(() => {
+            overlay.style.transform = 'translateY(0)';
+            overlay.style.opacity = '1';
+          }, spans.length * 40 + 100);
+        }
+        observer.unobserve(footerArt);
       }
     });
-  }, { threshold: 0 });
+  }, { threshold: 0.15 });
 
   observer.observe(footerArt);
-
-  function animateFooter() {
-    const rect = footerArt.getBoundingClientRect();
-    const vh = window.innerHeight;
-    const progress = Math.max(0, Math.min(1, 1 - (rect.top / vh)));
-    if (artText) {
-      artText.style.transform = `translateY(${(1 - progress) * 30}px)`;
-    }
-    if (overlay) {
-      overlay.style.transform = `translateY(${(1 - progress) * 15}px)`;
-      overlay.style.opacity = 0.3 + progress * 0.7;
-    }
-  }
 }
 
 // ---- Expandable entries ----
