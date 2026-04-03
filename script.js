@@ -3,7 +3,7 @@
    ============================================ */
 
 // ---- Footer art: scroll-driven accordion ----
-// rAF-batched to work on Firefox + Chrome + Safari
+// Uses page scroll fraction (not viewport position) so it works on short pages
 (function() {
   var art = document.getElementById('footerArt');
   if (!art) return;
@@ -14,43 +14,41 @@
 
   function update() {
     ticking = false;
-    var rect = art.getBoundingClientRect();
-    var vh = window.innerHeight;
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    var maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+    if (maxScroll <= 0) return;
 
-    // p goes 0→1 as the art scrolls from viewport bottom to 30% up
-    var p = (vh - rect.top) / (vh * 0.7);
+    // p: 0 at 40% page scroll, 1 at 100% page scroll
+    // Footer animation occupies the last 60% of scrolling
+    var scrollFrac = scrollTop / maxScroll;
+    var p = (scrollFrac - 0.4) / 0.6;
     p = p < 0 ? 0 : p > 1 ? 1 : p;
 
-    // Smoothstep
-    var sp = p * p * (3 - 2 * p);
-
     for (var i = 0; i < spans.length; i++) {
-      // Each line gets a staggered slice: starts later, ends later
-      var start = i * 0.09;
-      var lp = (sp - start) / 0.35;
+      // Stagger: each line starts 0.08 later
+      var lp = (p - i * 0.08) / 0.3;
       lp = lp < 0 ? 0 : lp > 1 ? 1 : lp;
+      // Smoothstep
+      var e = lp * lp * (3 - 2 * lp);
 
-      // scaleY: 0 → 1 (accordion expand from top)
-      // opacity: 0 → target
-      spans[i].style.transform = 'scaleY(' + lp + ')';
-      spans[i].style.opacity = ops[i] * lp;
+      spans[i].style.transform = 'scaleY(' + e + ')';
+      spans[i].style.opacity = ops[i] * e;
 
-      // Last line: solid text when mostly open
       if (i === spans.length - 1) {
-        spans[i].style.color = lp > 0.5 ? 'var(--text)' : '';
-        spans[i].style.webkitTextStroke = lp > 0.5 ? '0' : '';
+        spans[i].style.color = e > 0.5 ? 'var(--text)' : '';
+        spans[i].style.webkitTextStroke = e > 0.5 ? '0' : '';
       }
       if (i === spans.length - 2) {
-        spans[i].style.webkitTextStrokeWidth = lp > 0.5 ? '1.5px' : '';
+        spans[i].style.webkitTextStrokeWidth = e > 0.5 ? '1.5px' : '';
       }
     }
 
-    // SHIP: comes after last BUILD line
-    var sStart = spans.length * 0.09;
-    var sP = (sp - sStart) / 0.35;
+    // SHIP follows after last line
+    var sP = (p - spans.length * 0.08) / 0.3;
     sP = sP < 0 ? 0 : sP > 1 ? 1 : sP;
-    ship.style.opacity = sP;
-    ship.style.transform = 'translateY(' + (8 * (1 - sP)) + 'px)';
+    var sE = sP * sP * (3 - 2 * sP);
+    ship.style.opacity = sE;
+    ship.style.transform = 'translateY(' + (8 * (1 - sE)) + 'px)';
   }
 
   function onScroll() {
@@ -61,6 +59,7 @@
   }
 
   window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', update, { passive: true });
   update();
 })();
 
