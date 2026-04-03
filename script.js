@@ -3,67 +3,62 @@
    ============================================ */
 
 // ---- Footer art: scroll-driven reveal ----
-// Lines expand down as you scroll in, collapse up as you scroll out.
+// v4: dramatic movement, each line cascades from far below
 (function() {
   const art = document.getElementById('footerArt');
   if (!art) return;
 
-  const spans = art.querySelectorAll('.footer-art-text span');
+  const spans = Array.from(art.querySelectorAll('.footer-art-text span'));
   const overlay = art.querySelector('.footer-art-overlay');
-  const count = spans.length; // 8
-  // Target opacities for each line (top=faint, bottom=solid)
+  const total = spans.length + 1; // lines + SHIP overlay
   const targetOp = [0.05, 0.08, 0.14, 0.22, 0.32, 0.45, 0.65, 1];
-  // Bottom line gets solid fill
-  const solidIndex = count - 1;
 
-  function onScroll() {
+  function update() {
     const rect = art.getBoundingClientRect();
     const vh = window.innerHeight;
 
-    // progress: 0 = footer top just entering viewport bottom
-    //           1 = footer top at 40% from viewport bottom
-    const start = vh;
-    const end = vh * 0.4;
-    const progress = Math.max(0, Math.min(1, (start - rect.top) / (start - end)));
+    // progress 0..1 over a FULL viewport of scrolling
+    // 0 = art top is at viewport bottom
+    // 1 = art top is at viewport top
+    const progress = 1 - (rect.top / vh);
+    const p = Math.max(0, Math.min(1, progress));
 
-    // Each line reveals sequentially within the progress range
-    // Line 0 starts at progress=0, line 7+overlay finish at progress=1
-    const totalSlots = count + 1; // 8 lines + 1 overlay
+    spans.forEach(function(span, i) {
+      // each line occupies an overlapping slice of progress
+      // earlier lines start earlier, later lines start later
+      var lineP = (p - (i * 0.08)) / 0.3;
+      lineP = Math.max(0, Math.min(1, lineP));
 
-    for (let i = 0; i < count; i++) {
-      const lineStart = i / totalSlots;
-      const lineEnd = (i + 1) / totalSlots;
-      const lineProgress = Math.max(0, Math.min(1, (progress - lineStart) / (lineEnd - lineStart)));
+      // eased
+      var ease = lineP * lineP * (3 - 2 * lineP); // smoothstep
 
-      const op = targetOp[i] * lineProgress;
-      const ty = 12 * (1 - lineProgress);
+      var moveY = 60 * (1 - ease);
+      var op = targetOp[i] * ease;
+      var scale = 0.92 + 0.08 * ease;
 
-      spans[i].style.opacity = op;
-      spans[i].style.transform = 'translateY(' + ty + 'px)';
+      span.style.transform = 'translateY(' + moveY + 'px) scale(' + scale + ')';
+      span.style.opacity = op;
 
-      // Solid color on last line
-      if (i === solidIndex && lineProgress > 0.5) {
-        spans[i].style.color = 'var(--text)';
-        spans[i].style.webkitTextStroke = '0';
-      } else if (i === solidIndex) {
-        spans[i].style.color = '';
-        spans[i].style.webkitTextStroke = '';
+      // last line: solid color when revealed
+      if (i === spans.length - 1 && ease > 0.5) {
+        span.style.color = 'var(--text)';
+        span.style.webkitTextStroke = '0';
+      } else if (i === spans.length - 1) {
+        span.style.color = '';
+        span.style.webkitTextStroke = '';
       }
-      // Thicker stroke on second-to-last
-      if (i === solidIndex - 1) {
-        spans[i].style.webkitTextStrokeWidth = lineProgress > 0.5 ? '1.5px' : '';
-      }
-    }
+    });
 
-    // Overlay (SHIP.) is the last slot
-    const oStart = count / totalSlots;
-    const oProgress = Math.max(0, Math.min(1, (progress - oStart) / (1 - oStart)));
-    overlay.style.opacity = oProgress;
-    overlay.style.transform = 'translateY(' + (12 * (1 - oProgress)) + 'px)';
+    // SHIP overlay -- comes in after the last BUILD line
+    var shipP = (p - (spans.length * 0.08)) / 0.3;
+    shipP = Math.max(0, Math.min(1, shipP));
+    var shipEase = shipP * shipP * (3 - 2 * shipP);
+    overlay.style.transform = 'translateY(' + (50 * (1 - shipEase)) + 'px) scale(' + (0.9 + 0.1 * shipEase) + ')';
+    overlay.style.opacity = shipEase;
   }
 
-  window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll(); // set initial state
+  window.addEventListener('scroll', update, { passive: true });
+  update();
 })();
 
 // ---- Expandable entries ----
