@@ -631,47 +631,39 @@ kbd {
   overflow: hidden;
 }
 
-/* Giant typographic art */
+/* Footer typographic art */
 .footer-art {
   text-align: center;
   padding: 0;
 }
 
-/* Ghost trail — faintest at top, more visible going down */
 .footer-art-text {
   font-family: var(--mono);
   font-weight: 800;
   font-size: clamp(4.5rem, 13vw, 8rem);
   letter-spacing: -0.04em;
-  line-height: 0.78;
+  line-height: 0.82;
   user-select: none;
+}
+
+.footer-art-text span { display: block; }
+
+/* Ghost trail — outlined, faintest at top */
+.footer-art-text .ghost {
   color: transparent;
   -webkit-text-stroke: 1px var(--border);
 }
 
-.footer-art-text span { display: block; }
-.footer-art-text span:nth-child(1) { opacity: 0.06; }
-.footer-art-text span:nth-child(2) { opacity: 0.12; }
-.footer-art-text span:nth-child(3) { opacity: 0.22; }
-.footer-art-text span:nth-child(4) { opacity: 0.4; -webkit-text-stroke-width: 1.5px; }
+.footer-art-text .ghost:nth-child(1) { opacity: 0.06; }
+.footer-art-text .ghost:nth-child(2) { opacity: 0.12; }
+.footer-art-text .ghost:nth-child(3) { opacity: 0.25; }
+.footer-art-text .ghost:nth-child(4) { opacity: 0.45; -webkit-text-stroke-width: 1.5px; }
 
-/* Solid BUILD */
-.footer-art-solid {
-  font-family: var(--mono);
-  font-weight: 800;
-  font-size: clamp(4.5rem, 13vw, 8rem);
-  letter-spacing: -0.04em;
-  line-height: 0.78;
-  color: var(--text);
-}
+/* Solid BUILD — black */
+.footer-art-text .solid { color: var(--text); }
 
-/* SHIP — blue, right under BUILD, no gap */
-.footer-art-ship {
-  font-family: var(--mono);
-  font-weight: 800;
-  font-size: clamp(4.5rem, 13vw, 8rem);
-  letter-spacing: -0.04em;
-  line-height: 0.78;
+/* SHIP — blue */
+.footer-art-text .ship {
   color: var(--accent);
   text-shadow: 0 0 60px rgba(37, 99, 235, 0.15);
 }

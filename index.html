@@ -287,9 +287,7 @@
     <footer class="footer">
       <!-- Giant typographic art -->
       <div class="footer-art" id="footerArt">
-        <div class="footer-art-text" aria-hidden="true"><span>BUILD</span><span>BUILD</span><span>BUILD</span><span>BUILD</span></div>
-        <div class="footer-art-solid">BUILD</div>
-        <div class="footer-art-ship">SHIP.</div>
+        <div class="footer-art-text"><span class="ghost">BUILD</span><span class="ghost">BUILD</span><span class="ghost">BUILD</span><span class="ghost">BUILD</span><span class="solid">BUILD</span><span class="ship">SHIP.</span></div>
       </div>
 
       <!-- Info bar -->
@@ -336,11 +334,10 @@
   (function(){
     var art = document.getElementById('footerArt');
     if (!art) return;
-    // Trail: 4 ghost lines (faintest at top). Solid BUILD + SHIP are separate.
-    var trail = [].slice.call(art.querySelectorAll('.footer-art-text span'));
-    var solid = art.querySelector('.footer-art-solid');
-    var ship = art.querySelector('.footer-art-ship');
-    var trailOps = [0.06, 0.12, 0.22, 0.4];
+    var ghosts = [].slice.call(art.querySelectorAll('.ghost'));
+    var solid = art.querySelector('.solid');
+    var ship = art.querySelector('.ship');
+    var ghostOps = [0.06, 0.12, 0.25, 0.45];
     var ticking = false;
     function update() {
       ticking = false;
@@ -348,27 +345,25 @@
       var max = document.documentElement.scrollHeight - window.innerHeight;
       if (max <= 0) return;
       var frac = st / max;
-      // p: 0 at 15% scroll, 1 at 85% scroll
+      // p: 0→1 over 15%→85% of page scroll
       var p = (frac - 0.15) / 0.7;
       p = p < 0 ? 0 : p > 1 ? 1 : p;
-      // Solid BUILD fades in first (0-30% of p)
-      var sp = Math.min(1, p / 0.3);
-      sp = sp * sp * (3 - 2 * sp);
-      solid.style.opacity = sp;
-      // Trail expands upward: last trail (closest to solid) appears first,
-      // first trail (faintest, topmost) appears last
-      for (var i = trail.length - 1; i >= 0; i--) {
-        var idx = trail.length - 1 - i; // 0 for bottom trail, 3 for top trail
-        var lp = (p - 0.1 - idx * 0.12) / 0.25;
-        lp = lp < 0 ? 0 : lp > 1 ? 1 : lp;
-        var e = lp * lp * (3 - 2 * lp);
-        trail[i].style.opacity = trailOps[i] * e;
+      // Solid BUILD: fades in first
+      var s = Math.min(1, p / 0.25);
+      solid.style.opacity = s * s * (3 - 2 * s);
+      // Ghost trail expands UPWARD from solid:
+      // ghost[3] (closest to solid) appears first, ghost[0] (faintest) last
+      for (var i = ghosts.length - 1; i >= 0; i--) {
+        var dist = ghosts.length - 1 - i; // 0=closest, 3=farthest
+        var gp = (p - 0.1 - dist * 0.12) / 0.2;
+        gp = gp < 0 ? 0 : gp > 1 ? 1 : gp;
+        var ge = gp * gp * (3 - 2 * gp);
+        ghosts[i].style.opacity = ghostOps[i] * ge;
       }
-      // SHIP fades in last (70-100% of p)
-      var shP = (p - 0.7) / 0.3;
-      shP = shP < 0 ? 0 : shP > 1 ? 1 : shP;
-      var shE = shP * shP * (3 - 2 * shP);
-      ship.style.opacity = shE;
+      // SHIP: last to appear
+      var sp = (p - 0.7) / 0.3;
+      sp = sp < 0 ? 0 : sp > 1 ? 1 : sp;
+      ship.style.opacity = sp * sp * (3 - 2 * sp);
     }
     window.addEventListener('scroll', function() {
       if (!ticking) { ticking = true; requestAnimationFrame(update); }
