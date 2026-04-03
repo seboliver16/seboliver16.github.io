@@ -625,36 +625,88 @@ kbd {
 
 .footer {
   margin-top: 2rem;
-  padding: 2.5rem 0 2rem;
-  border-top: 2px solid var(--text);
   font-family: var(--mono);
   font-size: 0.7rem;
   color: var(--text-light);
+  overflow: hidden;
 }
 
-.footer-top {
+/* Giant typographic art */
+.footer-art {
+  position: relative;
+  height: 50vh;
+  min-height: 340px;
+  max-height: 500px;
+  overflow: hidden;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 2rem;
-  margin-bottom: 2rem;
+  align-items: flex-end;
+  justify-content: center;
 }
 
-.footer-brand {
+.footer-art-text {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  line-height: 0.85;
   font-family: var(--mono);
-  font-size: 1.4rem;
   font-weight: 800;
-  letter-spacing: -0.02em;
-  color: var(--text);
-  line-height: 1.2;
+  font-size: clamp(5rem, 15vw, 10rem);
+  letter-spacing: -0.04em;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--border);
+  user-select: none;
+  transform-origin: bottom center;
+  perspective: 600px;
 }
 
-.footer-brand-sub {
-  font-size: 0.7rem;
-  font-weight: 400;
-  color: var(--text-light);
-  margin-top: 0.3rem;
-  letter-spacing: 0;
+.footer-art-text span {
+  display: block;
+  transform: scaleX(1) scaleY(1);
+  opacity: 0.6;
+  transition: transform 0.4s, opacity 0.4s;
+}
+
+/* Each row gets progressively smaller/faded creating the 3D cascade */
+.footer-art-text span:nth-child(1) { opacity: 1; -webkit-text-stroke-color: var(--text); color: var(--text); -webkit-text-stroke: 0; }
+.footer-art-text span:nth-child(2) { transform: scale(0.96); opacity: 0.35; }
+.footer-art-text span:nth-child(3) { transform: scale(0.92); opacity: 0.28; }
+.footer-art-text span:nth-child(4) { transform: scale(0.88); opacity: 0.22; }
+.footer-art-text span:nth-child(5) { transform: scale(0.84); opacity: 0.18; }
+.footer-art-text span:nth-child(6) { transform: scale(0.80); opacity: 0.15; }
+.footer-art-text span:nth-child(7) { transform: scale(0.76); opacity: 0.12; }
+.footer-art-text span:nth-child(8) { transform: scale(0.72); opacity: 0.10; }
+.footer-art-text span:nth-child(9) { transform: scale(0.68); opacity: 0.08; }
+.footer-art-text span:nth-child(10) { transform: scale(0.64); opacity: 0.07; }
+.footer-art-text span:nth-child(11) { transform: scale(0.60); opacity: 0.06; }
+.footer-art-text span:nth-child(12) { transform: scale(0.56); opacity: 0.05; }
+.footer-art-text span:nth-child(13) { transform: scale(0.52); opacity: 0.04; }
+.footer-art-text span:nth-child(14) { transform: scale(0.48); opacity: 0.035; }
+.footer-art-text span:nth-child(15) { transform: scale(0.44); opacity: 0.03; }
+.footer-art-text span:nth-child(16) { transform: scale(0.40); opacity: 0.025; }
+.footer-art-text span:nth-child(17) { transform: scale(0.36); opacity: 0.02; }
+.footer-art-text span:nth-child(18) { transform: scale(0.32); opacity: 0.015; }
+.footer-art-text span:nth-child(19) { transform: scale(0.28); opacity: 0.01; }
+.footer-art-text span:nth-child(20) { transform: scale(0.24); opacity: 0.008; }
+
+.footer-art-overlay {
+  position: relative;
+  z-index: 2;
+  font-family: var(--mono);
+  font-weight: 800;
+  font-size: clamp(5rem, 15vw, 10rem);
+  letter-spacing: -0.04em;
+  color: var(--accent);
+  line-height: 0.85;
+  margin-bottom: -0.05em;
+  text-shadow: 0 0 60px rgba(37, 99, 235, 0.2);
+}
+
+/* Info bar below art */
+.footer-info {
+  padding: 2rem 0;
+  border-top: 2px solid var(--text);
 }
 
 .footer-cols {
@@ -688,22 +740,12 @@ kbd {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 1.25rem;
+  padding: 1.25rem 0;
   border-top: 1px solid var(--border);
 }
 
 .footer-bottom span {
   font-variant-numeric: tabular-nums;
-}
-
-.footer-ascii {
-  font-family: var(--mono);
-  font-size: 0.55rem;
-  line-height: 1.2;
-  color: var(--border);
-  white-space: pre;
-  user-select: none;
-  text-align: right;
 }
 
 /* ============================================
@@ -853,13 +895,14 @@ kbd {
     grid-template-columns: 1fr;
   }
 
-  .footer-top {
-    flex-direction: column;
-    gap: 1.5rem;
+  .footer-art {
+    height: 30vh;
+    min-height: 200px;
   }
 
   .footer-cols {
-    gap: 2rem;
+    flex-wrap: wrap;
+    gap: 1.5rem;
   }
 
   .footer-bottom {

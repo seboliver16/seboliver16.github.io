@@ -1,6 +1,39 @@
 /* ============================================
-   SEB OLIVER — Interactive Script
+   SEBASTIAN OLIVER — Interactive Script
    ============================================ */
+
+// ---- Footer art scroll parallax ----
+const footerArt = document.getElementById('footerArt');
+if (footerArt) {
+  const artText = footerArt.querySelector('.footer-art-text');
+  const overlay = footerArt.querySelector('.footer-art-overlay');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        window.addEventListener('scroll', animateFooter);
+        animateFooter();
+      } else {
+        window.removeEventListener('scroll', animateFooter);
+      }
+    });
+  }, { threshold: 0 });
+
+  observer.observe(footerArt);
+
+  function animateFooter() {
+    const rect = footerArt.getBoundingClientRect();
+    const vh = window.innerHeight;
+    const progress = Math.max(0, Math.min(1, 1 - (rect.top / vh)));
+    if (artText) {
+      artText.style.transform = `translateY(${(1 - progress) * 30}px)`;
+    }
+    if (overlay) {
+      overlay.style.transform = `translateY(${(1 - progress) * 15}px)`;
+      overlay.style.opacity = 0.3 + progress * 0.7;
+    }
+  }
+}
 
 // ---- Expandable entries ----
 document.querySelectorAll('[data-expandable]').forEach(entry => {
