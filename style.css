@@ -339,6 +339,9 @@ kbd {
 
 .section {
   padding: 2rem 0;
+  position: relative;
+  z-index: 1;
+  background: var(--bg);
 }
 
 .section-title {
@@ -635,7 +638,6 @@ kbd {
   text-align: center;
   padding: 0;
   height: 110vh;
-  overflow: clip;
 }
 
 .footer-art-text {
