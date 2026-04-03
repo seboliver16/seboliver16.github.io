@@ -5,12 +5,33 @@
 // ---- Footer art scroll reveal ----
 const footerArt = document.getElementById('footerArt');
 if (footerArt) {
-  new IntersectionObserver((entries, obs) => {
-    if (entries[0].isIntersecting) {
+  function revealFooter() {
+    if (!footerArt.classList.contains('visible')) {
       footerArt.classList.add('visible');
-      obs.disconnect();
     }
-  }, { threshold: 0.1 }).observe(footerArt);
+  }
+
+  // Primary: IntersectionObserver
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver((entries, obs) => {
+      if (entries[0].isIntersecting) {
+        revealFooter();
+        obs.disconnect();
+      }
+    }, { threshold: 0 }).observe(footerArt);
+  }
+
+  // Fallback: scroll listener
+  function checkScroll() {
+    const rect = footerArt.getBoundingClientRect();
+    if (rect.top < window.innerHeight) {
+      revealFooter();
+      window.removeEventListener('scroll', checkScroll);
+    }
+  }
+  window.addEventListener('scroll', checkScroll);
+  // Check immediately in case already in view
+  checkScroll();
 }
 
 // ---- Expandable entries ----
