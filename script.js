@@ -3,36 +3,30 @@
    ============================================ */
 
 // ---- Footer art scroll reveal ----
-const footerArt = document.getElementById('footerArt');
-if (footerArt) {
-  function revealFooter() {
-    if (!footerArt.classList.contains('visible')) {
-      footerArt.classList.add('visible');
-    }
+// Wait for the browser to paint the initial hidden state before observing.
+// Without this, the class gets added before the first paint and no transition plays.
+requestAnimationFrame(() => {
+requestAnimationFrame(() => {
+  const footerArt = document.getElementById('footerArt');
+  if (!footerArt) return;
+
+  let revealed = false;
+  function reveal() {
+    if (revealed) return;
+    revealed = true;
+    footerArt.classList.add('visible');
   }
 
-  // Primary: IntersectionObserver
-  if ('IntersectionObserver' in window) {
-    new IntersectionObserver((entries, obs) => {
-      if (entries[0].isIntersecting) {
-        revealFooter();
-        obs.disconnect();
-      }
-    }, { threshold: 0 }).observe(footerArt);
-  }
-
-  // Fallback: scroll listener
-  function checkScroll() {
+  // Only trigger on scroll — not on load
+  window.addEventListener('scroll', function onScroll() {
     const rect = footerArt.getBoundingClientRect();
-    if (rect.top < window.innerHeight) {
-      revealFooter();
-      window.removeEventListener('scroll', checkScroll);
+    if (rect.top < window.innerHeight * 0.92) {
+      reveal();
+      window.removeEventListener('scroll', onScroll);
     }
-  }
-  window.addEventListener('scroll', checkScroll);
-  // Check immediately in case already in view
-  checkScroll();
-}
+  });
+});
+});
 
 // ---- Expandable entries ----
 document.querySelectorAll('[data-expandable]').forEach(entry => {
