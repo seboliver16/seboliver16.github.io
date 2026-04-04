@@ -707,6 +707,8 @@ kbd {
   padding: 2rem 0;
   border-top: 2px solid var(--text);
   position: relative;
+  z-index: 1;
+  background: var(--bg);
 }
 
 .footer-cols {
@@ -896,7 +898,16 @@ kbd {
   }
 
   .footer-art {
-    height: 100vh;
+    height: 110vh;
+  }
+
+  .footer-art-text {
+    top: 30vh;
+    font-size: clamp(3rem, 14vw, 5rem);
+  }
+
+  .footer-info {
+    margin-top: -5vh;
   }
 
   .footer-cols {
