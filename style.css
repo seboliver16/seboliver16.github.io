@@ -633,26 +633,28 @@ kbd {
   color: var(--text-light);
 }
 
-/* Footer giant text — OSMO-style, breaks out of page container */
+/* Footer giant text — below footer info */
 .footer-art {
   padding: 2rem 0 0;
   margin-left: calc(-1 * var(--page-px));
   margin-right: calc(-1 * var(--page-px));
   width: calc(100% + 2 * var(--page-px));
+  overflow: hidden;
 }
 
 .footer-art-text {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0;
   font-family: var(--mono);
   font-weight: 900;
-  font-size: clamp(5rem, 18vw, 14rem);
+  font-size: clamp(3rem, 9vw, 7rem);
   letter-spacing: -0.05em;
-  line-height: 0.85;
+  line-height: 0.9;
   text-align: center;
   user-select: none;
-  white-space: nowrap;
 }
-
-.footer-art-text span { display: block; }
 
 /* BUILD — outlined */
 .footer-art-text .outline {
@@ -660,9 +662,18 @@ kbd {
   -webkit-text-stroke: 2px var(--text);
 }
 
-/* SHIP — solid */
+/* & — solid, smaller */
 .footer-art-text .solid {
   color: var(--text);
+}
+
+/* Ship icon inline */
+.ship-icon {
+  width: 0.7em;
+  height: 0.7em;
+  vertical-align: baseline;
+  margin-left: 0.05em;
+  fill: currentColor;
 }
 
 /* Info bar below art */
@@ -860,8 +871,15 @@ kbd {
     grid-template-columns: 1fr;
   }
 
+  .footer-art {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+
   .footer-art-text {
-    font-size: clamp(4rem, 20vw, 8rem);
+    flex-direction: column;
+    font-size: clamp(3rem, 18vw, 6rem);
   }
 
   .footer-cols {
