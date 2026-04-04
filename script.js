@@ -72,10 +72,12 @@ function togglePalette() {
   const isActive = palette.classList.contains('active');
   if (isActive) {
     palette.classList.remove('active');
+    document.body.style.overflow = '';
     cmdInput.value = '';
     renderResults('');
   } else {
     palette.classList.add('active');
+    document.body.style.overflow = 'hidden';
     cmdInput.focus();
     renderResults('');
   }
@@ -128,24 +130,54 @@ cmdInput.addEventListener('input', (e) => {
   renderResults(e.target.value);
 });
 
-// Keyboard nav in palette
-cmdInput.addEventListener('keydown', (e) => {
+// Only scroll the results container if the item is outside the visible area
+function scrollResultIntoView(el) {
+  if (!el) return;
+  const container = el.parentNode;
+  const elTop = el.offsetTop - container.offsetTop;
+  const elBottom = elTop + el.offsetHeight;
+  if (elTop < container.scrollTop) {
+    container.scrollTop = elTop;
+  } else if (elBottom > container.scrollTop + container.clientHeight) {
+    container.scrollTop = elBottom - container.clientHeight;
+  }
+}
+
+// Global keyboard shortcuts (including palette navigation)
+document.addEventListener('keydown', (e) => {
+  // Cmd+K or Ctrl+K to toggle palette
+  if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+    e.preventDefault();
+    togglePalette();
+    return;
+  }
+
+  // All other palette keys only when active
+  if (!palette.classList.contains('active')) return;
+
+  if (e.key === 'Escape') {
+    togglePalette();
+    return;
+  }
+
   const items = cmdResults.querySelectorAll('.cmd-result');
   const activeItem = cmdResults.querySelector('.cmd-result.active');
   let activeIndex = activeItem ? parseInt(activeItem.dataset.index) : -1;
 
   if (e.key === 'ArrowDown') {
     e.preventDefault();
+    e.stopPropagation();
     items.forEach(i => i.classList.remove('active'));
     activeIndex = (activeIndex + 1) % items.length;
     items[activeIndex]?.classList.add('active');
-    items[activeIndex]?.scrollIntoView({ block: 'nearest' });
+    scrollResultIntoView(items[activeIndex]);
   } else if (e.key === 'ArrowUp') {
     e.preventDefault();
+    e.stopPropagation();
     items.forEach(i => i.classList.remove('active'));
     activeIndex = activeIndex <= 0 ? items.length - 1 : activeIndex - 1;
     items[activeIndex]?.classList.add('active');
-    items[activeIndex]?.scrollIntoView({ block: 'nearest' });
+    scrollResultIntoView(items[activeIndex]);
   } else if (e.key === 'Enter') {
     e.preventDefault();
     const active = cmdResults.querySelector('.cmd-result.active');
@@ -154,19 +186,6 @@ cmdInput.addEventListener('keydown', (e) => {
       const item = sections.find(s => s.name === name);
       navigateTo(item);
     }
-  }
-});
-
-// Global keyboard shortcuts
-document.addEventListener('keydown', (e) => {
-  // Cmd+K or Ctrl+K to toggle palette
-  if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
-    e.preventDefault();
-    togglePalette();
-  }
-  // Escape to close
-  if (e.key === 'Escape' && palette.classList.contains('active')) {
-    togglePalette();
   }
 });
 

@@ -12,13 +12,14 @@
     :root {
       --mono: 'JetBrains Mono', monospace;
       --serif: 'Newsreader', Georgia, serif;
-      --bg: #f6f4f0;
-      --bg-card: #edeae4;
+      --bg: #f2f4f7;
+      --bg-card: #e8ebf0;
       --text: #1a1a18;
-      --text-mid: #6b6860;
-      --text-light: #9e9a90;
-      --accent: #c45d2c;
-      --border: #d4d0c8;
+      --text-mid: #606670;
+      --text-light: #929aa5;
+      --accent: #2563EB;
+      --accent-glow: rgba(37, 99, 235, 0.1);
+      --border: #d5d9e0;
     }
 
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -40,9 +41,26 @@
       content: '';
       position: fixed;
       inset: 0;
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+      background-image: radial-gradient(circle, var(--border) 0.75px, transparent 0.75px);
+      background-size: 24px 24px;
       pointer-events: none;
-      z-index: 9999;
+      z-index: 0;
+      mask-image: linear-gradient(to right,
+        rgba(0,0,0,0.4) 0%,
+        rgba(0,0,0,0.08) 15%,
+        transparent 22%,
+        transparent 78%,
+        rgba(0,0,0,0.08) 85%,
+        rgba(0,0,0,0.4) 100%
+      );
+      -webkit-mask-image: linear-gradient(to right,
+        rgba(0,0,0,0.4) 0%,
+        rgba(0,0,0,0.08) 15%,
+        transparent 22%,
+        transparent 78%,
+        rgba(0,0,0,0.08) 85%,
+        rgba(0,0,0,0.4) 100%
+      );
     }
 
     .container {
@@ -124,9 +142,9 @@
 
     .link-card:hover {
       border-color: var(--accent);
-      background: rgba(196, 93, 44, 0.08);
+      background: var(--accent-glow);
       transform: translateY(-2px);
-      box-shadow: 0 4px 16px rgba(196, 93, 44, 0.08);
+      box-shadow: 0 4px 16px rgba(37, 99, 235, 0.08);
     }
 
     .link-card:hover .link-icon { color: var(--accent); }

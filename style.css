@@ -635,7 +635,7 @@ kbd {
 
 /* Footer giant text — outside page container, full viewport width */
 .footer-art {
-  padding: 2rem 0 0;
+  padding: 2rem 0 1rem;
   width: 100%;
   overflow: hidden;
   background: var(--bg);
@@ -647,7 +647,7 @@ kbd {
   display: flex;
   align-items: baseline;
   justify-content: center;
-  gap: 0.15em;
+  gap: 0;
   font-family: var(--mono);
   font-weight: 900;
   font-size: clamp(4rem, 13vw, 12rem);
@@ -663,9 +663,15 @@ kbd {
   -webkit-text-stroke: 2px var(--text);
 }
 
-/* & — solid, smaller */
+/* & SHIP — solid */
 .footer-art-text .solid {
   color: var(--text);
+  white-space: nowrap;
+}
+
+.footer-art-text .amp {
+  font-size: 0.75em;
+  margin: 0 0.12em;
 }
 
 /* Ship icon inline */
@@ -874,7 +880,9 @@ kbd {
 
   .footer-art-text {
     flex-direction: column;
-    font-size: clamp(3rem, 18vw, 6rem);
+    align-items: center;
+    font-size: clamp(4rem, 22vw, 8rem);
+    line-height: 1;
   }
 
   .footer-cols {
@@ -883,8 +891,9 @@ kbd {
   }
 
   .footer-bottom {
-    flex-direction: column;
-    gap: 0.4rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.25rem 1rem;
     text-align: center;
   }
 
