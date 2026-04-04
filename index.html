@@ -353,13 +353,11 @@
     function update(){
       var rect = zone.getBoundingClientRect();
       var vh   = window.innerHeight;
-      /* sticky top offset matches CSS top: 8vh */
-      var stickyTop = Math.round(vh * 0.08);
+      /* sticky top offset matches CSS top: 25vh */
+      var stickyTop = Math.round(vh * 0.25);
+      /* progress 0 = zone top hits stickyTop, 1 = scroll zone exhausted */
       var scrollDist = stickyTop + zone.offsetHeight - vh;
-      /* Start animation when zone enters viewport (rect.top hits 90vh) */
-      var animTrigger = Math.round(vh * 0.9);
-      var fullRange = animTrigger - stickyTop + scrollDist;
-      var p = clamp01((animTrigger - rect.top) / fullRange);
+      var p = clamp01((stickyTop - rect.top) / scrollDist);
 
       /* 1. BUILD is always visible — no animation needed */
 
