@@ -54,8 +54,8 @@ const sections = [
   { name: 'Bio', section: '.two-col', hint: 'About me' },
   { name: 'Ventures', section: '[data-section="startups"]', hint: 'Vahalla, Julie AI, RoomMe' },
   { name: 'Experience', section: '[data-section="experience"]', hint: 'Ramp, Amazon, Deloitte' },
-  { name: 'Content', section: '[data-section="content"]', hint: 'YouTube, TikTok, Instagram' },
-  { name: 'Connect', section: '[data-section="connect"]', hint: 'Get in touch' },
+  { name: 'Socials', section: '[data-section="socials"]', hint: 'YouTube, TikTok, Instagram' },
+  { name: 'Connect', section: '[data-section="connect"]', hint: 'LinkedIn, X, GitHub' },
   { name: 'Vahalla', section: null, hint: 'Interview prep platform', url: 'https://vahalla.dev' },
   { name: 'Julie AI', section: null, hint: 'Expert discovery agent', url: 'https://julieai.dev' },
   { name: 'RoomMe', section: null, hint: 'Roommate matching app', url: 'https://roomme.app' },
@@ -197,29 +197,36 @@ renderResults('');
   if (!sea) return;
 
   const chars = ['s', '1', '3', 'r', 's', 'r', '1', '3', 's', '3', 'r', '1'];
-  const GAP = 28;
-  const COLS = Math.floor(window.innerWidth / GAP);
   const ROWS = 50;
+  let resizeTimer;
 
-  for (let c = 0; c < COLS; c++) {
-    const col = document.createElement('div');
-    col.className = 'sea-col';
-    col.style.left = (c * GAP) + 'px';
+  function buildSea() {
+    sea.innerHTML = '';
+    const w = window.innerWidth;
+    const GAP = Math.max(20, Math.min(28, w / 50));
+    const COLS = Math.ceil(w / GAP);
 
-    // Random speed between 30s and 70s for variety
-    const speed = 30 + Math.random() * 40;
-    col.style.animationDuration = speed + 's';
-    // Random start offset so columns aren't in sync
-    col.style.animationDelay = -(Math.random() * speed) + 's';
+    for (let c = 0; c < COLS; c++) {
+      const col = document.createElement('div');
+      col.className = 'sea-col';
+      col.style.left = ((c / COLS) * 100) + '%';
 
-    // Build column text — each char on its own line
-    let text = '';
-    for (let r = 0; r < ROWS; r++) {
-      text += chars[Math.floor(Math.random() * chars.length)] + '\n';
+      const speed = 30 + Math.random() * 40;
+      col.style.animationDuration = speed + 's';
+      col.style.animationDelay = -(Math.random() * speed) + 's';
+
+      let text = '';
+      for (let r = 0; r < ROWS; r++) {
+        text += chars[Math.floor(Math.random() * chars.length)] + '\n';
+      }
+      col.textContent = text + text;
+      sea.appendChild(col);
     }
-    // Double it for seamless loop
-    col.textContent = text + text;
-
-    sea.appendChild(col);
   }
+
+  buildSea();
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(buildSea, 300);
+  });
 })();

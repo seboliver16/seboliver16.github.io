@@ -616,6 +616,20 @@ kbd {
   gap: 0.75rem;
 }
 
+.connect-grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+a.section-title-link {
+  text-decoration: none;
+  color: var(--text);
+  cursor: pointer;
+}
+
+a.section-title-link:hover {
+  color: var(--accent);
+}
+
 .connect-card {
   display: flex;
   align-items: center;
@@ -656,6 +670,7 @@ kbd {
   font-size: 0.75rem;
   font-weight: 600;
   color: var(--text);
+  white-space: nowrap;
 }
 
 .connect-value {
@@ -663,6 +678,7 @@ kbd {
   font-size: 0.8rem;
   color: var(--text-light);
   margin-left: auto;
+  white-space: nowrap;
   transition: color 0.2s;
 }
 

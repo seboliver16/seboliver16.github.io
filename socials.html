@@ -16,15 +16,9 @@
   <div class="word-sea" id="wordSea" aria-hidden="true"></div>
 
   <div class="socials-page">
-    <!-- Back link -->
-    <a href="index.html" class="back-link">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5m0 0l7 7m-7-7l7-7"/></svg>
-      seboliver.dev
-    </a>
-
-    <!-- Identity -->
+    <!-- Identity / Back -->
     <div class="socials-hero" data-animate>
-      <h1 class="socials-name">SEBASTIAN<br>OLIVER</h1>
+      <h1 class="socials-name"><a href="index.html" class="section-title section-title-link"><span class="socials-arrow">&larr;</span>SEBASTIAN<br>OLIVER</a></h1>
       <p class="socials-tagline">engineer. founder. builder.</p>
     </div>
 
@@ -111,41 +105,41 @@
     if (!sea) return;
 
     const words = ['TECH', 'AI', 'STARTUPS', 'BUILDER', 'SHIPPING', 'FOUNDER', 'INVESTING', 'PODCAST', 'NYC', 'SCALE', 'SHIP', 'BUILD', 'CODE', 'LAUNCH'];
-    const w = window.innerWidth;
-    const contentW = 480;
-    const marginW = Math.max(0, (w - contentW) / 2);
-    // Place columns in the margins: 2-3 per side depending on space
-    const colW = Math.max(60, marginW / 3);
-    const positions = [];
-    // Left margin columns
-    for (let x = 0; x < marginW - 20; x += colW) {
-      positions.push(x);
-    }
-    // Right margin columns
-    for (let x = w - marginW + 20; x < w; x += colW) {
-      positions.push(x);
-    }
     const ROWS = 20;
+    let resizeTimer;
 
-    for (let c = 0; c < positions.length; c++) {
-      const col = document.createElement('div');
-      col.className = 'word-sea-col';
-      col.style.left = positions[c] + 'px';
-      col.style.width = colW + 'px';
+    function buildWordSea() {
+      sea.innerHTML = '';
+      const w = window.innerWidth;
+      // Spread columns evenly across the full viewport
+      const colCount = Math.max(3, Math.ceil(w / 150));
+      const colW = w / colCount;
 
-      const speed = 300 + Math.random() * 200;
-      col.style.animationDuration = speed + 's';
-      col.style.animationDelay = -(Math.random() * speed) + 's';
+      for (let c = 0; c < colCount; c++) {
+        const col = document.createElement('div');
+        col.className = 'word-sea-col';
+        col.style.left = ((c / colCount) * 100) + '%';
+        col.style.width = colW + 'px';
 
-      let text = '';
-      for (let r = 0; r < ROWS; r++) {
-        const word = words[Math.floor(Math.random() * words.length)];
-        // Stack word vertically — one char per line
-        text += word.split('').join('\n') + '\n\n';
+        const speed = 300 + Math.random() * 200;
+        col.style.animationDuration = speed + 's';
+        col.style.animationDelay = -(Math.random() * speed) + 's';
+
+        let text = '';
+        for (let r = 0; r < ROWS; r++) {
+          const word = words[Math.floor(Math.random() * words.length)];
+          text += word.split('').join('\n') + '\n\n';
+        }
+        col.textContent = text + text;
+        sea.appendChild(col);
       }
-      col.textContent = text + text;
-      sea.appendChild(col);
     }
+
+    buildWordSea();
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(buildWordSea, 300);
+    });
   })();
   </script>
 </body>
