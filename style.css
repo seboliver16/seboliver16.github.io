@@ -633,12 +633,15 @@ kbd {
   color: var(--text-light);
 }
 
-/* Footer giant text — below footer info */
+/* Footer giant text — breaks out of page container to full viewport width */
 .footer-art {
   padding: 2rem 0 0;
-  margin-left: calc(-1 * var(--page-px));
-  margin-right: calc(-1 * var(--page-px));
-  width: calc(100% + 2 * var(--page-px));
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
   overflow: hidden;
 }
 
@@ -649,7 +652,7 @@ kbd {
   gap: 0;
   font-family: var(--mono);
   font-weight: 900;
-  font-size: clamp(3rem, 9vw, 7rem);
+  font-size: clamp(4rem, 13vw, 12rem);
   letter-spacing: -0.05em;
   line-height: 0.9;
   text-align: center;
@@ -872,9 +875,11 @@ kbd {
   }
 
   .footer-art {
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%;
+    left: auto;
+    right: auto;
+    margin-left: calc(-1 * var(--page-px));
+    margin-right: calc(-1 * var(--page-px));
+    width: calc(100% + 2 * var(--page-px));
   }
 
   .footer-art-text {
