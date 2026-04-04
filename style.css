@@ -49,31 +49,50 @@ body {
   overflow-x: hidden;
 }
 
-/* Magazine dot grid on sides */
-body::before {
-  content: '';
+/* Flowing s13r sea in margins */
+.sea {
   position: fixed;
   inset: 0;
-  background-image: radial-gradient(circle, var(--border) 0.75px, transparent 0.75px);
-  background-size: 24px 24px;
   pointer-events: none;
   z-index: 0;
+  overflow: hidden;
   mask-image: linear-gradient(to right,
-    rgba(0,0,0,0.4) 0%,
-    rgba(0,0,0,0.08) 15%,
-    transparent 22%,
-    transparent 78%,
-    rgba(0,0,0,0.08) 85%,
-    rgba(0,0,0,0.4) 100%
+    rgba(0,0,0,1) 0%,
+    rgba(0,0,0,0.4) 16%,
+    transparent 25%,
+    transparent 75%,
+    rgba(0,0,0,0.4) 84%,
+    rgba(0,0,0,1) 100%
   );
   -webkit-mask-image: linear-gradient(to right,
-    rgba(0,0,0,0.4) 0%,
-    rgba(0,0,0,0.08) 15%,
-    transparent 22%,
-    transparent 78%,
-    rgba(0,0,0,0.08) 85%,
-    rgba(0,0,0,0.4) 100%
+    rgba(0,0,0,1) 0%,
+    rgba(0,0,0,0.4) 16%,
+    transparent 25%,
+    transparent 75%,
+    rgba(0,0,0,0.4) 84%,
+    rgba(0,0,0,1) 100%
   );
+}
+
+.sea-col {
+  position: absolute;
+  top: 0;
+  width: 1.4em;
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 2.4;
+  color: var(--text-mid);
+  opacity: 0.18;
+  text-align: center;
+  white-space: pre-line;
+  animation: seaDrift linear infinite;
+  will-change: transform;
+}
+
+@keyframes seaDrift {
+  from { transform: translateY(0); }
+  to { transform: translateY(-50%); }
 }
 
 /* Page container */
@@ -694,7 +713,8 @@ kbd {
 
 .footer-cols {
   display: flex;
-  gap: 3rem;
+  justify-content: space-between;
+  gap: 2rem;
 }
 
 .footer-col-title {

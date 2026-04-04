@@ -191,3 +191,36 @@ document.addEventListener('keydown', (e) => {
 
 // Initial render
 renderResults('');
+
+// ---- Flowing s13r Sea ----
+(function () {
+  const sea = document.getElementById('sea');
+  if (!sea) return;
+
+  const chars = ['s', '1', '3', 'r', 's', 'r', '1', '3', 's', '3', 'r', '1'];
+  const GAP = 28;
+  const COLS = Math.floor(window.innerWidth / GAP);
+  const ROWS = 50;
+
+  for (let c = 0; c < COLS; c++) {
+    const col = document.createElement('div');
+    col.className = 'sea-col';
+    col.style.left = (c * GAP) + 'px';
+
+    // Random speed between 30s and 70s for variety
+    const speed = 30 + Math.random() * 40;
+    col.style.animationDuration = speed + 's';
+    // Random start offset so columns aren't in sync
+    col.style.animationDelay = -(Math.random() * speed) + 's';
+
+    // Build column text — each char on its own line
+    let text = '';
+    for (let r = 0; r < ROWS; r++) {
+      text += chars[Math.floor(Math.random() * chars.length)] + '\n';
+    }
+    // Double it for seamless loop
+    col.textContent = text + text;
+
+    sea.appendChild(col);
+  }
+})();
