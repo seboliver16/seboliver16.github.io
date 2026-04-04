@@ -376,6 +376,31 @@ kbd {
   transition: color 0.3s;
 }
 
+.section-title-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.all-links-btn {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  color: var(--text-light);
+  text-decoration: none;
+  padding: 0.3em 0.7em;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.all-links-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--accent-glow);
+}
+
 .section-title::after {
   content: '';
   position: absolute;
