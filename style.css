@@ -633,17 +633,13 @@ kbd {
   color: var(--text-light);
 }
 
-/* Footer giant text — breaks out of page container to full viewport width */
+/* Footer giant text — outside page container, full viewport width */
 .footer-art {
   padding: 2rem 0 0;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
   background: var(--bg);
+  position: relative;
   z-index: 2;
 }
 
@@ -874,14 +870,6 @@ kbd {
 
   .connect-grid {
     grid-template-columns: 1fr;
-  }
-
-  .footer-art {
-    left: auto;
-    right: auto;
-    margin-left: calc(-1 * var(--page-px));
-    margin-right: calc(-1 * var(--page-px));
-    width: calc(100% + 2 * var(--page-px));
   }
 
   .footer-art-text {
