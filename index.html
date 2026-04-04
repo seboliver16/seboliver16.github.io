@@ -353,8 +353,8 @@
     function update(){
       var rect = zone.getBoundingClientRect();
       var vh   = window.innerHeight;
-      /* sticky top offset matches CSS top: 25vh */
-      var stickyTop = Math.round(vh * 0.25);
+      /* sticky top offset matches CSS top: 8vh */
+      var stickyTop = Math.round(vh * 0.08);
       /* progress 0 = zone top hits stickyTop, 1 = scroll zone exhausted */
       var scrollDist = stickyTop + zone.offsetHeight - vh;
       var p = clamp01((stickyTop - rect.top) / scrollDist);

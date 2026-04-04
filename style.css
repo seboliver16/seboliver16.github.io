@@ -642,7 +642,7 @@ kbd {
 
 .footer-art-text {
   position: sticky;
-  top: 25vh;
+  top: 8vh;
   font-family: var(--mono);
   font-weight: 800;
   font-size: clamp(4rem, 12vw, 8rem);
@@ -902,7 +902,7 @@ kbd {
   }
 
   .footer-art-text {
-    top: 25vh;
+    top: 8vh;
     font-size: clamp(3rem, 14vw, 5rem);
   }
 
