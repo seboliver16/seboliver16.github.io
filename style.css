@@ -898,7 +898,8 @@ kbd {
   }
 
   .footer-art {
-    height: 80vh;
+    height: 110vh;
+    margin-bottom: -60vh;
   }
 
   .footer-art-text {
@@ -907,7 +908,7 @@ kbd {
   }
 
   .footer-info {
-    margin-top: -55vh;
+    margin-top: 0;
   }
 
   .footer-cols {
