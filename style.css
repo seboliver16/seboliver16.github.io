@@ -643,13 +643,15 @@ kbd {
   margin-right: -50vw;
   width: 100vw;
   overflow: hidden;
+  background: var(--bg);
+  z-index: 2;
 }
 
 .footer-art-text {
   display: flex;
   align-items: baseline;
   justify-content: center;
-  gap: 0;
+  gap: 0.15em;
   font-family: var(--mono);
   font-weight: 900;
   font-size: clamp(4rem, 13vw, 12rem);
