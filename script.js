@@ -2,6 +2,58 @@
    SEBASTIAN OLIVER — Interactive Script
    ============================================ */
 
+// ---- Theme Toggle (light / dark / system) ----
+(function () {
+  const THEME_KEY = 'theme-preference';
+  const cycle = ['light', 'dark', 'system'];
+
+  function getSystemTheme() {
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+
+  function applyTheme(preference) {
+    const resolved = preference === 'system' ? getSystemTheme() : preference;
+    document.documentElement.setAttribute('data-theme', preference);
+    if (preference === 'system') {
+      // Apply resolved colors but keep data-theme="system" for icon display
+      if (resolved === 'dark') {
+        document.documentElement.style.colorScheme = 'dark';
+      } else {
+        document.documentElement.style.colorScheme = 'light';
+      }
+      // Override CSS vars for system mode
+      document.documentElement.setAttribute('data-resolved', resolved);
+    } else {
+      document.documentElement.style.colorScheme = resolved;
+      document.documentElement.removeAttribute('data-resolved');
+    }
+  }
+
+  function init() {
+    const saved = localStorage.getItem(THEME_KEY) || 'light';
+    applyTheme(saved);
+
+    const btn = document.getElementById('themeToggle');
+    if (btn) {
+      btn.addEventListener('click', () => {
+        const current = localStorage.getItem(THEME_KEY) || 'light';
+        const next = cycle[(cycle.indexOf(current) + 1) % cycle.length];
+        localStorage.setItem(THEME_KEY, next);
+        applyTheme(next);
+      });
+    }
+
+    // Listen for system preference changes (relevant when set to "system")
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+      const pref = localStorage.getItem(THEME_KEY) || 'light';
+      if (pref === 'system') applyTheme('system');
+    });
+  }
+
+  // Run immediately
+  init();
+})();
+
 // ---- Expandable entries ----
 document.querySelectorAll('[data-expandable]').forEach(entry => {
   const row = entry.querySelector('.entry-row');
@@ -65,6 +117,7 @@ const sections = [
   { name: 'YouTube', section: null, hint: '@StartUpSeb', url: 'https://www.youtube.com/@StartUpSeb' },
   { name: 'TikTok', section: null, hint: '@startupsebb', url: 'https://www.tiktok.com/@startupsebb' },
   { name: 'Instagram', section: null, hint: '@startupseb', url: 'https://www.instagram.com/startupseb/' },
+  { name: 'Toggle Theme', section: null, hint: 'Light / Dark / System', action: 'toggle-theme' },
 ];
 
 function togglePalette() {
@@ -106,6 +159,12 @@ function renderResults(query) {
 }
 
 function navigateTo(item) {
+  if (item.action === 'toggle-theme') {
+    const btn = document.getElementById('themeToggle');
+    if (btn) btn.click();
+    togglePalette();
+    return;
+  }
   if (item.url) {
     window.open(item.url, '_blank');
   } else if (item.section) {

@@ -15,9 +15,28 @@
   --accent-hover: #1d4ed8;
   --accent-glow: rgba(37, 99, 235, 0.1);
   --border: #d5d9e0;
+  --shadow-color: rgba(0, 0, 0, 0.15);
+  --shadow-light: rgba(0, 0, 0, 0.08);
+  --backdrop-bg: rgba(26, 26, 24, 0.5);
   --radius: 6px;
   --page-max: 820px;
   --page-px: clamp(1.25rem, 4vw, 3rem);
+}
+
+[data-theme="dark"],
+[data-resolved="dark"] {
+  --bg: #111116;
+  --bg-card: #1a1a22;
+  --text: #e4e4e7;
+  --text-mid: #9a9aab;
+  --text-light: #5f5f73;
+  --accent: #5b8def;
+  --accent-hover: #7ba5ff;
+  --accent-glow: rgba(91, 141, 239, 0.12);
+  --border: #2a2a35;
+  --shadow-color: rgba(0, 0, 0, 0.4);
+  --shadow-light: rgba(0, 0, 0, 0.25);
+  --backdrop-bg: rgba(0, 0, 0, 0.6);
 }
 
 /* Reset */
@@ -531,7 +550,7 @@ kbd {
   background: var(--accent-glow);
   color: var(--accent);
   border-radius: 3px;
-  border: 1px solid rgba(37, 99, 235, 0.2);
+  border: 1px solid var(--accent-glow);
 }
 
 .entry-date {
@@ -595,7 +614,7 @@ kbd {
   color: var(--accent);
   text-decoration: none;
   padding: 0.3em 0.7em;
-  border: 1px solid rgba(37, 99, 235, 0.25);
+  border: 1px solid var(--accent-glow);
   border-radius: 4px;
   transition: all 0.2s;
 }
@@ -647,7 +666,7 @@ a.section-title-link:hover {
   border-color: var(--accent);
   background: var(--accent-glow);
   transform: translateY(-2px);
-  box-shadow: 0 4px 16px rgba(37, 99, 235, 0.08);
+  box-shadow: 0 4px 16px var(--accent-glow);
 }
 
 .connect-card:hover .connect-icon {
@@ -817,7 +836,7 @@ a.section-title-link:hover {
 .cmd-palette-backdrop {
   position: absolute;
   inset: 0;
-  background: rgba(26, 26, 24, 0.5);
+  background: var(--backdrop-bg);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 }
@@ -829,7 +848,7 @@ a.section-title-link:hover {
   background: var(--bg);
   border: 1px solid var(--border);
   border-radius: 12px;
-  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 24px 64px var(--shadow-color), 0 2px 8px var(--shadow-light);
   overflow: hidden;
   transform: translateY(-8px) scale(0.98);
   transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1);
@@ -899,6 +918,58 @@ a.section-title-link:hover {
   margin-left: auto;
   font-size: 0.65rem;
   color: var(--text-light);
+}
+
+/* ============================================
+   Theme Toggle
+   ============================================ */
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius);
+  color: var(--text-mid);
+  background: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 0;
+  font-family: var(--mono);
+}
+
+.theme-toggle:hover {
+  color: var(--accent);
+  background: var(--accent-glow);
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+
+.theme-toggle svg {
+  display: none;
+  width: 18px;
+  height: 18px;
+}
+
+.theme-toggle .icon-light,
+.theme-toggle .icon-dark,
+.theme-toggle .icon-system {
+  display: none;
+}
+
+[data-theme="light"] .theme-toggle .icon-light,
+html:not([data-theme]) .theme-toggle .icon-light {
+  display: block;
+}
+
+[data-theme="dark"] .theme-toggle .icon-dark {
+  display: block;
+}
+
+[data-theme="system"] .theme-toggle .icon-system {
+  display: block;
 }
 
 /* ============================================
