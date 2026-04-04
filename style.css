@@ -898,16 +898,16 @@ kbd {
   }
 
   .footer-art {
-    height: 85vh;
+    height: 110vh;
   }
 
   .footer-art-text {
-    top: 20vh;
+    top: 30vh;
     font-size: clamp(3rem, 14vw, 5rem);
   }
 
   .footer-info {
-    margin-top: -35vh;
+    margin-top: -55vh;
   }
 
   .footer-cols {
