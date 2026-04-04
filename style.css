@@ -627,7 +627,7 @@ kbd {
    ============================================ */
 
 .footer {
-  margin-top: 6rem;
+  margin-top: 1rem;
   font-family: var(--mono);
   font-size: 0.7rem;
   color: var(--text-light);
